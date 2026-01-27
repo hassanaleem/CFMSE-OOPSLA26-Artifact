@@ -1,0 +1,35 @@
+time /cfmse/klee/build/bin/klee -use-merge --max-memory=51200  --write-cov --max-time=10s --solver-backend=stp --dump-states-on-halt=false --only-output-states-covering-new --output-dir=/artifact/kick-the-tire/cfmse-experiments/01272026_220609_toupper_klee_sm/klee_sm_100_1  toupper_sm.ll
+KLEE: output directory is "/artifact/kick-the-tire/cfmse-experiments/01272026_220609_toupper_klee_sm/klee_sm_100_1"
+KLEE: Using STP solver backend
+KLEE: WARNING: --use-merge enabled. Using NURS_CovNew as default searcher.
+INFO[cfmse]: Removing non line table debug info ...
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+
+KLEE: done: total instructions = 3413
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 100
+KLEE: done: generated tests = 1
+
+real	0m0.731s
+user	0m0.650s
+sys	0m0.083s
+/cfmse/klee/build/bin/klee -use-merge --max-memory=51200 --write-cov --max-time=10s --solver-backend=stp --dump-states-on-halt=false --only-output-states-covering-new --output-dir=/artifact/kick-the-tire/cfmse-experiments/01272026_220609_toupper_klee_sm/klee_sm_100_1 toupper_sm.ll
+PID: 13448
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2026-01-27 22:06:09
+BEGIN searcher description
+MergingSearcher
+END searcher description
+Finished: 2026-01-27 22:06:10
+Elapsed: 00:00:01
+KLEE: done: explored paths = 101
+KLEE: done: avg. constructs per query = 11
+KLEE: done: total queries = 101
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 101
+KLEE: done: query cex = 101
+
+KLEE: done: total instructions = 3413
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 100
+KLEE: done: generated tests = 1

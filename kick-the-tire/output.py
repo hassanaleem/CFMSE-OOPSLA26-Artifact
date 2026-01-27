@@ -15,7 +15,6 @@ def process_benchmark_file(file_path):
         return None
 
     # 1. Get the benchmark name from the filename
-    # e.g., "./erosion.csv" -> "erosion"
     benchmark_name = os.path.splitext(os.path.basename(file_path))[0]
     df['Benchmark'] = benchmark_name
 
@@ -82,16 +81,6 @@ def process_benchmark_file(file_path):
 
 if __name__ == "__main__":
     
-    # --- Part 1: Process a SINGLE benchmark (as you asked) ---
-    print("--- Processing a single file ---")
-    single_file_path = './erosion.csv' # Assuming you have this file
-    single_table = process_benchmark_file(single_file_path)
-    
-    if single_table is not None:
-        # Use tabulate to print it nicely, as you imported
-        print(tabulate(single_table, headers='keys', tablefmt='psql'))
-
-
     # --- Part 2: Process ALL benchmarks and combine them ---
     print("\n\n--- Processing all .csv files in the directory ---")
     

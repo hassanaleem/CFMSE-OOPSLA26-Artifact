@@ -1,0 +1,23 @@
+/cfmse/klee/build/bin/klee --max-memory=51200 --write-cov --max-time=10s --solver-backend=stp --dump-states-on-halt=false --only-output-states-covering-new --output-dir=/artifact/kick-the-tire/cfmse-experiments/01272026_220536_toupper_klee/klee_10_1 toupper_nosm.ll
+PID: 13137
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2026-01-27 22:05:36
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2026-01-27 22:05:36
+Elapsed: 00:00:00
+KLEE: done: explored paths = 1024
+KLEE: done: avg. constructs per query = 11
+KLEE: done: total queries = 11
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 11
+KLEE: done: query cex = 11
+
+KLEE: done: total instructions = 38887
+KLEE: done: completed paths = 1024
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 3
