@@ -1,0 +1,7 @@
+{
+  "KLEE_OPTIONS" : "--simplify-sym-indices --write-cov  --max-memory=72000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s --max-time=3600s --watchdog --search=nurs:covnew ",
+  "CFMSE_IGNORE_JSON" : "cfmse_ignore.json",
+  "CFM_OPTIONS" : "-klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic",
+  "PROG_ARGS" : " --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout "
+}
+

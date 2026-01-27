@@ -1,0 +1,12 @@
+I;C;warning_defs;[4 x %struct.FlagDef]*;libtcc.c:1371
+I;C;flag_defs;[4 x %struct.FlagDef]*;libtcc.c:1421
+I;C;tcc_keywords;[5148 x i8]*;tccpp.c:65
+I;C;ab_month_name;[12 x [4 x i8]]*;tccpp.c:2615
+I;C;tok_two_chars;[64 x i8]*;tccpp.c:72
+I;C;reg_classes;[12 x i32]*;x86_64-gen.c:106
+I;C;arg_regs;[6 x i8]*;x86_64-gen.c:821
+I;C;test_bits;[30 x i8]*;i386-asm.c:169
+I;C;reg_to_size;[9 x i8]*;i386-asm.c:155
+I;C;op0_codes;[89 x i16]*;i386-asm.c:227
+I;C;asm_instrs;[280 x %struct.ASMInstr]*;i386-asm.c:211
+I;C;segment_prefixes;[6 x i8]*;i386-asm.c:202

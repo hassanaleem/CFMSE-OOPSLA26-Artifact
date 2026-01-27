@@ -1,0 +1,13 @@
+I;C;multipliers;[13 x i8]*;../../src/od.c:1561
+I;C;width_bytes;[9 x i32]*;../../src/od.c:155
+I;C;default_file_list;[2 x i8*]*;../../src/od.c:254
+I;C;charname;[33 x i8*]*;../../src/od.c:173
+I;C;bytes_to_hex_digits;[17 x i32]*;../../src/od.c:138
+I;C;bytes_to_unsigned_dec_digits;[17 x i32]*;../../src/od.c:135
+I;C;bytes_to_oct_digits;[17 x i32]*;../../src/od.c:129
+I;C;bytes_to_signed_dec_digits;[17 x i32]*;../../src/od.c:132
+I;C;short_options;[35 x i8]*;../../src/od.c:268
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:77
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:91
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112

@@ -1,0 +1,4 @@
+I;C;osabis;[16 x %struct.anon]*;../../binutils/elfedit.c:555
+I;C;_sch_istable;[256 x i16]*;../../libiberty/safe-ctype.c:159
+I;C;_sch_tolower;[256 x i8]*;../../libiberty/safe-ctype.c:191
+I;C;_sch_toupper;[256 x i8]*;../../libiberty/safe-ctype.c:220

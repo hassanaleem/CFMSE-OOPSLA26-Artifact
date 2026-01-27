@@ -1,0 +1,4 @@
+chcon
+mkdir
+mkfifo 
+chown

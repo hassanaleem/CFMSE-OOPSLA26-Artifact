@@ -1,0 +1,20 @@
+I;C;matchers;[6 x %struct.matcher]*;../../src/grep.c:22
+I;C;before_options;[59 x i8]*;../../src/grep.c:31
+I;C;after_options;[114 x i8]*;../../src/grep.c:33
+I;C;line_beg_no_bk;[3 x i8]*;../../src/dfasearch.c:182
+I;C;line_end_no_bk;[3 x i8]*;../../src/dfasearch.c:183
+I;C;word_beg_no_bk;[19 x i8]*;../../src/dfasearch.c:184
+I;C;word_end_no_bk;[19 x i8]*;../../src/dfasearch.c:185
+I;C;line_beg_bk;[4 x i8]*;../../src/dfasearch.c:186
+I;C;line_end_bk;[4 x i8]*;../../src/dfasearch.c:187
+I;C;word_beg_bk;[23 x i8]*;../../src/dfasearch.c:188
+I;C;word_end_bk;[23 x i8]*;../../src/dfasearch.c:189
+I;C;color_dict;[12 x %struct.color_cap]*;../../src/main.c:254
+I;C;directories_types;[3 x i32]*;../../src/main.c:373
+I;C;directories_args;[4 x i8*]*;../../src/main.c:369
+I;C;short_options;[59 x i8]*;../../src/main.c:274
+I;C;utf8_classes;[5 x [8 x i32]]*;../../src/dfa.c:1543
+I;C;is_basic_table;[8 x i32]*;../../lib/mbchar.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:65
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:79
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26

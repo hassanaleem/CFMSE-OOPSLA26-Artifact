@@ -1,0 +1,5 @@
+clean:
+	rm -rf *.ll output*.* *.dot klee-out-*/ klee-last *.svg *.bc .*.dot 
+
+force_clean:
+	rm -rf *.ll output*.* *.dot klee-out-*/ klee-last *.svg *.bc .*.dot *.log *.csv

@@ -1,0 +1,37 @@
+#! /bin/sh
+
+trap 'rm -fr $tmpfiles' 1 2 3 15
+
+tmpfiles="test.bin test.out"
+# Make sure no files are left over.
+rm -fr $tmpfiles
+
+test "X${VERBOSE}" = Xtrue && {
+  set -x
+  PS4=">$`basename $0`> "
+}
+
+: ${UUDECODE=$top_builddir/src/uudecode}
+: ${UUENCODE=$top_builddir/src/uuencode}
+
+while :
+do
+  ${UUDECODE} $top_srcdir/tests/testdata || {
+    result=$?
+    break
+  }
+
+  ${UUENCODE} test.bin test.bin > test.out || {
+    result=$?
+    break
+  }
+
+  : ${DIFF=diff}
+  ${DIFF} $top_srcdir/tests/testdata test.out > /dev/null
+  result=$?
+  break
+done
+
+rm -fr $tmpfiles
+
+exit $result

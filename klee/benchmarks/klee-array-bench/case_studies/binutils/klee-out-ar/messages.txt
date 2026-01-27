@@ -1,0 +1,4 @@
+KLEE: Logging queries that reach solver in .kquery format to /home/user/symbolic_array/case_studies/binutils/klee-out-ar/solver-queries.kquery
+
+KLEE: Deterministic memory allocation starting from 0x7ffef66f3000
+KLEE: Deterministic memory allocation starting from 0x7ffef66f3000

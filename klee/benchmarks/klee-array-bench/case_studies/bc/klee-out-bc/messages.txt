@@ -1,0 +1,2 @@
+KLEE: Logging queries that reach solver in .kquery format to /home/user/symbolic_array/case_studies/bc/klee-out-bc/solver-queries.kquery
+

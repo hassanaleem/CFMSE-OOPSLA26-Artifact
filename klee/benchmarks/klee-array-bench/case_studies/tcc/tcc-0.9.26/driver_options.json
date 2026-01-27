@@ -1,0 +1,7 @@
+{
+  "KLEE_OPTIONS" : "  --simplify-sym-indices --output-module --max-memory=32000 --max-sym-array-size=4096 --disable-inlining --optimize --use-forked-solver --use-cex-cache --libc=uclibc --posix-runtime --external-calls=all --only-output-states-covering-new --watchdog --max-memory-inhibit=false --use-query-log=solver:kquery --max-static-fork-pct=1 --max-static-solve-pct=1 --max-static-cpfork-pct=1 --switch-type=internal --dump-states-on-halt=false --debug-print-instructions=compact:file --debug-compress-instructions --compress-query-log --max-solver-time=200s --max-time=1800s --search=nurs:covnew   ",
+  "CFMSE_IGNORE_JSON" : "cfmse_ignore.json",
+  "CFM_OPTIONS" : "-klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic",
+  "PROG_ARGS" : " A B C --sym-args 0 3 8 --sym-files 3 800 --sym-stdout  "
+}
+

@@ -1,0 +1,11 @@
+I;C;DEFAULT_SECTION_DELIMITERS;[3 x i8]*;../../src/nl.c:53
+I;C;FORMAT_RIGHT_LZ;[8 x i8]*;../../src/nl.c:47
+I;C;FORMAT_RIGHT_NOLZ;[7 x i8]*;../../src/nl.c:44
+I;C;FORMAT_LEFT;[8 x i8]*;../../src/nl.c:50
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:77
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:91
+I;C;utf8_sb_map;[4 x i64]*;../../lib/regcomp.c:566
+I;C;__re_error_msgid_idx;[17 x i64]*;../../lib/regcomp.c:182
+I;C;__re_error_msgid;[369 x i8]*;../../lib/regcomp.c:128
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112

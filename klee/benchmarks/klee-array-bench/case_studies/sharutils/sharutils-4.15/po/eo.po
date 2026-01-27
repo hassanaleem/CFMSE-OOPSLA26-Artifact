@@ -1,0 +1,2135 @@
+# Esperanto translation for sharutils.
+# Copyright (C) 2013, 2015 Free Software Foundation, Inc.
+# This file is distributed under the same license as the sharutils package.
+# Felipe Castro <fefcas@gmail.com>, 2013, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU sharutils 4.14.3\n"
+"Report-Msgid-Bugs-To: bug-gnu-utils@gnu.org\n"
+"POT-Creation-Date: 2015-02-07 10:53-0800\n"
+"PO-Revision-Date: 2015-01-07 15:30-0300\n"
+"Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
+"Language-Team: Esperanto <translation-team-eo@lists.sourceforge.net>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#: src/scribble.c:166
+#, c-format
+msgid "could not allocate %u bytes of scribble space"
+msgstr "ne eblis rezervi %u bajtojn el malneta spaco"
+
+#. TRANSLATORS:  This is a phony function generated for the purpose of
+#. constructing the strings to be extracted for translation.  Each string
+#. is associated with a name (e.g. SM_ans_yes) that can be found in shar.c,
+#. if you need to look up context.  These strings are all inserted into
+#. the shar-generated shell script so the shar user can create shar archives
+#. with messages localized for one locale.
+#.
+#: src/scripts.x:449
+msgid "Note: not verifying md5sums.  Consider installing GNU coreutils."
+msgstr "Rimarko: ni ne kontrolas md5sum.  Konsideru instali GNU coreutils."
+
+#: src/scripts.x:450
+msgid ""
+"WARNING: not restoring timestamps.  Consider getting and\n"
+"installing GNU 'touch', distributed in GNU coreutils..."
+msgstr ""
+"AVERTO: ni ne restarigas tempindikojn.  Konsideru akiri\n"
+"kaj instali GNU 'touch', distribuata en GNU coreutils..."
+
+#: src/scripts.x:452
+#, c-format
+msgid "lock directory %s exists"
+msgstr "ŝlos-dosierujo %s ekzistas"
+
+#: src/scripts.x:453
+#, c-format
+msgid "failed to create %s lock directory"
+msgstr "fiaskis krei la ŝlos-dosierujon %s"
+
+#: src/scripts.x:454
+#, c-format
+msgid "x - created lock directory %s."
+msgstr "x - kreis ŝlos-dosierujon %s."
+
+#: src/scripts.x:455
+#, c-format
+msgid "x - failed to create lock directory %s."
+msgstr "x - fiaskis krei ŝlos-dosierujon %s."
+
+#: src/scripts.x:456
+#, c-format
+msgid "x - created directory %s."
+msgstr "x - kreis dosierujon %s."
+
+#: src/scripts.x:457
+#, c-format
+msgid "x - failed to create directory %s."
+msgstr "x - fiaskis krei dosierujon %s."
+
+#: src/scripts.x:458
+msgid "yes"
+msgstr "jes"
+
+#: src/scripts.x:459
+msgid "overwrite this file"
+msgstr "anstataŭigi tiun ĉi dosieron"
+
+#: src/scripts.x:460
+msgid "no"
+msgstr "ne"
+
+#: src/scripts.x:461
+msgid "skip this file"
+msgstr "salti ĉi tiun dosieron"
+
+#: src/scripts.x:462
+msgid "all"
+msgstr "ĉio"
+
+#: src/scripts.x:463
+msgid "overwrite all files"
+msgstr "anstataŭigi ĉiujn dosierojn"
+
+#: src/scripts.x:464
+msgid "none"
+msgstr "nenio"
+
+#: src/scripts.x:465
+msgid "overwrite no files"
+msgstr "anstataŭigi neniun dosieron"
+
+#: src/scripts.x:466
+msgid "help"
+msgstr "helpi"
+
+#: src/scripts.x:467
+msgid "explain choices"
+msgstr "klarigi elektojn"
+
+#: src/scripts.x:468
+msgid "quit"
+msgstr "fini"
+
+#: src/scripts.x:469
+msgid "exit immediately"
+msgstr "ĉesi tuje"
+
+#: src/scripts.x:470
+#, c-format
+msgid "restore of %s failed"
+msgstr "restarigo de %s fiaskis"
+
+#: src/scripts.x:471
+#, c-format
+msgid "  chmod %04o %s\n"
+msgstr "  chmod %04o %s\n"
+
+#: src/scripts.x:472
+#, c-format
+msgid "End of part %d, continue with part %d"
+msgstr "Fino de parto %d, daŭrigo kun parto %d"
+
+#: src/scripts.x:473
+#, c-format
+msgid "End of %s part %d"
+msgstr "Fino de %s parto %d"
+
+#: src/scripts.x:474
+#, c-format
+msgid "restoration warning:  size of %s is not %s"
+msgstr "restariga averto:  grando de %s ne estas %s"
+
+#: src/scripts.x:475 src/shar.c:1456
+msgid "(text)"
+msgstr "(teksto)"
+
+#: src/scripts.x:476
+msgid "(compressed)"
+msgstr "(densigita)"
+
+#: src/scripts.x:477
+msgid "(gzipped)"
+msgstr "(gzip-ita)"
+
+#: src/scripts.x:478
+msgid "(bzipped)"
+msgstr "(bzip-ita)"
+
+#: src/scripts.x:479
+msgid "(binary)"
+msgstr "(duuma)"
+
+#: src/scripts.x:480
+msgid "archive"
+msgstr "arĥivi"
+
+#: src/scripts.x:481
+#, c-format
+msgid "File %s is continued in part %d"
+msgstr "Dosiero %s daŭriĝas en parto %d"
+
+#: src/scripts.x:482
+msgid "Please unpack part 1 first!"
+msgstr "Bonvolu elpakigi parton 1 unue!"
+
+#: src/scripts.x:483
+msgid "Please unpack part ${shar_sequence} next!"
+msgstr "Bonvolu elpakigi parton ${shar_sequence} sekve!"
+
+#: src/scripts.x:484
+#, c-format
+msgid "x - STILL SKIPPING %s"
+msgstr "x - ANKORAŬ SALTANTA %s"
+
+#: src/scripts.x:485
+#, c-format
+msgid "continuing file %s"
+msgstr "daŭriganta dosiero %s"
+
+#: src/scripts.x:486
+msgid "(empty)"
+msgstr "(malplena)"
+
+#: src/scripts.x:487
+#, c-format
+msgid "x - overwriting %s"
+msgstr "x - anstataŭiganta %s"
+
+#: src/scripts.x:488
+#, c-format
+msgid "overwrite %s"
+msgstr "anstataŭigi %s"
+
+#: src/scripts.x:489
+#, c-format
+msgid "SKIPPING %s"
+msgstr "SALTANTA %s"
+
+#: src/scripts.x:490
+msgid "extraction aborted"
+msgstr "elpakigo estas ĉesigita"
+
+#: src/scripts.x:491
+#, c-format
+msgid "x - SKIPPING %s (file already exists)"
+msgstr "x - SALTANTA %s (dosiero jam ekzistas)"
+
+#: src/scripts.x:492
+#, c-format
+msgid "x - extracting %s %s"
+msgstr "x - elpakigo de %s %s"
+
+#: src/scripts.x:493
+#, c-format
+msgid "File %s is complete"
+msgstr "Dosiero %s estas kompleta"
+
+#: src/scripts.x:494
+#, c-format
+msgid "uudecoding file %s"
+msgstr "uu-dekodiganta dosieron %s"
+
+#: src/scripts.x:495
+msgid "MD5 check failed"
+msgstr "Kontrolo MD5 fiaskis"
+
+#: src/scripts.x:496
+msgid "You have unpacked the last part"
+msgstr "Vi elpakigis la lastan parton"
+
+#: src/scripts.x:497
+#, c-format
+msgid "x - removed lock directory %s."
+msgstr "x - forigis ŝlos-dosierujon %s."
+
+#: src/scripts.x:498
+#, c-format
+msgid "x - failed to remove lock directory %s."
+msgstr "x - fiaskis forigi ŝlos-dosierujon %s."
+
+#: src/shar-opts.c:1870
+#, c-format
+msgid "Cannot reopen %s as stdin"
+msgstr "Ne eblas re-malfermi %s kiel ĉefenigujon"
+
+#: src/shar-opts.c:1990
+msgid "shar usage error:\n"
+msgstr "shar, uzmanira eraro:\n"
+
+#: src/shar-opts.c:2027
+msgid "shar fatal error:\n"
+msgstr "neriparebla eraro de shar:\n"
+
+#: src/shar-opts.c:2064 src/unshar-opts.c:738 src/uudecode-opts.c:512
+#: src/uuencode-opts.c:463
+#, c-format
+msgid "fserr %d (%s) performing '%s' on %s\n"
+msgstr "fserr %d (%s) realiganta '%s' sur %s\n"
+
+#: src/shar-opts.c:2189 src/unshar-opts.c:863 src/uudecode-opts.c:637
+#: src/uuencode-opts.c:588
+msgid "No memory for duping translated strings\n"
+msgstr "Mankas memoro por duobligi tradukitajn ĉenojn\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the sharOptions structure noted in the
+#. comments below.  The literal text is defined in shar_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. shar_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via sharOptions.pzCopyright
+#: src/shar-opts.c:2257
+#, fuzzy
+msgid ""
+"shar (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"shar (GNU sharutils) 4.15\n"
+"Kopyrajto (C) 1994-2014 Free Software Foundation, Inc., ĉiuj rajtoj "
+"rezervitaj.\n"
+"Tio ĉi estas libera programaro. Ĝi estas permesita por uzo, modifo kaj\n"
+"redistribuo sub la kondiĉoj de la GNU-a Ĝenerala Publika Permeso,\n"
+"versio 3 aŭ posta <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/shar-opts.c:2264
+msgid ""
+"shar is free software: you can redistribute it and/or modify it under the\n"
+"terms of the GNU General Public License as published by the Free Software\n"
+"Foundation, either version 3 of the License, or (at your option) any later\n"
+"version.\n"
+"\n"
+msgstr ""
+"shar estas libera programaro: vi povas modifi kaj/aŭ modifi ĝin sub la\n"
+"kondiĉoj de la GNU-a Ĝenerala Publika Permeso, kiel publikita de \n"
+"Free Software Foundation, aŭ versio 3 de la Permeso, aŭ (laŭ via volo)\n"
+"iu ajn posta versio.\n"
+"\n"
+
+#: src/shar-opts.c:2268
+msgid ""
+"shar is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"shar estas distribuata esperante ke ĝi estos utila, tamen SEN IU AJN\n"
+"GARANTIO; eĉ sen implicita garantio de MERKATIGO aŭ TAŬGO POR SPECIFA\n"
+"CELO.  Konsultu la GNU-an Ĝeneralan Publikan Permeson por pli da\n"
+"detaloj.\n"
+"\n"
+
+#: src/shar-opts.c:2272 src/unshar-opts.c:946 src/uudecode-opts.c:720
+#: src/uuencode-opts.c:671
+msgid ""
+"You should have received a copy of the GNU General Public License along\n"
+"with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"Vi devas esti ricevinta kopion de la GNU-a Ĝenerala Publika Permeso\n"
+"kune kun tiu ĉi programaro.  Se ne, konsultu <http://www.gnu.org/licenses/"
+">.\n"
+
+#: src/shar-opts.c:2276
+#, c-format
+msgid ""
+"shar (GNU sharutils) - create a shell archive\n"
+"Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+msgstr ""
+"shar (GNU sharutils) - krei ŝelan arĥivon\n"
+"Uzmaniero:  %s [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+
+#: src/shar-opts.c:2280
+msgid ""
+"If no 'file's are specified, the list of input files is read from standard\n"
+"input.  Standard input must not be a terminal.\n"
+msgstr ""
+"Se neniu 'dosiero' estas indikita, la listo de enig-dosieroj estos legataj\n"
+"el la ĉefenigujo.  La ĉefenigujo ne povas esti terminalo.\n"
+
+#: src/shar-opts.c:2284
+msgid ""
+"'shar' creates \"shell archives\" (or shar files) which are in text format\n"
+"and can be emailed.  These files may be unpacked later by executing them\n"
+"with '/bin/sh'.  The resulting archive is sent to standard out unless the\n"
+"'-o' option is given.  A wide range of features provide extensive\n"
+"flexibility in manufacturing shars and in specifying 'shar' \"smartness\".\n"
+"Archives may be fairly simple ('--vanilla-operation') or essentially a\n"
+"mailable 'tar' archive.\n"
+"\n"
+msgstr ""
+"'shar' kreas \"ŝelajn arĥivojn\" (aŭ shar-dosierojn) strukturitajn laŭ "
+"teksta\n"
+"formo kaj povas esti retpoŝte sendataj.  Tiuj dosieroj povas esti elpakataj\n"
+"poste per funkciado kun '/bin/sh'.  La rezultanta arĥivo estas sendata al "
+"la\n"
+"ĉefeligujo, escepte se la modifilo '-o' estas aplikita.  Granda rango da\n"
+"trajtoj provizas ampleksan flekseblecon por fabriki shar-ojn kaj por "
+"specifi\n"
+"la \"inteligentecon\" de 'shar'.  Arĥivoj povas esti tre simplaj, per uzo "
+"de\n"
+"'--vanilla-operation', aŭ esence povas esti poŝte sendebla arĥivo 'tar'.\n"
+"\n"
+
+#: src/shar-opts.c:2291 src/shar-opts.c:2385
+msgid ""
+"Options may be specified in any order until a 'file' argument is\n"
+"recognized.  If the '--intermix-type' option has been specified, more\n"
+"compression and encoding options will be recognized between the 'file'\n"
+"arguments.\n"
+"\n"
+msgstr ""
+"Modifiloj povas esti indikitaj laŭ iu ajn ordo ĝis kiam la argumento\n"
+"'dosiero' estu rekonita.  Se la modifilo '--intermix-type' estas indikita,\n"
+"pli densigaj kaj enkodigaj modifiloj estos rekonataj inter la argumentoj\n"
+"'dosiero'.\n"
+"\n"
+
+#: src/shar-opts.c:2295
+msgid ""
+"Though this program supports 'uuencode'-d files, they are deprecated.  If\n"
+"you are emailing files, please consider mime-encoded files.  If you do\n"
+"'uuencode', base64 is the preferred encoding method.\n"
+msgstr ""
+"Kvankan tiu ĉi programo subtenas 'uu-enkoditajn' dosieroj, ili ne estas\n"
+"rekomendataj.  Se vi poŝtsendas dosierojn, bonvolu konsideri mime-"
+"enkodigon.\n"
+"Se vi uzas 'uuencode', base64 estas la preferata enkodig-metodo.\n"
+
+#: src/shar-opts.c:2300
+msgid "shar (GNU sharutils) 4.15"
+msgstr "shar (GNU sharutils) 4.15"
+
+#: src/shar-opts.c:2303
+msgid ""
+"shar (GNU sharutils) - create a shell archive\n"
+"Usage:  shar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"\n"
+msgstr ""
+"shar (GNU sharutils) - kreas ŝelan arĥivon\n"
+"Uzmaniero:  shar [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+"\n"
+
+#: src/shar-opts.c:2305
+msgid ""
+"Specify compression:\n"
+"   -p, --intermix-type        specify compression for input files\n"
+"                                - prohibits the option 'vanilla-operation'\n"
+msgstr ""
+"indikado de densigo:\n"
+"   -p, --intermix-type        indiki densigon por enig-dosieroj\n"
+"                                - malpermesas la modifilon 'vanilla-"
+"operation'\n"
+
+#: src/shar-opts.c:2308
+msgid ""
+"   -C, --compactor=PROG       specify compaction (compression) program PROG\n"
+"                                - prohibits the option 'vanilla-operation'\n"
+"                                - may appear multiple times\n"
+"                                - it must be known to shar: xz gzip bzip2\n"
+msgstr ""
+"   -C, --compactor=PROG       indiki densigilan programon PROG\n"
+"                                - malpermesas la modifilon 'vanilla-"
+"operation'\n"
+"                                - povas aperi multfoje\n"
+"                                - devas esti konata de shar: xz gzip bzip2\n"
+
+#: src/shar-opts.c:2312
+msgid ""
+"   -g, --level-of-compression=LEVEL\n"
+"                              pass LEVEL for compression\n"
+"                                - it must be in the range: 1 to 9\n"
+"\n"
+msgstr ""
+"   -g, --level-of-compression=NIVELO\n"
+"                              pasi NIVELOn por densigo\n"
+"                                - ĝi devas esti en la intervalo: 1 al 9\n"
+"\n"
+
+#: src/shar-opts.c:2315
+msgid ""
+"Specify file encoding methodology:\n"
+"   -M, --mixed-uuencode       decide uuencoding for each file\n"
+msgstr ""
+"Indiki dosier-enkodigan metodon:\n"
+"   -M, --mixed-uuencode       decidi uu-enkodigon por ĉiu dosiero\n"
+
+#: src/shar-opts.c:2317
+msgid ""
+"   -B, --uuencode             treat all files as binary\n"
+"                                - an alternate for mixed-uuencode\n"
+msgstr ""
+"   -B, --uuencode             trakti ĉiujn dosierojn kiel duumajn\n"
+"                                - alternativo por mixed-uuencode\n"
+
+#: src/shar-opts.c:2319
+msgid ""
+"   -T, --text-files           treat all files as text\n"
+"                                - an alternate for mixed-uuencode\n"
+"\n"
+msgstr ""
+"   -T, --text-files           trakti ĉiujn dosierojn kiel tekstajn\n"
+"                                - alternativo por mixed-uuencode\n"
+"\n"
+
+#: src/shar-opts.c:2321
+msgid "Specifying file selection and output modes:\n"
+msgstr "Indiko de dosier-elekto kaj eligaj reĝimoj:\n"
+
+#: src/shar-opts.c:2322
+msgid "   -o, --output-prefix=str    print output to file PREFIX.nn\n"
+msgstr "   -o, --output-prefix=ĉeno   sendi eligon al dosiero PREFIKSO.nn\n"
+
+#: src/shar-opts.c:2323
+msgid ""
+"   -l, --whole-size-limit=SIZE\n"
+"                              split archive, not files, to SIZE\n"
+"                                - requires the option 'output-prefix'\n"
+"                                - is scalable with a suffix: k/K/m/M/g/G/t/"
+"T\n"
+"                                - it must lie in one of the ranges:\n"
+"                                  8 to 1023, or 8192 to 4194304\n"
+msgstr ""
+"   -l, --whole-size-limit=GRANDO\n"
+"                              apartigi arĥivon, ne dosierojn, po GRANDO\n"
+"                                - postulas modifilon 'output-prefix'\n"
+"                                - skaleblas per sufikso: k/K/m/M/g/G/t/T\n"
+"                                - ĝi devas esti en unu el la intervaloj:\n"
+"                                  8 al 1023, aŭ 8192 al 4194304\n"
+
+#: src/shar-opts.c:2329
+msgid ""
+"   -L, --split-size-limit=SIZE\n"
+"                              split archive or files to SIZE\n"
+"                                - requires the option 'output-prefix'\n"
+"                                - is scalable with a suffix: k/K/m/M/g/G/t/"
+"T\n"
+"                                - it must lie in one of the ranges:\n"
+"                                  8 to 1023, or 8192 to 4194304\n"
+"                                - an alternate for 'whole-size-limit'\n"
+msgstr ""
+"   -L, --split-size-limit=GRANDO\n"
+"                              apartigi arĥivon aŭ dosieroj po GRANDO\n"
+"                                - postulas modifilon 'output-prefix'\n"
+"                                - skaleblas per sufikso: k/K/m/M/g/G/t/T\n"
+"                                - ĝi devas esti en unu el la intervaloj:\n"
+"                                  8 al 1023, aŭ 8192 al 4194304\n"
+"                                - estas alternativo por 'whole-size-limit'\n"
+
+#: src/shar-opts.c:2336
+msgid ""
+"   -I, --input-file-list=FILE read file list from FILE\n"
+"\n"
+msgstr ""
+"   -I, --input-file-list=DOSIERO\n"
+"                              legi dosierliston el DOSIERO\n"
+"\n"
+
+#: src/shar-opts.c:2337
+msgid ""
+"Controlling the shar headers:\n"
+"   -n, --archive-name=NAME    use NAME to document the archive\n"
+msgstr ""
+"Regado de kaplinioj de shar:\n"
+"   -n, --archive-name=NOMO    uzi NOMOn por dokumenti la arĥivon\n"
+
+#: src/shar-opts.c:2339
+msgid "   -s, --submitter=NAME       override the submitter name with NAME\n"
+msgstr "   -s, --submitter=NOMO       anstataŭigi la sendant-nomon per NOMO\n"
+
+#: src/shar-opts.c:2340
+msgid ""
+"   -a, --net-headers          output Submitted-by: & Archive-name: headers\n"
+"                                - requires the option 'archive-name'\n"
+msgstr ""
+"   -a, --net-headers          eligi kapojn Submitted-by: & Archive-name:\n"
+"                                - postulas modifilon 'archive-name'\n"
+
+#: src/shar-opts.c:2342
+msgid "   -c, --cut-mark             start the shar with a cut line\n"
+msgstr "   -c, --cut-mark             komencigi shar per tranĉlinio\n"
+
+#: src/shar-opts.c:2343
+msgid ""
+"   -t, --translate            translate messages in the script\n"
+"\n"
+msgstr ""
+"   -t, --translate            traduki mesaĝojn en la skripto\n"
+"\n"
+
+#: src/shar-opts.c:2344
+msgid ""
+"Protecting against transmission issues:\n"
+"       --no-character-count   do not use `wc -c' to check size\n"
+msgstr ""
+"Protekto kontraŭ transsendaj problemoj:\n"
+"       --no-character-count   ne uzi 'wc -c' por kontroli grandon\n"
+
+#: src/shar-opts.c:2346
+msgid "   -D, --no-md5-digest        do not use md5sum digest to verify\n"
+msgstr "   -D, --no-md5-digest        ne uzi resumo md5sum por kontroli\n"
+
+#: src/shar-opts.c:2347
+msgid ""
+"   -F, --force-prefix         apply the prefix character on every line\n"
+msgstr ""
+"   -F, --force-prefix         apliki la prefiksan signon en ĉiu linio\n"
+
+#: src/shar-opts.c:2348
+msgid ""
+"   -d, --here-delimiter=DELIM use DELIM to delimit the files\n"
+"\n"
+msgstr ""
+"   -d, --here-delimiter=APART uzi APART por apartlimigi la dosierojn\n"
+"\n"
+
+#: src/shar-opts.c:2349
+msgid ""
+"Producing different kinds of shars:\n"
+"   -V, --vanilla-operation    produce very simple shars\n"
+msgstr ""
+"Produkto de malsamaj tipoj de shar:\n"
+"   -V, --vanilla-operation    produkti tre simplan shar\n"
+
+#: src/shar-opts.c:2351
+msgid "   -P, --no-piping            use temporary files between programs\n"
+msgstr ""
+"   -P, --no-piping            uzi provizorajn dosierojn inter programoj\n"
+
+#: src/shar-opts.c:2352
+msgid "   -x, --no-check-existing    blindly overwrite existing files\n"
+msgstr ""
+"   -x, --no-check-existing    blinde anstataŭigi ekzistantajn dosierojn\n"
+
+#: src/shar-opts.c:2353
+msgid ""
+"   -X, --query-user           ask user before overwriting files\n"
+"                                - prohibits the option 'vanilla-operation'\n"
+msgstr ""
+"   -X, --query-user           demandi uzanton antaŭ ol anstataŭigi "
+"dosierojn\n"
+"                                - malpermesas la modifilon 'vanilla-"
+"operation'\n"
+
+#: src/shar-opts.c:2355
+msgid "   -m, --no-timestamp         do not restore modification times\n"
+msgstr "   -m, --no-timestamp         ne restarigi modif-tempojn\n"
+
+#: src/shar-opts.c:2356
+msgid "   -Q, --quiet-unshar         avoid verbose messages at unshar time\n"
+msgstr ""
+"   -Q, --quiet-unshar         eviti detalajn mesaŝojn dum unshar aktivas\n"
+
+#: src/shar-opts.c:2357
+msgid ""
+"   -f, --basename             restore in one directory, despite hierarchy\n"
+"\n"
+msgstr ""
+"   -f, --basename             restarigi en unu dosierujo, malgraŭ la "
+"hierarkio\n"
+"\n"
+
+#: src/shar-opts.c:2358
+msgid ""
+"Internationalization options:\n"
+"       --no-i18n              do not internationalize\n"
+msgstr ""
+"Internaciigaj modifiloj:\n"
+"       --no-i18n              ne internaciigi\n"
+
+#: src/shar-opts.c:2360
+msgid ""
+"       --print-text-domain-dir  print directory with shar messages\n"
+"\n"
+msgstr ""
+"       --print-text-domain-dir  montri dosierujon kun mesaĝoj shar\n"
+"\n"
+
+#: src/shar-opts.c:2361
+msgid ""
+"User feedback/entertainment:\n"
+"   -q, --quiet                do not output verbose messages\n"
+msgstr ""
+"Informigo/amuzigo de uzanto:\n"
+"   -q, --quiet                ne eligi detalajn mesaĝojn\n"
+
+#: src/shar-opts.c:2363
+msgid ""
+"       --silent               an alias for the 'quiet' option\n"
+"\n"
+msgstr ""
+"       --silent               jen alinomo por la modifilo 'quiet'\n"
+"\n"
+
+#: src/shar-opts.c:2364
+msgid "Version, usage and configuration options:\n"
+msgstr "Versiaj, uzmanieraj kaj agordaj modifiloj:\n"
+
+#: src/shar-opts.c:2365 src/unshar-opts.c:978 src/uudecode-opts.c:754
+#: src/uuencode-opts.c:701
+msgid "   -v, --version[=MODE]       output version information and exit\n"
+msgstr "   -v, --version[=REĜIMO]     eligi version kaj ĉesi\n"
+
+#: src/shar-opts.c:2366 src/unshar-opts.c:979 src/uudecode-opts.c:755
+#: src/uuencode-opts.c:702
+msgid ""
+"   -h, --help                 display extended usage information and exit\n"
+msgstr ""
+"   -h, --help                 montri detalan uzmanieran informon kaj ĉesi\n"
+
+#: src/shar-opts.c:2367 src/unshar-opts.c:980 src/uudecode-opts.c:756
+#: src/uuencode-opts.c:703
+msgid ""
+"   -!, --more-help            extended usage information passed thru pager\n"
+msgstr ""
+"   -!, --more-help            detala uzmaniera informo estas pasata tra "
+"paĝilo\n"
+
+#: src/shar-opts.c:2368 src/uudecode-opts.c:757 src/uuencode-opts.c:704
+msgid ""
+"   -R, --save-opts[=FILE]     save the option state to a config file FILE\n"
+msgstr ""
+"   -R, --save-opts[=DOSIERO]  konservi la modifil-staton al agorda DOSIERO\n"
+
+#: src/shar-opts.c:2369 src/uudecode-opts.c:758 src/uuencode-opts.c:705
+msgid ""
+"   -r, --load-opts=FILE       load options from the config file FILE\n"
+"                                - disabled with '--no-load-opts'\n"
+"                                - may appear multiple times\n"
+"\n"
+msgstr ""
+"   -r, --load-opts=DOSIERO    ŝargi modifilojn el agorda DOSIERO\n"
+"                                - malebligata per '--no-load-opts'\n"
+"                                - povas aperi multfoje\n"
+"\n"
+
+#: src/shar-opts.c:2372
+msgid ""
+"Options are specified by doubled hyphens and their name or by a single\n"
+"hyphen and the flag character.\n"
+"If no 'file's are specified, the list of input files is read from a\n"
+"standard input.  Standard input must not be a terminal.\n"
+"\n"
+msgstr ""
+"Modifiloj estas indikataj per duoblaj streketoj kaj iliaj nomoj aŭ\n"
+"per unusola streketo kaj la flag-signo.\n"
+"Se neniu 'dosiero' estas indikita, do la listo de enigdosieroj estos\n"
+"legata el la ĉefenigujo, kiu ne povas esti terminalo.\n"
+"\n"
+
+#: src/shar-opts.c:2376 src/unshar-opts.c:990 src/uudecode-opts.c:764
+#: src/uuencode-opts.c:710
+msgid "The following option preset mechanisms are supported:\n"
+msgstr "La jenaj modifilaj antaŭdifin-meĥanismoj estas subtenataj:\n"
+
+#: src/shar-opts.c:2377
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'shar' creates \"shell archives\" (or shar files) which are in text format\n"
+"and can be emailed.  These files may be unpacked later by executing them\n"
+"with '/bin/sh'.  The resulting archive is sent to standard out unless the\n"
+"'-o' option is given.  A wide range of features provide extensive\n"
+"flexibility in manufacturing shars and in specifying 'shar' \"smartness\".\n"
+"Archives may be fairly simple ('--vanilla-operation') or essentially a\n"
+"mailable 'tar' archive.\n"
+"\n"
+msgstr ""
+" - lego de dosiero $HOME/.sharrc\n"
+"\n"
+"'shar' kreas \"ŝelajn arĥivojn\" (aŭ shar-dosierojn) strukturitajn laŭ "
+"teksta\n"
+"formo kaj povas esti retpoŝte sendataj.  Tiuj dosieroj povas esti elpakataj\n"
+"poste per funkciado kun '/bin/sh'.  La rezultanta arĥivo estas sendata al "
+"la\n"
+"ĉefeligujo, escepte se la modifilo '-o' estas aplikita.  Granda rango da\n"
+"trajtoj provizas ampleksan flekseblecon por fabriki shar-ojn kaj por "
+"specifi\n"
+"la \"inteligentecon\" de 'shar'.  Arĥivoj povas esti tre simplaj, per uzo "
+"de\n"
+"'--vanilla-operation', aŭ esence povas esti poŝte sendebla arĥivo 'tar'.\n"
+"\n"
+
+#: src/shar-opts.c:2389
+msgid ""
+"Though this program supports 'uuencode'-d files, they are deprecated.  If\n"
+"you are emailing files, please consider mime-encoded files.  If you do\n"
+"'uuencode', base64 is the preferred encoding method.\n"
+"\n"
+"Please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+msgstr ""
+"Kvankan tiu ĉi programo subtenas 'uu-enkoditajn' dosieroj, ili ne estas\n"
+"rekomendataj.  Se vi poŝtsendas dosierojn, bonvolu konsideri mime-"
+"enkodigon.\n"
+"Se vi uzas 'uuencode', base64 estas la preferata enkodig-metodo.\n"
+"\n"
+"Bonvolu raporti program-misojn al:  <bug-gnu-utils@gnu.org>\n"
+
+#: src/shar-opts.c:2395
+msgid ""
+"shar (GNU sharutils) - create a shell archive\n"
+"Usage:  shar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"Try 'shar --help' for more information.\n"
+msgstr ""
+"shar (GNU sharutils) - kreas ŝelan arĥivon\n"
+"Uzmaniero:  shar [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+"Provu 'shar --help' por pli da informo.\n"
+
+#: ../autoopts.c:67 ../autoopts.c:93
+#, c-format
+msgid "allocation of %d bytes failed\n"
+msgstr "rezervo de %d bajtoj fiaskis\n"
+
+#: ../init.c:53
+msgid "AutoOpts function called without option descriptor\n"
+msgstr "Funkcio AutoOpts estis vokata sen modifila priskribilo\n"
+
+#: ../init.c:86
+msgid "\tThis exceeds the compiled library version:  "
+msgstr "\tTio ĉi superas la version de kompilita biblioteko:  "
+
+#: ../init.c:84
+#, c-format
+msgid ""
+"Automated Options Processing Error!\n"
+"\t%s called AutoOpts function with structure version %d:%d:%d.\n"
+msgstr ""
+"Eraro pri aŭtomata procezado de modifiloj!\n"
+"\t%s vokis funkcion AutoOpts sen struktura versio %d:%d:%d.\n"
+
+#: ../autoopts.c:80
+#, c-format
+msgid "realloc of %d bytes at 0x%p failed\n"
+msgstr "re-rezervo de %d bajtoj ĉe 0x%p fiaskis\n"
+
+#: ../init.c:88
+msgid "\tThis is less than the minimum library version:  "
+msgstr "\tTio ĉi estas malpli ol la minimuma biblioteka versio:  "
+
+#: ../version.c:121
+#, c-format
+msgid ""
+"Automated Options version %s\n"
+"\tCopyright (C) 1999-2014 by Bruce Korb - all rights reserved\n"
+msgstr ""
+"Aŭtomataj Modifiloj versio %s\n"
+"\tKopirajto (C) 1999-2014 de Bruce Korb - ĉiuj rajtoj rezervitaj\n"
+
+#: ../makeshell.c:87
+#, c-format
+msgid "(AutoOpts bug):  %s.\n"
+msgstr "(Miso de AutoOpts):  %s.\n"
+
+#: ../reset.c:90
+msgid "optionResetOpt() called, but reset-option not configured"
+msgstr "optionResetOpt() vokita, sed reekiga modifilo ne estas agordita"
+
+#: ../usage.c:292
+msgid "could not locate the 'help' option"
+msgstr "ne eblis lokigi la modifilon 'help'"
+
+#: ../autoopts.c:336
+msgid "optionProcess() was called with invalid data"
+msgstr "optionProcess() estis vokata kun malvalida datumaro"
+
+#: ../usage.c:748
+msgid "invalid argument type specified"
+msgstr "malvalida argumento-tipo estas indikita"
+
+#: ../find.c:598
+msgid "defaulted to option with optional arg"
+msgstr "ni revenis al modifilo sen deviga argumento"
+
+#: ../alias.c:76
+msgid "aliasing option is out of range."
+msgstr "alinoma modifilo estas for de intervalo."
+
+#: ../enum.c:234
+#, c-format
+msgid "%s error:  the keyword '%s' is ambiguous for %s\n"
+msgstr "Eraro de %s:  la ŝlosilvorto '%s' estas plursenca por %s\n"
+
+#: ../find.c:108
+msgid "  The following options match:\n"
+msgstr "  La sekvaj modifiloj kongruas:\n"
+
+#: ../find.c:293
+#, c-format
+msgid "%s: ambiguous option name: %s (matches %d options)\n"
+msgstr "%s: plursenca modifil-nomo: %s (kongruas kun %d modifiloj)\n"
+
+#: ../check.c:161
+#, c-format
+msgid "%s: Command line arguments required\n"
+msgstr "%s: komand-liniaj argumentoj estas postulataj\n"
+
+#: ../alias.c:43
+#, c-format
+msgid "%d %s%s options allowed\n"
+msgstr "%d modifiloj %s%s permesataj\n"
+
+#: ../makeshell.c:94
+#, c-format
+msgid "%s error %d (%s) calling %s for '%s'\n"
+msgstr "%s eraro %d (%s) vokanta %s por '%s'\n"
+
+#: ../makeshell.c:306
+msgid "interprocess pipe"
+msgstr "interproceza dukto"
+
+#: ../version.c:168
+#, c-format
+msgid ""
+"error: version option argument '%c' invalid.  Use:\n"
+"\t'v' - version only\n"
+"\t'c' - version and copyright\n"
+"\t'n' - version and full copyright notice\n"
+msgstr ""
+"eraro: versia modifil-argumento '%c' malvalidas.  Uzu:\n"
+"\t'v' - nur versio\n"
+"\t'c' - versio kaj kopirajto\n"
+"\t'n' - versio kaj kompleta kopirajt-noto\n"
+
+#: ../check.c:58
+#, c-format
+msgid "%s error:  the '%s' and '%s' options conflict\n"
+msgstr "Eraro de %s:  la modifiloj '%s' kaj '%s' konfliktas\n"
+
+#: ../find.c:217 ../find.c:430
+#, c-format
+msgid "%s: The '%s' option has been disabled."
+msgstr "%s: la modifilo '%s' estas malebligita."
+
+#: ../alias.c:38
+msgid "-equivalence"
+msgstr "-ekvivalento"
+
+#: ../find.c:469 ../reset.c:110
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: malpermesata modifilo -- %c\n"
+
+#: ../find.c:271 ../find.c:755 ../reset.c:118
+#, c-format
+msgid "%s: illegal option -- %s\n"
+msgstr "%s: malpermesata modifilo -- %s\n"
+
+#: ../find.c:335
+#, c-format
+msgid "%s: unknown vendor extension option -- %s\n"
+msgstr "%s: nekonata vendant-etendita modifilo --%s\n"
+
+#: ../enum.c:159 ../enum.c:169
+#, c-format
+msgid "  or an integer from %d through %d\n"
+msgstr "  aŭ entjero el %d tra %d\n"
+
+#: ../usage.c:747 ../usage.c:1081
+#, c-format
+msgid "%s error:  invalid option descriptor for %s\n"
+msgstr "Eraro de %s:  malvalida modifil-priskribilo por %s\n"
+
+#: ../find.c:385
+#, c-format
+msgid "%s: invalid option name: %s\n"
+msgstr "%s: malvalida modifil-nomo: %s\n"
+
+#: ../find.c:527
+#, c-format
+msgid "%s: The '%s' option requires an argument.\n"
+msgstr "%s: la modifilo '%s' postulas argumenton.\n"
+
+#: ../autoopts.c:156
+#, c-format
+msgid ""
+"(AutoOpts bug):  Equivalenced option '%s' was equivalenced to both\n"
+"\t'%s' and '%s'."
+msgstr ""
+"(Miso de AutoOpts):  ekvivalenta modifilo '%s' estas ekvivalentita kaj al\n"
+"\t'%s' kaj al '%s'."
+
+#: ../check.c:94
+#, c-format
+msgid "%s error:  The %s option is required\n"
+msgstr "Eraro de %s:  la modifilo %s estas postulata\n"
+
+#: ../find.c:632
+#, c-format
+msgid "%s: The '%s' option cannot have an argument.\n"
+msgstr "%s: la modifilo '%s' ne povas havi argumenton.\n"
+
+#: ../check.c:151
+#, c-format
+msgid "%s: Command line arguments are not allowed.\n"
+msgstr "%s: komand-liniaj argumentoj ne estas permesataj.\n"
+
+#: ../save.c:535
+#, c-format
+msgid "error %d (%s) creating %s\n"
+msgstr "eraro %d (%s) dum kreado de %s\n"
+
+#: ../enum.c:234
+#, c-format
+msgid "%s error:  '%s' does not match any %s keywords.\n"
+msgstr "Eraro de %s:  '%s' ne kongruas kun iu ajn ŝlosilvortoj %s.\n"
+
+#: ../reset.c:93
+#, c-format
+msgid "%s error: The '%s' option requires an argument.\n"
+msgstr "Eraro de %s: la modifilo '%s' postulas argumenton.\n"
+
+#: ../save.c:184 ../save.c:238
+#, c-format
+msgid "error %d (%s) stat-ing %s\n"
+msgstr "eraro %d (%s) dum apliko de stat %s\n"
+
+#: ../restore.c:143
+#, c-format
+msgid "%s error: no saved option state\n"
+msgstr "Eraro de %s: neniu konservita modifil-stato\n"
+
+#: ../autoopts.c:231
+#, c-format
+msgid "'%s' is not a command line option.\n"
+msgstr "'%s' ne estas komand-linia modifilo.\n"
+
+#: ../time.c:111
+#, c-format
+msgid "%s error:  '%s' is not a recognizable date/time.\n"
+msgstr "Eraro de %s:  '%s' ne estas rekonebla dato/horo.\n"
+
+#: ../save.c:132
+#, c-format
+msgid "'%s' not defined\n"
+msgstr "'%s' ne estas difinita\n"
+
+#: ../time.c:50
+#, c-format
+msgid "%s error:  '%s' is not a recognizable time duration.\n"
+msgstr "Eraro de %s:  '%s' ne estas rekonebla tempo-daŭro.\n"
+
+#: ../check.c:92
+#, c-format
+msgid "%s error:  The %s option must appear %d times.\n"
+msgstr "Eraro de %s:  la modifilo %s devas aperi %d fojojn.\n"
+
+#: ../numeric.c:164
+#, c-format
+msgid "%s error:  '%s' is not a recognizable number.\n"
+msgstr "Eraro de %s:  '%s' ne estas rekonebla numero.\n"
+
+#: ../enum.c:200
+#, c-format
+msgid "%s error:  %s exceeds %s keyword count\n"
+msgstr "Eraro de %s:  %s superas ŝlosil-nombro %s\n"
+
+#: ../usage.c:330
+#, c-format
+msgid "Try '%s %s' for more information.\n"
+msgstr "Provu '%s %s' por pli da informoj.\n"
+
+#: ../alias.c:45
+#, c-format
+msgid "one %s%s option allowed\n"
+msgstr "unu modifilo %s%s permesata\n"
+
+#: ../makeshell.c:208 ../makeshell.c:943 ../usage.c:274 ../usage.c:415
+#: ../usage.c:625 ../version.c:175 src/uuencode.c:107 src/uuencode.c:184
+#: src/uuencode.c:273 src/uuencode.c:278 src/uuencode.c:280 src/uuencode.c:282
+msgid "standard output"
+msgstr "ĉefeligujo"
+
+#: ../usage.c:274 ../usage.c:415 ../usage.c:625 ../version.c:175
+msgid "standard error"
+msgstr "ĉeferarujo"
+
+#: ../makeshell.c:208 ../makeshell.c:943 ../usage.c:273 ../usage.c:414
+#: ../usage.c:624 ../version.c:174
+msgid "write"
+msgstr "skribi"
+
+#: ../numeric.c:60
+#, c-format
+msgid "%s error:  %s option value %ld is out of range.\n"
+msgstr "Eraro de %s:  %s-modifil-valoro %ld estas for de intervalo.\n"
+
+#: ../check.c:44
+#, c-format
+msgid "%s error:  %s option requires the %s option\n"
+msgstr "Eraro de %s:  modifilo %s postulas la modifilon %s\n"
+
+#: ../save.c:131 ../save.c:183 ../save.c:237 ../save.c:256 ../save.c:534
+#, c-format
+msgid "%s warning:  cannot save options - %s not regular file\n"
+msgstr ""
+"Averto de %s:  ne eblas konservi modifilojn - %s ne estas ordinara dosiero\n"
+
+#: src/shar.c:360
+#, c-format
+msgid "printf formatting error:  %s\n"
+msgstr "strukturig-eraro de printf:  %s\n"
+
+#: src/shar.c:407
+msgid "sharutils bug - no status"
+msgstr "miso de sharutils - sen stato"
+
+#: src/shar.c:756
+msgid "Too many directories for mkdir generation"
+msgstr "Tro multaj dosierujoj por generi per mkdir"
+
+#: src/shar.c:839 src/shar.c:1699
+#, c-format
+msgid "Cannot access %s"
+msgstr "Ne eblas atingi %s"
+
+#: src/shar.c:934
+#, c-format
+msgid "Cannot get current directory name"
+msgstr "Ne eblas havigi la nunan dosierujan nomon"
+
+#: src/shar.c:1023
+#, c-format
+msgid "Starting file %s\n"
+msgstr "Ekigo de dosiero %s\n"
+
+#: src/shar.c:1117
+msgid "Could not popen command"
+msgstr "Ne eblis apliki 'popen' al komando"
+
+#: src/shar.c:1177
+#, c-format
+msgid "Cannot open file %s"
+msgstr "Ne eblas malfermi la dosieron %s"
+
+#: src/shar.c:1303 src/shar.c:1314 src/shar.c:1923
+msgid "call"
+msgstr "voki"
+
+#: src/shar.c:1326
+msgid "pipe fd"
+msgstr "fd de dukto"
+
+#: src/shar.c:1441 src/shar.c:1455
+msgid "text"
+msgstr "teksto"
+
+#: src/shar.c:1559
+#, c-format
+msgid "Continuing file %s\n"
+msgstr "Daŭrigo kun la dosiero %s\n"
+
+#: src/shar.c:1694
+#, c-format
+msgid "%s: Not a regular file"
+msgstr "%s: ne estas regula dosiero"
+
+#: src/shar.c:1742
+msgid "empty"
+msgstr "malplena"
+
+#: src/shar.c:1769
+#, c-format
+msgid "Saving %s (%s)"
+msgstr "Konservado de %s (%s)"
+
+#: src/shar.c:1970
+#, c-format
+msgid "Invalid format for output file names (%s): %s"
+msgstr "Malvalida formo por eligajn dosiernomojn (%s): %s"
+
+#: src/shar.c:1985
+msgid "more than one format element"
+msgstr "pli ol unu forma elemento"
+
+#: src/shar.c:1990
+msgid "no conversion character"
+msgstr "neniu konverta signo"
+
+#: src/shar.c:1999
+msgid "format is too wide"
+msgstr "formo tro larĝas"
+
+#: src/shar.c:2011
+msgid "invalid conversion character"
+msgstr "malvalida konverta signo"
+
+#: src/shar.c:2056
+msgid "Opening"
+msgstr "Malfermanta"
+
+#: src/shar.c:2071
+msgid "Closing"
+msgstr "Fermanta"
+
+#: src/shar.c:2158
+#, c-format
+msgid "reopening stderr to /dev/null"
+msgstr "re-malfermanta la ĉeferarujon al /dev/null"
+
+#: src/shar.c:2211
+msgid "No input files"
+msgstr "Mankas enig-dosieroj"
+
+#: src/shar.c:2228
+#, c-format
+msgid "PLEASE avoid -X shars on Usenet or public networks"
+msgstr "BONVOLU eviti '-X shar' en Usenet aŭ publikaj retoj"
+
+#: src/shar.c:2252
+#, c-format
+msgid ""
+"The '%s' option may not be intermixed with file names\n"
+"unless the --intermix-type option has been specified."
+msgstr ""
+"La modifilo '%s' ne povas intermiksi kun dosiernomoj\n"
+"escepte se la modifilo --intermix-type estas indikita."
+
+#: src/shar.c:2270
+#, c-format
+msgid "The '%s' option must appear before any file names"
+msgstr "La modifilo '%s' devas aperi antaŭ iuj ajn dosiernomoj"
+
+#: src/shar.c:2306
+#, c-format
+msgid ""
+"invalid compaction type:  %s\n"
+"the known types are:\n"
+msgstr ""
+"malvalida densiga tipo:  %s\n"
+"la konataj tipoj estas:\n"
+
+#: src/shar.c:2345
+msgid "files on command line and --input-file-list specified"
+msgstr "dosieroj en komand-linio kaj --input-file-list estis indikataj"
+
+#: src/shar.c:2394
+#, c-format
+msgid "Created %d files\n"
+msgstr "%d dosieroj estis kreataj\n"
+
+#: src/unshar-opts.c:583
+#, c-format
+msgid "fs error %d (%s) %s-ing %s\n"
+msgstr "eraro de fs %d (%s) dum apliko de %s al %s\n"
+
+#: src/unshar-opts.c:585 src/unshar-opts.c:647 src/uudecode.c:515
+#: src/uuencode.c:207
+msgid "standard input"
+msgstr "ĉefenigujo"
+
+#: src/unshar-opts.c:664
+msgid "unshar usage error:\n"
+msgstr "unshar, uzmanira eraro:\n"
+
+#: src/unshar-opts.c:701
+msgid "unshar fatal error:\n"
+msgstr "neriparebla eraro de unshar:\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the unsharOptions structure noted in the
+#. comments below.  The literal text is defined in unshar_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. unshar_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via unsharOptions.pzCopyright
+#: src/unshar-opts.c:931
+#, fuzzy
+msgid ""
+"unshar (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"unshar (GNU sharutils) 4.15\n"
+"Kopyrajto (C) 1994-2014 Free Software Foundation, Inc., ĉiuj rajtoj "
+"rezervitaj.\n"
+"Tio ĉi estas libera programaro. Ĝi estas permesita por uzo, modifo kaj\n"
+"redistribuo sub la kondiĉoj de la GNU-a Ĝenerala Publika Permeso,\n"
+"versio 3 aŭ posta <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/unshar-opts.c:938
+msgid ""
+"unshar is free software: you can redistribute it and/or modify it under the\n"
+"terms of the GNU General Public License as published by the Free Software\n"
+"Foundation, either version 3 of the License, or (at your option) any later\n"
+"version.\n"
+"\n"
+msgstr ""
+"unshar estas libera programaro: vi povas modifi kaj/aŭ modifi ĝin sub la\n"
+"kondiĉoj de la GNU-a Ĝenerala Publika Permeso, kiel publikita de \n"
+"Free Software Foundation, aŭ versio 3 de la Permeso, aŭ (laŭ via volo)\n"
+"iu ajn posta versio.\n"
+"\n"
+
+#: src/unshar-opts.c:942
+msgid ""
+"unshar is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"unshar estas distribuata esperante ke ĝi estos utila, tamen SEN IU AJN\n"
+"GARANTIO; eĉ sen implicita garantio de MERKATIGO aŭ TAŬGO POR SPECIFA\n"
+"CELO.  Konsultu la GNU-an Ĝeneralan Publikan Permeson por pli da\n"
+"detaloj.\n"
+"\n"
+
+#: src/unshar-opts.c:950
+#, c-format
+msgid ""
+"unshar (GNU sharutils) - unpack a shar archive\n"
+"Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+msgstr ""
+"unshar (GNU sharutils) - malpakigi ŝelan arĥivon\n"
+"Uzmaniero:  %s [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+
+#: src/unshar-opts.c:954
+msgid ""
+"\n"
+"If no arguments are provided, input arguments are read from stdin,\n"
+"one per line; blank and '#'-prefixed lines are comments.\n"
+"'stdin' may not be a terminal (tty).\n"
+msgstr ""
+"\n"
+"Se neniu argumento estas indikita, enig-argumentoj estas legataj el\n"
+"la ĉefenigujo, po unu por linio; linioj komencantaj per blank-spaco aŭ\n"
+"per '#' estas komentoj. La ĉefenigujo ne povas esti terminalo (tty).\n"
+
+#: src/unshar-opts.c:960
+msgid ""
+"Unshar scans the input files (typically email messages) looking for the\n"
+"start of a shell archive.  If no files are given, then standard input is\n"
+"processed instead.  It then passes each archive discovered through an\n"
+"invocation of the shell program to unpack it.\n"
+msgstr ""
+"Unshar skanas la enig-dosierojn (ordinare poŝt-mesaĝojn) serĉante la\n"
+"komencon de ŝel-arĥivon.  Se neniu dosiero estas indikita, do la\n"
+"ĉefenigujo estos anstataŭe procezata.  Ĝi tiam liveras ĉiun malkovritan\n"
+"arĥivon per alvoko de ŝel-programo por malpakigi ĝin.\n"
+
+#: src/unshar-opts.c:966
+msgid "unshar (GNU sharutils) 4.15"
+msgstr "unshar (GNU sharutils) 4.15"
+
+#: src/unshar-opts.c:969
+msgid ""
+"unshar (GNU sharutils) - unpack a shar archive\n"
+"Usage:  unshar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"\n"
+msgstr ""
+"unshar (GNU sharutils) - malpakigas ŝelan arĥivon\n"
+"Uzmaniero:  unshar [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+"\n"
+
+#: src/unshar-opts.c:971
+msgid "   -d, --directory=DIR        unpack into the directory DIR\n"
+msgstr "   -d, --directory=UJO        malpakigi al dosierujon UJO\n"
+
+#: src/unshar-opts.c:972
+msgid "   -c, --overwrite            overwrite any pre-existing files\n"
+msgstr ""
+"   -c, --overwrite            anstataŭigi ajnan antaŭ-estantan dosieron\n"
+
+#: src/unshar-opts.c:973
+msgid "   -f, --force                an alias for the 'overwrite' option\n"
+msgstr ""
+"   -f, --force                jen alinomo por la modifilo 'overwrite'\n"
+
+#: src/unshar-opts.c:974
+msgid "   -E, --split-at=SPLIT-PAT   split input on SPLIT-PAT lines\n"
+msgstr "   -E, --split-at=APART-ŜAB   apartigi enigon ĉe linioj APART-ŜAB\n"
+
+#: src/unshar-opts.c:975
+msgid ""
+"   -e, --exit-0               split input on \"exit 0\" lines\n"
+"                                - prohibits the option 'split-at'\n"
+msgstr ""
+"   -e, --exit-0               apartigi enigon ĉe linioj \"exit 0\"\n"
+"                                - malpermesas la modifilon 'split-at'\n"
+
+#: src/unshar-opts.c:977
+msgid "   -D, --debug                debug the shell code\n"
+msgstr "   -D, --debug               rafinigi la ŝel-kodumaron\n"
+
+#: src/unshar-opts.c:981
+msgid ""
+"   -R, --save-opts[=FILE]     save the option state to the config file FILE\n"
+msgstr ""
+"   -R, --save-opts[=DOSIERO]  konservi la modifil-staton al la agorda "
+"DOSIERO\n"
+
+#: src/unshar-opts.c:982
+msgid ""
+"   -r, --load-opts=FILE       load options from the config file FILE\n"
+"                                - disabled as '--no-load-opts'\n"
+"                                - may appear multiple times\n"
+"\n"
+msgstr ""
+"   -r, --load-opts=DOSIERO    ŝargi modifilojn el agorda DOSIERO\n"
+"                                - malebligata de '--no-load-opts'\n"
+"                                - povas aperi multfoje\n"
+"\n"
+
+#: src/unshar-opts.c:985 src/uuencode-opts.c:708
+msgid ""
+"Options are specified by doubled hyphens and their name or by a single\n"
+"hyphen and the flag character.\n"
+"\n"
+msgstr ""
+"Modifiloj estas indikataj per duoblaj streketoj kaj iliaj nomoj aŭ\n"
+"per unusola streketo kaj la flag-signo.\n"
+"\n"
+
+#: src/unshar-opts.c:987
+msgid ""
+"If no arguments are provided, input arguments are read from stdin,\n"
+"one per line; blank and '#'-prefixed lines are comments.\n"
+"'stdin' may not be a terminal (tty).\n"
+"\n"
+msgstr ""
+"Se neniu argumento estas indikita, enig-argumentoj estas legataj el\n"
+"la ĉefenigujo, po unu por linio; linioj komencantaj per blank-spaco aŭ\n"
+"per '#' estas komentoj. La ĉefenigujo ne povas esti terminalo (tty).\n"
+"\n"
+
+#: src/unshar-opts.c:991
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'unshar' scans the input files (typically email messages) looking for the\n"
+"start of a shell archive.  If no files are given, then standard input is\n"
+"processed instead.  It then passes each archive discovered through an\n"
+"invocation of the shell program to unpack it.\n"
+"\n"
+msgstr ""
+" - lego de dosiero $HOME/.sharrc\n"
+"\n"
+"'unshar' skanas la enig-dosierojn (ordinare poŝt-mesaĝojn) serĉante la\n"
+"komencon de ŝel-arĥivon.  Se neniu dosiero estas indikita, do la\n"
+"ĉefenigujo estos anstataŭe procezata.  Ĝi tiam liveras ĉiun malkovritan\n"
+"arĥivon per alvoko de ŝel-programo por malpakigi ĝin.\n"
+"\n"
+
+#: src/unshar-opts.c:996 src/uudecode-opts.c:780
+msgid "Please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+msgstr "Bonvolu raporti program-misojn al:  <bug-gnu-utils@gnu.org>\n"
+
+#: src/unshar-opts.c:999
+msgid ""
+"unshar (GNU sharutils) - unpack a shar archive\n"
+"Usage:  unshar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"Try 'unshar --help' for more information.\n"
+msgstr ""
+"unshar (GNU sharutils) - malpakigas ŝelan arĥivon\n"
+"Uzmaniero:  unshar [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+"Provu 'unshar --help' por pli da informo.\n"
+
+#: src/unshar-opts.h:263 src/uudecode-opts.h:241
+#, c-format
+msgid "could not allocate %zu bytes for %s\n"
+msgstr "ne eblis rezervi %zu bajtojn por %s\n"
+
+#: src/unshar.c:203
+#, c-format
+msgid "Found no shell commands after cut line in %s"
+msgstr "Neniu ŝel-komandoj estis trovataj post tranĉita linio en %s"
+
+#: src/unshar.c:222
+#, c-format
+msgid "%s is probably not a shell archive"
+msgstr "%s probable ne estas ŝel-arĥivo"
+
+#: src/unshar.c:223
+#, c-format
+msgid "The 'cut line' was followed by: %s"
+msgstr "La 'tranĉita linio' estis sekvata de: %s"
+
+#: src/unshar.c:246
+#, c-format
+msgid "Found no shell commands in %s"
+msgstr "Neniu ŝel-komandoj estis trovataj en %s"
+
+#: src/unshar.c:255
+#, c-format
+msgid "%s looks like raw C code, not a shell archive"
+msgstr "%s ŝajnas krudan C-kodumaĵon, ne ŝel-arĥivon"
+
+#: src/unshar.c:326
+msgid "file name buffer"
+msgstr "dosiernoma bufro"
+
+#: src/unshar.c:452
+msgid "read/write buffer"
+msgstr "leg/skriba bufro"
+
+#: src/uudecode-opts.c:438
+msgid "uudecode usage error:\n"
+msgstr "uzmaniera eraro de uudecode:\n"
+
+#: src/uudecode-opts.c:475
+msgid "uudecode fatal error:\n"
+msgstr "neriparebla eraro de uudecode:\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the uudecodeOptions structure noted in the
+#. comments below.  The literal text is defined in uudecode_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. uudecode_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via uudecodeOptions.pzCopyright
+#: src/uudecode-opts.c:705
+#, fuzzy
+msgid ""
+"uudecode (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"uudecode (GNU sharutils) 4.15\n"
+"Kopyrajto (C) 1994-2014 Free Software Foundation, Inc., ĉiuj rajtoj "
+"rezervitaj.\n"
+"Tio ĉi estas libera programaro. Ĝi estas permesita por uzo, modifo kaj\n"
+"redistribuo sub la kondiĉoj de la GNU-a Ĝenerala Publika Permeso,\n"
+"versio 3 aŭ posta <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/uudecode-opts.c:712
+msgid ""
+"uudecode is free software: you can redistribute it and/or modify it under\n"
+"the terms of the GNU General Public License as published by the Free\n"
+"Software Foundation, either version 3 of the License, or (at your option)\n"
+"any later version.\n"
+"\n"
+msgstr ""
+"uudecode estas libera programaro: vi povas redistribui ĝin kaj/aŭ modifi "
+"ĝin\n"
+"sub la kondiĉoj de la GNU-a Ĝenerala Publika Permeso, kiel publikigite de\n"
+"Free Software Foundation, aŭ versio 3 de la Permeso, aŭ (laŭ via deziro)\n"
+"iu ajn posta versio.\n"
+"\n"
+
+#: src/uudecode-opts.c:716
+msgid ""
+"uudecode is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"uudecode estas distribuata esperante ke ĝi estos utila, tamen SEN IU AJN\n"
+"GARANTIO; eĉ sen implicita garantio de MERKATIGO aŭ TAŬGO POR SPECIFA\n"
+"CELO.  Konsultu la GNU-an Ĝeneralan Publikan Permeson por pli da\n"
+"detaloj.\n"
+"\n"
+
+#: src/uudecode-opts.c:724
+#, c-format
+msgid ""
+"uudecode (GNU sharutils) - decode an encoded file\n"
+"Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+msgstr ""
+"uudecode (GNU sharutils) - dekodigas enkoditan dosieron\n"
+"Uzmaniero:  %s [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+
+#: src/uudecode-opts.c:728
+msgid "If no 'file'(s) are provided, then standard input is decoded.\n"
+msgstr "Se neniu 'dosiero' estas indikita, do la ĉefenigujo estos dekodita.\n"
+
+#: src/uudecode-opts.c:731
+msgid ""
+"'uudecode' transforms uuencoded files into their original form.\n"
+"\n"
+msgstr ""
+"'uudecode' transformas 'uu-enkoditajn' dosierojn al iliaj originalaj "
+"formoj.\n"
+"\n"
+
+#: src/uudecode-opts.c:732 src/uudecode-opts.c:767
+msgid ""
+"The encoded file(s) may be specified on the command line, or one may be\n"
+"read from standard input.  The output file name is specified in the encoded\n"
+"file, but may be overridden with the '-o' option.  It will have the mode of\n"
+"the original file, except that setuid and execute bits are not retained.  "
+"If\n"
+"the output file is specified to be '/dev/stdout' or '-', the result will be\n"
+"written to standard output.  If there are multiple input files and the\n"
+"second or subsquent file specifies standard output, the decoded data will\n"
+"be written to the same file as the previous output.  Don't do that.\n"
+"\n"
+msgstr ""
+"La enkodita(j) dosiero(j) povas esti indikataj en la komand-linio, aŭ unu\n"
+"povas esti legata el la ĉefenigujo.  La eliga dosiernomo estas indikata en "
+"la\n"
+"enkodita dosiero, sed povas esti preterpasata per la modifilo '-o'.  Ĝi "
+"tenos\n"
+"la permesojn de la originala dosiero, krom la bitoj 'setuid' kaj 'exec'.  "
+"Se\n"
+"la elig dosiero estas indikita kiel '/dev/stdout' aŭ '-', la rezulto estos\n"
+"skribata al la ĉefeligujo.  Se estas multoblaj enig-dosieroj kaj la dua aŭ\n"
+"sekva dosiero indikas la ĉefeligujon, la dekodita datumaro estos skribata "
+"al\n"
+"la sama dosiero ol la antaŭa eligo.  Ne faru tion.\n"
+"\n"
+
+#: src/uudecode-opts.c:740
+msgid ""
+"'uudecode' ignores any leading and trailing lines.  It looks for a line\n"
+"that starts with \"'begin'\" and proceeds until the end-of-encoding marker "
+"is\n"
+"found.  The program determines from the header line of the encoded file\n"
+"which of the two supported encoding schemes was used and whether or not the\n"
+"output file name has been encoded with base64 encoding.  See 'uuencode(5)'.\n"
+msgstr ""
+"'uudecode' preteratentas iujn ajn kapajn aŭ vostajn liniojn.  Ĝi serĉas "
+"linion\n"
+"kiu komenciĝas per \"'begin'\" kaj daŭrigas ĝis kiam la marko fino-de-"
+"enkodigo\n"
+"estos trovata.  La programo determinas el la kaplinio de la enkodita "
+"dosiero\n"
+"kiu el la du subtenataj enkodig-metodoj estis uzataj kaj ĉu la eliga "
+"dosier-\n"
+"nomo estas enkodita per base64.  Konsultu 'uuencode(5)'.\n"
+
+#: src/uudecode-opts.c:747
+msgid "uudecode (GNU sharutils) 4.15"
+msgstr "uudecode (GNU sharutils) 4.15"
+
+#: src/uudecode-opts.c:750
+msgid ""
+"uudecode (GNU sharutils) - decode an encoded file\n"
+"Usage:  uudecode [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"\n"
+msgstr ""
+"uudecode (GNU sharutils) - dekodigas enkoditan dosieron\n"
+"Uzmaniero:  uudecode [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero> ...]\n"
+"\n"
+
+#: src/uudecode-opts.c:752
+msgid "   -o, --output-file=str      direct output to file\n"
+msgstr "   -o, --output-file=ĉeno     konduki eligon al dosiero\n"
+
+#: src/uudecode-opts.c:753
+msgid "   -c, --ignore-chmod         ignore fchmod(3P) errors\n"
+msgstr "   -c, --ignore-chmod         preteratenti erarojn fchmod(3P)\n"
+
+#: src/uudecode-opts.c:761
+msgid ""
+"Options are specified by doubled hyphens and their name or by a single\n"
+"hyphen and the flag character.\n"
+"If no 'file'(s) are provided, then standard input is decoded.\n"
+"\n"
+msgstr ""
+"Modifiloj estas indikataj per duoblaj streketoj kaj iliaj nomoj aŭ\n"
+"per unusola streketo kaj la flag-signo.\n"
+"Se neniu 'dosiero' estas indikita, do la ĉefenigujo estos dekodita.\n"
+"\n"
+
+#: src/uudecode-opts.c:765
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'uudecode' transforms uuencoded files into their original form.\n"
+"\n"
+msgstr ""
+" - lego de dosiero $HOME/.sharrc\n"
+"\n"
+"'uudecode' transformas 'uu-enkoditajn' dosierojn al iliaj originalaj "
+"formoj.\n"
+"\n"
+
+#: src/uudecode-opts.c:775
+msgid ""
+"'uudecode' ignores any leading and trailing lines.  It looks for a line\n"
+"that starts with \"'begin'\" and proceeds until the end-of-encoding marker "
+"is\n"
+"found.  The program determines from the header line of the encoded file\n"
+"which of the two supported encoding schemes was used and whether or not the\n"
+"output file name has been encoded with base64 encoding.  See 'uuencode(5)'.\n"
+"\n"
+msgstr ""
+"'uudecode' preteratentas iujn ajn kapajn aŭ vostajn liniojn.  Ĝi serĉas "
+"linion\n"
+"kiu komenciĝas per \"'begin'\" kaj daŭrigas ĝis kiam la marko fino-de-"
+"enkodigo\n"
+"estos trovata.  La programo determinas el la kaplinio de la enkodita "
+"dosiero\n"
+"kiu el la du subtenataj enkodig-metodoj estis uzataj kaj ĉu la eliga "
+"dosier-\n"
+"nomo estas enkodita per base64.  Konsultu 'uuencode(5)'.\n"
+"\n"
+
+#: src/uudecode-opts.c:783
+msgid ""
+"uudecode (GNU sharutils) - decode an encoded file\n"
+"Usage:  uudecode [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"Try 'uudecode --help' for more information.\n"
+msgstr ""
+"uudecode (GNU sharutils) - dekodigas enkoditan dosieron\n"
+"Uzmaniero:  uudecodes [ -<flago> [<val>] | --<nomo>[{=| }<val>] ]... "
+"[<dosiero>...]\n"
+"Provu 'uudecode --help' por pli da informo.\n"
+
+#: src/uudecode.c:122 src/uudecode.c:186
+#, c-format
+msgid "%s: Short file"
+msgstr "%s: mallonga dosiero"
+
+#: src/uudecode.c:168
+#, c-format
+msgid "%s: No `end' line"
+msgstr "%s: neniu 'fina' linio"
+
+#: src/uudecode.c:192
+#, c-format
+msgid "%s: invalid input"
+msgstr "%s: malvalida enigo"
+
+#: src/uudecode.c:214 src/uudecode.c:228
+msgid "cannot expand $HOME"
+msgstr "ne eblas etendigi $HOME"
+
+#: src/uudecode.c:264
+#, c-format
+msgid "%s: Illegal file name: %s"
+msgstr "%s: malpermesata dosiernomo: %s"
+
+#: src/uudecode.c:271
+#, c-format
+msgid "No user '%s'"
+msgstr "Neniu uzanto '%s'"
+
+#: src/uudecode.c:282 src/uudecode.c:344
+msgid "output file name"
+msgstr "eliga dosiernomo"
+
+#: src/uudecode.c:301
+#, c-format
+msgid "cannot access %s"
+msgstr "ne eblas atingi %s"
+
+#: src/uudecode.c:314
+#, c-format
+msgid "chmod of %s"
+msgstr "apliko de chmod al %s"
+
+#: src/uudecode.c:338
+msgid "output name is empty"
+msgstr "eliga nomo malplenas"
+
+#: src/uudecode.c:349
+#, c-format
+msgid "invalid base64 encoded name: %s"
+msgstr "malvalida base64-enkodita nomo: %s"
+
+#: src/uudecode.c:384
+#, c-format
+msgid "%s: Invalid or missing 'begin' line\n"
+msgstr "%s: malvalida au mankanta linio 'begin'\n"
+
+#: src/uudecode.c:481
+#, c-format
+msgid "%s: Write error"
+msgstr "%s: skrib-eraro"
+
+#: src/uudecode.c:521
+msgid ""
+"You cannot specify an output file when processing\n"
+"multiple input files.\n"
+msgstr ""
+"Vi ne povas indiki eligan dosieron por procezi\n"
+"multoblajn enig-dosierojn.\n"
+
+#: src/uuencode-opts.c:389
+msgid "uuencode usage error:\n"
+msgstr "uzmaniera eraro de uuencode:\n"
+
+#: src/uuencode-opts.c:426
+msgid "uuencode fatal error:\n"
+msgstr "neriparebla eraro de uuencode:\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the uuencodeOptions structure noted in the
+#. comments below.  The literal text is defined in uuencode_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. uuencode_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via uuencodeOptions.pzCopyright
+#: src/uuencode-opts.c:656
+#, fuzzy
+msgid ""
+"uuencode (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"uuencode (GNU sharutils) 4.15\n"
+"Kopyrajto (C) 1994-2014 Free Software Foundation, Inc., ĉiuj rajtoj "
+"rezervitaj.\n"
+"Tio ĉi estas libera programaro. Ĝi estas permesita por uzo, modifo kaj\n"
+"redistribuo sub la kondiĉoj de la GNU-a Ĝenerala Publika Permeso,\n"
+"versio 3 aŭ posta <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/uuencode-opts.c:663
+msgid ""
+"uuencode is free software: you can redistribute it and/or modify it under\n"
+"the terms of the GNU General Public License as published by the Free\n"
+"Software Foundation, either version 3 of the License, or (at your option)\n"
+"any later version.\n"
+"\n"
+msgstr ""
+"uuencode estas libera programaro: vi povas redistribui ĝin kaj/aŭ modifi "
+"ĝin\n"
+"sub la kondiĉoj de la GNU-a Ĝenerala Publika Permeso, kiel publikigite de\n"
+"Free Software Foundation, aŭ versio 3 de la Permeso, aŭ (laŭ via deziro)\n"
+"iu ajn posta versio.\n"
+"\n"
+
+#: src/uuencode-opts.c:667
+msgid ""
+"uuencode is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"uuencode estas distribuata esperante ke ĝi estos utila, tamen SEN IU AJN\n"
+"GARANTIO; eĉ sen implicita garantio de MERKATIGO aŭ TAŬGO POR SPECIFA\n"
+"CELO.  Konsultu la GNU-an Ĝeneralan Publikan Permeson por pli da\n"
+"detaloj.\n"
+"\n"
+
+#: src/uuencode-opts.c:675
+#, c-format
+msgid ""
+"uuencode (GNU sharutils) - encode a file into email friendly text\n"
+"Usage:  %s [ -<flag> | --<name> ]... [<in-file>] <output-name>\n"
+msgstr ""
+"uuencode (GNU sharutils) - enkodigas dosieron al retpoŝteca teksto\n"
+"Uzmaniero:  %s [ -<flago> | --<nomo>]... [<enig-dosiero>] <elig-nomo>\n"
+
+#: src/uuencode-opts.c:679
+msgid ""
+"'uuencode' is used to create an ASCII representation of a file that can be\n"
+"sent over channels that may otherwise corrupt the data.  Specifically,\n"
+"email cannot handle binary data and will often even insert a character when\n"
+"the six character sequence \"\\nFrom \" is seen.\n"
+"\n"
+msgstr ""
+"'uuencode' estas uzata por krei reprezenton ASCII de dosiero kiu povu esti\n"
+"sendata tra kanaloj kiuj alimaniere povus fuŝi la datumaron.  Specife,\n"
+"retpoŝto ne povas trakti duuman datumaron kaj ofte eĉ enmetos signon kiam\n"
+"la ses-signa sekvo \"\\nFrom \" estas trovata.\n"
+"\n"
+
+#: src/uuencode-opts.c:683 src/uuencode-opts.c:716
+msgid ""
+"'uuencode' will read 'in-file' if provided and otherwise read data from\n"
+"standard in and write the encoded form to standard out.  The output will\n"
+"begin with a header line for use by 'uudecode' giving it the resulting\n"
+"suggested file 'output-name' and access mode.  If the 'output-name' is\n"
+"specifically '/dev/stdout', then 'uudecode' will emit the decoded file to\n"
+"standard out.\n"
+"\n"
+msgstr ""
+"'uuencode' legos 'enig-dosieron' se ĝi estas provizita, kontraŭe ĝi legos\n"
+"datumaron el la ĉefenigujo kaj skribos la enkoditan formon al la "
+"ĉefeligujo.\n"
+"La eligo komenciĝos per kaplinio por esti uzata de 'uudecode', liverante al "
+"ĝi\n"
+"la rezultan sugestitan dosieron 'elig-nomo' kaj ties ating-permeson.  Se\n"
+"'elig-nomo' estas specife '/dev/stdout', do 'uudecode' sendos la dekoditan\n"
+"dosieron al la ĉefeligujo.\n"
+"\n"
+
+#: src/uuencode-opts.c:689
+msgid ""
+"'Note': 'uuencode' uses buffered input and assumes that it is not hand\n"
+"typed from a tty.  The consequence is that at a tty, you may need to hit\n"
+"Ctl-D several times to terminate input.\n"
+msgstr ""
+"'Noto': 'uuencode' uzas bufrigitan enigon kaj konsideras ke ne estas mane\n"
+"tajpita el tty.  La sekvo estas ke ĉe tty, vi eble bezonos premi Ctrl-D\n"
+"plurfoje por finigi la enigon.\n"
+
+#: src/uuencode-opts.c:694
+msgid "uuencode (GNU sharutils) 4.15"
+msgstr "uuencode (GNU sharutils) 4.15"
+
+#: src/uuencode-opts.c:697
+msgid ""
+"uuencode (GNU sharutils) - encode a file into email friendly text\n"
+"Usage:  uuencode [ -<flag> | --<name> ]... [<in-file>] <output-name>\n"
+"\n"
+msgstr ""
+"uuencode (GNU sharutils) - enkodigas dosieron al retpoŝteca teksto\n"
+"Uzmaniero:  uuencode [ -<flago> | --<nomo>]... [<enig-dosiero>] <elig-nomo>\n"
+"\n"
+
+#: src/uuencode-opts.c:699
+msgid "   -m, --base64               convert using base64\n"
+msgstr "   -m, --base64               konverti uzante base64\n"
+
+#: src/uuencode-opts.c:700
+msgid "   -e, --encode-file-name     encode the output file name\n"
+msgstr "   -e, --encode-file-name     enkodigi la eligan dosiernomon\n"
+
+#: src/uuencode-opts.c:711
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'uuencode' is used to create an ASCII representation of a file that can be\n"
+"sent over channels that may otherwise corrupt the data.  Specifically,\n"
+"email cannot handle binary data and will often even insert a character when\n"
+"the six character sequence \"\\nFrom \" is seen.\n"
+"\n"
+msgstr ""
+" - lego de dosiero $HOME/.sharrc\n"
+"\n"
+"'uuencode' estas uzata por krei reprezenton ASCII de dosiero kiu povu esti\n"
+"sendata tra kanaloj kiuj alimaniere povus fuŝi la datumaron.  Specife,\n"
+"retpoŝto ne povas trakti duuman datumaron kaj ofte eĉ enmetos signon kiam\n"
+"la ses-signa sekvo \"\\nFrom \" estas trovata.\n"
+"\n"
+
+#: src/uuencode-opts.c:722
+msgid ""
+"'Note': 'uuencode' uses buffered input and assumes that it is not hand\n"
+"typed from a tty.  The consequence is that at a tty, you may need to hit\n"
+"Ctl-D several times to terminate input.\n"
+"\n"
+"Please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+msgstr ""
+"'Noto': 'uuencode' uzas bufrigitan enigon kaj konsideras ke ne estas mane\n"
+"tajpita el tty.  La sekvo estas ke ĉe tty, vi eble bezonos premi Ctrl-D\n"
+"plurfoje por finigi la enigon.\n"
+"\n"
+"Bonvolu raporti program-misojn al:  <bug-gnu-utils@gnu.org>\n"
+
+#: src/uuencode-opts.c:728
+msgid ""
+"uuencode (GNU sharutils) - encode a file into email friendly text\n"
+"Usage:  uuencode [ -<flag> | --<name> ]... [<in-file>] <output-name>\n"
+"Try 'uuencode --help' for more information.\n"
+msgstr ""
+"uuencode (GNU sharutils) - enkodigas dosieron al retpoŝteca teksto\n"
+"Uzmaniero:  uuencode [ -<flago> | --<nomo>]... [<enig-dosiero>] <elig-nomo>\n"
+"\n"
+
+#: src/uuencode.c:228
+msgid "freopen of stdin"
+msgstr "apliko de freopen al stdin"
+
+#: src/uuencode.c:257
+msgid "file name"
+msgstr "dosiernomo"
+
+#: lib/error.c:191
+msgid "Unknown system error"
+msgstr "Nekonata sistem-eraro"
+
+#: lib/getopt.c:547 lib/getopt.c:576
+#, c-format
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: la modifilo '%s' estas plursenca; eblecoj:"
+
+#: lib/getopt.c:624 lib/getopt.c:628
+#, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: la modifilo '--%s' ne permesas argumenton\n"
+
+#: lib/getopt.c:637 lib/getopt.c:642
+#, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: la modifilo '%c%s' ne permesas argumenton\n"
+
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
+msgid "%s: option '--%s' requires an argument\n"
+msgstr "%s: la modifilo '--%s' postulas argumenton\n"
+
+#: lib/getopt.c:742 lib/getopt.c:745
+#, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: nerekonita modifilo '--%s'\n"
+
+#: lib/getopt.c:753 lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: nerekonita modifilo '%c%s'\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: malvalida modifilo -- '%c'\n"
+
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: la modifilo postulas argumenton -- '%c'\n"
+
+#: lib/getopt.c:934 lib/getopt.c:950
+#, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: la modifilo '-W %s' estas plursenca\n"
+
+#: lib/getopt.c:974 lib/getopt.c:992
+#, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: la modifilo '-W %s' ne permesas argumenton\n"
+
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: la modifilo '-W %s' postulas argumenton\n"
+
+#: lib/openat-die.c:38
+#, c-format
+msgid "unable to record current working directory"
+msgstr "ne eblas registri la aktualan labordosierujon"
+
+#: lib/openat-die.c:57
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "fiasko dum reveno al la komenca labordosierujo"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:312
+msgid "`"
+msgstr "‘"
+
+#: lib/quotearg.c:313
+msgid "'"
+msgstr "’"
+
+#: lib/spawn-pipe.c:135 lib/spawn-pipe.c:138 lib/spawn-pipe.c:259
+#: lib/spawn-pipe.c:262
+#, c-format
+msgid "cannot create pipe"
+msgstr "ne eblas krei dukton"
+
+#: lib/spawn-pipe.c:229 lib/spawn-pipe.c:343 lib/wait-process.c:282
+#: lib/wait-process.c:356
+#, c-format
+msgid "%s subprocess failed"
+msgstr "subprocezo de %s fiaskis"
+
+#: lib/w32spawn.h:43
+#, c-format
+msgid "_open_osfhandle failed"
+msgstr "_open_osfhandle fiaskis"
+
+#: lib/w32spawn.h:84
+#, c-format
+msgid "cannot restore fd %d: dup2 failed"
+msgstr "ne eblas restarigi fd %d: dup2 fiaskis"
+
+#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
+#, c-format
+msgid "%s subprocess"
+msgstr "subprocezo de %s"
+
+#: lib/wait-process.c:274 lib/wait-process.c:346
+#, c-format
+msgid "%s subprocess got fatal signal %d"
+msgstr "subprocezo de %s ricevis mortigan signalon %d"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "memoro estas plenigita"
+
+#: lib/xstrtol-error.c:63
+#, c-format
+msgid "invalid %s%s argument '%s'"
+msgstr "malvalida %s%s-argumento '%s'"
+
+#: lib/xstrtol-error.c:68
+#, c-format
+msgid "invalid suffix in %s%s argument '%s'"
+msgstr "malvalida sufikso en %s%s-argumento '%s'"
+
+#: lib/xstrtol-error.c:72
+#, c-format
+msgid "%s%s argument '%s' too large"
+msgstr "%s%s-argumento '%s' tro larĝas"

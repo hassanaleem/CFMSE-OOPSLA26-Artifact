@@ -1,0 +1,32 @@
+[submodule "benchmarks/chopper-experiments"]
+	path = benchmarks/chopper-experiments
+	url = git@github.com:charitha22/chopper-experiments.git
+[submodule "benchmarks/ansibench"]
+	path = benchmarks/ansibench
+	url = git@github.com:charitha22/ansibench.git
+[submodule "benchmarks/anant"]
+	path = benchmarks/anant
+	url = git@github.com:charitha22/anant.git
+[submodule "benchmarks/numal"]
+	path = benchmarks/numal
+	url = git@github.com:charitha22/numal.git
+[submodule "benchmarks/gumbo-parser"]
+	path = benchmarks/gumbo-parser
+	url = git@github.com:charitha22/gumbo-parser.git
+[submodule "benchmarks/json.h"]
+	path = benchmarks/json.h
+	url = https://github.com/charitha22/json.h.git
+[submodule "benchmarks/protobuf-c"]
+	path = benchmarks/protobuf-c
+	url = git@github.com:charitha22/protobuf-c.git
+[submodule "benchmarks/slre"]
+	path = benchmarks/slre
+	url = git@github.com:charitha22/slre.git
+[submodule "benchmarks/tiny-regex-c"]
+	path = benchmarks/tiny-regex-c
+	# url = git@github.com:charitha22/tiny-regex-c.git
+	url = https://github.com/charitha22/tiny-regex-c.git
+[submodule "benchmarks/utf8.h"]
+	path = benchmarks/utf8.h
+	# url = git@github.com:charitha22/utf8.h.git
+	url = https://github.com/charitha22/utf8.h.git

@@ -1,0 +1,46 @@
+#include <stdio.h>
+char glob[3] = {'0', '0' , '0'};
+void foo(int *a1, int *a2, int *a3, int *a4, int *a5, int *a6, int* arr) {
+  int a = *a1;
+  int b = *a2;
+  int c = *a3;
+  int d = *a4;
+  int e = *a5;
+  int f = *a6;
+
+  if (a > 0) {
+    a += arr[0];
+    b--;
+    c--;
+    d*=3;
+  } else {
+    f++;
+    e*=4;
+    arr[1] = e;
+  }
+
+  printf("a=%d\n"
+         "b=%d\n"
+         "c=%d\n"
+         "d=%d\n"
+         "e=%d\n"
+         "f=%d\n",
+         a, b, c, d, e, f);
+}
+
+int main() {
+  int a, b, c, d, e, f;
+  int arr[2];
+  char g = glob[0];
+  printf("%c\n", g);
+  scanf("%d", &a);
+  scanf("%d", &b);
+  scanf("%d", &c);
+  scanf("%d", &d);
+  scanf("%d", &e);
+  scanf("%d", &f);
+  scanf("%d", &arr[0]);
+  scanf("%d", &arr[1]);
+
+  foo(&a, &b, &c, &d, &e, &f, arr);
+}

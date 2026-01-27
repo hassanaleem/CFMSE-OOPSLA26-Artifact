@@ -1,0 +1,13 @@
+diff --git a/language.l b/language.l
+index a2d1a57..9b16fbf 100644
+--- bandicoot-v6/language.l
++++ bandicoot-v6/language.l
+@@ -38,7 +38,7 @@ limitations under the License.
+ 
+ extern Env *grammar_init();
+ extern void yyerror(const char*, ...);
+-extern void yyparse();
++//extern void yyparse();
+ 
+ static struct {
+     const char *path;

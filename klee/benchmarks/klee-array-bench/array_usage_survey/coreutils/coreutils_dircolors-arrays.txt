@@ -1,0 +1,7 @@
+I;C;ls_codes;[35 x i8*]*;../../src/dircolors.c:69
+I;C;slack_codes;[35 x i8*]*;../../src/dircolors.c:60
+I;C;G_line;[3826 x i8]*;../../src/dircolors.h:1
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:77
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:91
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112

@@ -1,0 +1,81 @@
+AutoGen Definitions options;
+
+/*--copyright-mark "(copyright \\(c\\)[ \t]+|date[ \t]*=[ \t]*\")" \
+ *  "([12][90][0-9][0-9])"
+
+   Copyright (C) 1994-2015 Free Software Foundation, Inc.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3, or (at your option)
+   any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+ */
+copyright = {
+    date    = "1994-2015";
+    type    = gpl;
+    owner   = "Free Software Foundation, Inc.";
+    eaddr   = 'bug-gnu-utils@gnu.org';
+};
+
+package         = 'GNU sharutils';
+version         = '4.15';
+
+gnu-usage;
+long-opts;
+help-value      = h;
+version-value   = v;
+homerc          = '$HOME';
+rcfile          = .sharrc;
+save-opts-value = R;
+load-opts-value = r;
+option-doc-format = texi;
+config-header   = config.h;
+no-misuse-usage;
+usage-message;
+die-code;
+
+export  = '#include "local.h"'"\nchar const * const program_name;";
+
+#shell
+echo "include = 'char const * const program_name = \"${progname}\";';"
+
+test -f ${progname}-full-help.txt && {
+  echo 'full-usage = <<_EOUsage_'
+  cat ${progname}-full-help.txt
+  printf '\n_EOUsage_;\n'
+}
+test -f ${progname}-short-help.txt && {
+  echo 'short-usage = <<_EOUsage_'
+  cat ${progname}-short-help.txt
+  printf '\n_EOUsage_;\n'
+}
+#endshell
+
+#ifdef NEED_AUTHORS
+doc-section     = {
+    ds-type     = AUTHORS;
+    ds-format   = texi;
+    ds-text     = <<- _EOText_
+	The @file{shar} and @file{unshar} programs is the collective work of
+	many authors.  Many people contributed by reporting problems,
+	suggesting various improvements or submitting actual code.  A list of
+	these people is in the @file{THANKS} file in the sharutils distribution.
+	_EOText_;
+};
+#endif
+
+doc-section     = {
+    ds-type     = 'BUGS';
+    ds-format   = texi;
+    ds-text     = <<- _EOText_
+	Please put @samp{sharutils} in the subject line for emailed bug
+	reports.  It helps to spot the message.
+	_EOText_;
+};

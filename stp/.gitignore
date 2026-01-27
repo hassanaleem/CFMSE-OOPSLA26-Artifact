@@ -1,0 +1,11 @@
+# Python files
+*.pyc
+
+# Vim swap files
+*.swp
+
+docs/_build
+
+.DS_Store
+.direnv
+build

@@ -1,0 +1,18 @@
+/home/user/symbolic_array/case_studies/tools/klee/Release+Asserts/bin/klee --stats-write-after-instructions=116298930 --istats-write-after-instructions=116298930 --stats-write-interval=0 --istats-write-interval=0 --stop-after-n-instructions=3488967904 --simplify-sym-indices --output-module --max-memory=4095 --allocate-determ=true --allocate-determ-size=4095 --allocate-determ-start-address=0x7ffef66f3000 --max-sym-array-size=4096 --disable-inlining --optimize --use-forked-solver --use-cex-cache --libc=uclibc --posix-runtime --allow-external-sym-calls --only-output-states-covering-new --watchdog --max-memory-inhibit=false --use-query-log=solver:kquery --max-static-fork-pct=1 --max-static-solve-pct=1 --max-static-cpfork-pct=1 --switch-type=internal --dump-states-on-halt=false --debug-print-instructions=compact:file --debug-compress-instructions --compress-query-log --environ=/tmp/test.env --run-in=/tmp/sandbox --max-instruction-time=200. --max-solver-time=200. --max-time=4000. --search=dfs --output-dir=klee-out-as /home/user/symbolic_array/case_studies/binutils/binutils-2.27/obj-llvm/gas/as-new.bc --itbl A B --sym-files 2 20 --sym-stdin 20 --sym-stdout
+PID: 7590
+Started: 2017-02-15 16:30:53
+BEGIN searcher description
+DFSSearcher
+END searcher description
+Finished: 2017-02-15 16:31:18
+Elapsed: 00:00:25
+KLEE: done: explored paths = 131
+KLEE: done: avg. constructs per query = 42
+KLEE: done: total queries = 227
+KLEE: done: valid queries = 72
+KLEE: done: invalid queries = 155
+KLEE: done: query cex = 227
+
+KLEE: done: total instructions = 38062361
+KLEE: done: completed paths = 0
+KLEE: done: generated tests = 0

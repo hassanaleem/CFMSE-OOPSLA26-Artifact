@@ -1,0 +1,29 @@
+I;C;char_message;[32 x i8]*;../../src/cmp.c:481
+I;C;byte_msgid;[32 x i8]*;../../src/cmp.c:490
+I;C;valid_suffixes;[11 x i8]*;../../src/cmp.c:122
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;is_basic_table;[8 x i32]*;../../lib/mbchar.c:28
+I;C;skew_increment;[3 x i32]*;../../src/diff3.c:1349
+I;C;option_help_msgid;[20 x i8*]*;../../src/diff3.c:427
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:75
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:89
+I;C;is_basic_table;[8 x i32]*;../../lib/mbchar.c:28
+I;C;C_ifdef_group_formats;[119 x i8]*;../../src/diff.c:366
+I;C;option_help_msgid;[67 x i8*]*;../../src/diff.c:853
+I;C;group_format_option;[4 x [25 x i8]]*;../../src/diff.c:142
+I;C;line_format_option;[3 x [24 x i8]]*;../../src/diff.c:150
+I;C;shortopts;[57 x i8]*;../../src/diff.c:106
+I;C;prime_offset;[64 x i8]*;../../src/io.c:744
+I;C;pr_program;[12 x i8]*;../../src/util.c:28
+I;C;change_letter;[4 x i8]*;../../src/util.c:720
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;utf8_sb_map;[4 x i64]*;../../lib/regcomp.c:586
+I;C;__re_error_msgid_idx;[17 x i64]*;../../lib/regcomp.c:182
+I;C;__re_error_msgid;[369 x i8]*;../../lib/regcomp.c:128
+I;C;is_basic_table;[8 x i32]*;../../lib/mbchar.c:28
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:75
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:89
+I;C;option_help_msgid;[26 x i8*]*;../../src/sdiff.c:172
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;is_basic_table;[8 x i32]*;../../lib/mbchar.c:28

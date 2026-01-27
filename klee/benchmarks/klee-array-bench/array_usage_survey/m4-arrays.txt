@@ -1,0 +1,17 @@
+I;C;digits;[37 x i8]*;../../src/builtin.c:450
+I;C;builtin_tab;[46 x %struct.builtin]*;../../src/builtin.c:93
+I;C;digits;[37 x i8]*;../../src/builtin.c:450
+I;C;builtin_tab;[46 x %struct.builtin]*;../../src/builtin.c:93
+I;N;fatal_signals;[7 x i32]*;../../lib/fatal-signal.c:51
+I;C;primes;[232 x i64]*;../../lib/gl_anyhash_list2.h:25
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:75
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:89
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112
+I;N;fatal_signals;[7 x i32]*;../../lib/fatal-signal.c:51
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:75
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:89
+I;C;letters;[63 x i8]*;../../lib/tempname.c:176
+I;C;primes;[232 x i64]*;../../lib/gl_anyhash_list2.h:25
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112

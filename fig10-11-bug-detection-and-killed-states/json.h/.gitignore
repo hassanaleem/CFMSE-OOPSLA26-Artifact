@@ -1,0 +1,9 @@
+*.DS_Store
+build
+*.csv
+cfm_driver_output/
+*.ll
+test-driver.bc
+log*
+Logs*
+.github

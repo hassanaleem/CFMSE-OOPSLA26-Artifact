@@ -1,0 +1,30 @@
+## Makefile for the checks subdirectory of the GNU Shar utilities.
+##
+## Copyright (C) 1995-2015 Free Software Foundation, Inc.
+##
+## This program is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 3, or (at your option)
+## any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program; if not, see <http://gnu.org/licenses/gpl.html>
+
+## Process this file with automake to produce Makefile.in.
+
+TESTS = uutest-1 uudecode-2 shar-1 shar-2 shar-3 shar-4
+TESTS_ENVIRONMENT = \
+  top_srcdir=$(top_srcdir) \
+  PATH=`cd ../src && pwd`:"$$PATH" \
+  LC_ALL=C \
+  PACKAGE_STRING='$(PACKAGE_STRING)' top_builddir=$(top_builddir)
+
+EXTRA_DIST = $(TESTS) testdata shar-1.ok
+
+clean-local :
+	rm -rf shar-1-* shar-1.in shar-2*.* $${TMPDIR=/tmp}/shar-3*.d

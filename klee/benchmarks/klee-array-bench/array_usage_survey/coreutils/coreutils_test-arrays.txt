@@ -1,0 +1,2 @@
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:77
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:91

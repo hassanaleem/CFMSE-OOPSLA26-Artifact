@@ -1,0 +1,2 @@
+clean:
+	rm -rf *.ll output*.* *.dot klee-*/ klee-last *.svg *.bc .*.dot 

@@ -1,0 +1,6 @@
+Metric,,Time(s),Time(s),Time(s),Number of Queries,Number of Queries,Number of Queries,Average Query Size,Average Query Size,Average Query Size,Explored Paths,Explored Paths,Explored Paths,AvgSolverQuerySize-cfm,Completed_Paths,Completed_Paths,Completed_Paths,Completed_Paths-cfm,Explored_Paths-cfm,Generated_Tests,Generated_Tests,Generated_Tests,Generated_Tests-cfm,Instrs,Instrs,Instrs,Instrs-cfm,MaxMem(MiB),MaxMem(MiB),MaxMem(MiB),MaxMem(MiB)-cfm,QCexCHits,QCexCHits,QCexCHits,QCexCHits-cfm,Queries-cfm,TSolver(%),TSolver(%),TSolver(%),TSolver(%)-cfm,Time(s)-cfm
+Method,,K,SM,C,K,SM,C,K,SM,C,K,SM,C,SM,K,SM,C,SM,SM,K,SM,C,SM,K,SM,C,SM,K,SM,C,SM,K,SM,C,SM,SM,K,SM,C,SM,SM
+Benchmark,Input_Size,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+toupper,10,0.1,0.07,0.0,11.0,11.0,0.0,11.0,11.0,0.0,1024,11,1,0.0,1024,1,1,1,1,3,1,1,1,38887.0,353.0,335.0,355.0,0.78,0.78,0.8,0.81,39.0,19.0,0.0,0.0,0.0,72.25,98.13,0.26,0.26,0.0
+toupper,50,OOT,0.35,0.0,22.0,51.0,0.0,11.0,11.0,0.0,554424,51,1,0.0,0,1,1,1,1,0,1,1,1,19482160.0,1713.0,1615.0,1715.0,1585.79,0.82,0.8,0.81,20.0,99.0,0.0,0.0,0.0,17.92,97.78,0.22,0.22,0.0
+toupper,100,OOT,0.71,0.0,22.0,101.0,0.0,11.0,11.0,0.0,537642,101,1,0.0,0,1,1,1,1,0,1,1,1,18795340.0,3413.0,3215.0,3415.0,1737.09,0.86,0.8,0.81,20.0,199.0,0.0,0.0,0.0,18.14,95.16,0.18,0.17,0.0

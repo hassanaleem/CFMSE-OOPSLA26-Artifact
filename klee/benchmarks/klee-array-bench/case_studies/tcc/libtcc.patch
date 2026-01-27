@@ -1,0 +1,11 @@
+--- tcc-0.9.26/lib/libtcc1.c	2013-02-15 14:24:00.000000000 +0000
++++ tcc-0.9.26/lib/libtcc1.c	2016-10-04 11:30:00.296267667 +0100
+@@ -675,7 +675,7 @@
+     }
+ }
+ 
+-void *__va_copy(struct __va_list_struct *src)
++void *__va_copy2(struct __va_list_struct *src)
+ {
+     struct __va_list_struct *dest =
+         (struct __va_list_struct *)malloc(sizeof(struct __va_list_struct));

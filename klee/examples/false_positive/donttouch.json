@@ -1,0 +1,5 @@
+{
+  "false_positive.c" : {
+    "main" : [14]
+  }
+}

@@ -1,0 +1,3 @@
+KLEE: Using STP solver backend
+KLEE: Logging queries that reach solver in .kquery format to /home/min/a/cgusthin/git/klee/benchmarks/klee-array-bench/case_studies/tcc/tcc-0.9.26/obj-llvm/klee-out-0/solver-queries.kquery
+

@@ -1,0 +1,103 @@
+Running regex
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: ./test-driver.bc
+Program arguments	: 
+KLEE options		: --max-time=7200s -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=7200s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/cfm-rundir/sandbox  --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742930336_0 /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee  -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --max-time=7200s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-rundir/sandbox  --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-nocfm-test-driver-1742930336  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc 
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-nocfm-test-driver-1742930336"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742930336_0"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 9
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 8
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 1
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 9
+(klee_cfm_stdout) : CFMSE took 1.900000e-02 ms.
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: open
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: write
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 109847175280208) at libc/termios/tcgetattr.c:43 12
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: open
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: write
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 96154452924512) at libc/termios/tcgetattr.c:43 12
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: ERROR: re.c:213: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 81.39986991882324 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: re.c
+(klee_cfm_stdout) : Line: 213
+(klee_cfm_stdout) : assembly.ll line: 904
+(klee_cfm_stdout) : State: 620833
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000000904 in re_compile (pattern=96154446896560) at re.c:213
+(klee_cfm_stdout) : #100002302 in __user_main () at re.c:537
+(klee_cfm_stdout) : #200000396 in __uClibc_main (main=96154446915456, argc=1, argv=96154445299008, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #300000558 in main (=1, =96154445299008)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 96154446896571
+(klee_cfm_stdout) : next: object at 13685699057600 of size 1536
+(klee_cfm_stdout) : MO128[1536] (no allocation info)
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742930336_0/test000024.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742930336_0/test000024.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/FP_test_out_0  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc 
+(analyze) : Error detected when replaying test
+(analyze) : KLEE OUTPUT KLEE: ERROR: re.c:213: memory error: out of bound pointer
+(analyze) : Error detected when replaying test
+(analyze) : KLEE OUTPUT KLEE: ERROR: EXITING ON ERROR:
+(analyze) : Detected error is a TRUE ERROR!
+(main) : KLEE with CFM found true error in 82 seconds
+(main) : Exiting the driver loop..!
+(main) : Waiting for KLEE without Transformation to finish execution
+(klee-nocfm-stdout) : KLEE: ERROR: re.c:213: memory error: out of bound pointer
+(klee-nocfm-stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee-nocfm-stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee-nocfm) : ERROR found in non-transformed KLEE run in 129.1257781982422 seconds!
+(klee-nocfm-stdout) : Error: memory error: out of bound pointer
+(klee-nocfm-stdout) : File: re.c
+(klee-nocfm-stdout) : Line: 213
+(klee-nocfm-stdout) : assembly.ll line: 903
+(klee-nocfm-stdout) : State: 1078855
+(klee-nocfm-stdout) : Stack:
+(klee-nocfm-stdout) : #000000903 in re_compile (pattern=109847171521680) at re.c:213
+(klee-nocfm-stdout) : #100002305 in __user_main () at re.c:537
+(klee-nocfm-stdout) : #200000395 in __uClibc_main (main=109847171557280, argc=1, argv=109847170686272, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee-nocfm-stdout) : #300000557 in main (=1, =109847170686272)
+(klee-nocfm-stdout) : Info:
+(klee-nocfm-stdout) : address: 109847171521691
+(klee-nocfm-stdout) : next: object at 16863328933824 of size 1536
+(klee-nocfm-stdout) : MO128[1536] (no allocation info)
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742930336_*
+(main) : KLEE output files in path : /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-nocfm-test-driver-1742930336

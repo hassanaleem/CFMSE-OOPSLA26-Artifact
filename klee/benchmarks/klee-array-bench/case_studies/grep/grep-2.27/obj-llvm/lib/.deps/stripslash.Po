@@ -1,0 +1,17 @@
+stripslash.o: ../../lib/stripslash.c ../config.h ../../lib/dirname.h \
+  /opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/stdbool.h \
+  /opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/stddef.h \
+  /opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/__stddef_max_align_t.h \
+  ../../lib/dosname.h
+
+../config.h:
+
+../../lib/dirname.h:
+
+/opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/stdbool.h:
+
+/opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/stddef.h:
+
+/opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/__stddef_max_align_t.h:
+
+../../lib/dosname.h:

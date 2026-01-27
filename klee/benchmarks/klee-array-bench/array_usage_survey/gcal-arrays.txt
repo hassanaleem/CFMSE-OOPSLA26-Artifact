@@ -1,0 +1,28 @@
+I;C;dvec;[12 x i32]*;../../src/gcal.c:122
+I;C;mvec;[12 x i32]*;../../src/gcal.c:125
+I;C;lopt;[116 x %struct.long_option_type]*;../../src/gcal.c:177
+I;N;supported_date_format;[5 x %struct.date_format_type]*;../../src/gcal.c:1070
+I;N;greg_reform_date;[5 x %struct.greg_type]*;../../src/gcal.c:1106
+I;C;pagers;[4 x i8*]*;../../src/gcal.c:1547
+I;C;dt_table;[382 x i16]*;../../src/hd-astro.c:268
+I;C;cc_holidays;[346 x %struct.country_code_type]*;../../src/hd-data.c:57
+I;C;hd_text;[552 x %struct.holiday_text_type]*;../../src/hd-data.c:447
+I;C;zod_name;[12 x i8*]*;../../src/hd-data.c:1065
+I;C;hmvec;[6 x [13 x i32]]*;../../src/hd-data.c:1049
+I;C;chi_branch;[12 x i8*]*;../../src/hd-data.c:1082
+I;C;chi_stem;[10 x i8*]*;../../src/hd-data.c:1073
+I;C;info_exclusive_day;[12 x %struct.exclusion_date_type]*;../../src/help.c:126
+I;C;tc;[4 x i8*]*;../../src/tty.c:1267
+I;C;suffix;[4 x i8*]*;../../src/utils.c:1077
+I;C;name;[8 x i8*]*;../../src/utils.c:1123
+I;C;name;[8 x i8*]*;../../src/utils.c:1174
+I;C;name;[8 x i8*]*;../../src/utils.c:1225
+I;C;name;[13 x i8*]*;../../src/utils.c:1243
+I;C;name;[13 x i8*]*;../../src/utils.c:1320
+I;C;name;[13 x i8*]*;../../src/utils.c:2196
+I;C;name;[8 x i8*]*;../../src/utils.c:2176
+I;C;aobj_oformat;[69 x [2 x %struct.astronomical_object_output_format_type]]*;../../src/rc-insert.c:73
+I;N;rc_nl;[2 x i8]*;../../src/rc-utils.c:2628
+I;C;mvec;[12 x i32]*;../../src/tcal.c:135
+I;C;dvec;[12 x i32]*;../../src/tcal.c:130
+I;N;greg_reform_date;[2 x %struct.greg_type]*;../../src/tcal.c:142

@@ -1,0 +1,7 @@
+{
+  "KLEE_OPTIONS" : "--max-time=3h -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov",
+  "CFMSE_IGNORE_JSON" : "cfmse_ignore.json",
+  "CFM_OPTIONS" : "-klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic",
+  "PROG_ARGS" : " 32 "
+}
+

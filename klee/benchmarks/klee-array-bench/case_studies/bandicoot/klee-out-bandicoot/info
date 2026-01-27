@@ -1,0 +1,18 @@
+/home/user/symbolic_array/case_studies/tools/klee/Release+Asserts/bin/klee --stats-write-interval=1500 --istats-write-interval=1500 --simplify-sym-indices --output-module --max-memory=4095 --allocate-determ=true --allocate-determ-size=4095 --allocate-determ-start-address=0x7ffef66f3000 --max-sym-array-size=4096 --disable-inlining --optimize --use-forked-solver --use-cex-cache --libc=uclibc --posix-runtime --allow-external-sym-calls --only-output-states-covering-new --watchdog --max-memory-inhibit=false --use-query-log=solver:kquery --max-static-fork-pct=1 --max-static-solve-pct=1 --max-static-cpfork-pct=1 --switch-type=internal --dump-states-on-halt=false --debug-print-instructions=compact:file --debug-compress-instructions --compress-query-log --environ=/tmp/test.env --run-in=/tmp/sandbox --max-instruction-time=200. --max-solver-time=200. --max-time=1800. --search=dfs --output-dir=klee-out-bandicoot /home/user/symbolic_array/case_studies/bandicoot/bandicoot-v6/bin/bandicoot.bc --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 30 --sym-stdin 30 --sym-stdout
+PID: 13353
+Started: 2017-02-21 13:07:44
+BEGIN searcher description
+DFSSearcher
+END searcher description
+Finished: 2017-02-21 13:37:47
+Elapsed: 00:30:03
+KLEE: done: explored paths = 89
+KLEE: done: avg. constructs per query = 1157
+KLEE: done: total queries = 925
+KLEE: done: valid queries = 822
+KLEE: done: invalid queries = 103
+KLEE: done: query cex = 925
+
+KLEE: done: total instructions = 2140271
+KLEE: done: completed paths = 60
+KLEE: done: generated tests = 22

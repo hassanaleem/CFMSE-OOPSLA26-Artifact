@@ -1,0 +1,56 @@
+Release/
+Release+Asserts/
+Debug/
+Debug+Asserts/
+Output/
+
+# commonly used as cmake build directory
+build/
+dist/
+
+cscope.*
+*~
+
+*.log
+*.sum
+*.out
+*.status
+.DS_Store
+._.DS_Store
+
+# In source build files
+docs/doxygen.cfg
+include/klee/Config/CompileTimeInfo.h
+*.config
+
+config.h
+site.exp
+
+# Site file for llvm-lit
+lit.site.cfg
+
+# Autoconf files
+autoconf/aclocal.m4
+autoconf/autom4te.cache/
+autom4te.cache/
+
+# examples dir setup
+examples/setup_env.sh
+
+benchmarks/diffutils-3.6/obj-llvm
+benchmarks/setenv.h
+
+# python
+.venv
+python3-venv/
+**/site-packages/
+**/__pycache__/
+
+kernels/*/*.csv
+kernels/*/*.log
+*.ll
+
+demo/
+kernels/*.txt
+demo/*.txt
+

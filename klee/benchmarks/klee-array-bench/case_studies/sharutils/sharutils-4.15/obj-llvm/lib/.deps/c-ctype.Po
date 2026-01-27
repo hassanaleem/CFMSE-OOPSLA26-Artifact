@@ -1,0 +1,8 @@
+c-ctype.o: ../../lib/c-ctype.c ../config.h ../../lib/c-ctype.h \
+  /opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/stdbool.h
+
+../config.h:
+
+../../lib/c-ctype.h:
+
+/opt/rocm-4.2.0/llvm/lib/clang/12.0.0/include/stdbool.h:

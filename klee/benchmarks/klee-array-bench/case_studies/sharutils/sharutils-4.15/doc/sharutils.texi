@@ -1,0 +1,153 @@
+\input texinfo
+@c %**start of header
+@setfilename sharutils.info
+@settitle GNU @code{shar} utilities
+@dircategory Archiving
+@direntry
+* Shar utilities: (sharutils).  Shell archiver, uuencode/uudecode.
+@end direntry
+@dircategory Individual utilities
+@direntry
+* shar: (sharutils)shar Invocation.             Make a shell archive.
+* unshar: (sharutils)unshar Invocation.         Explode a shell archive.
+* uudecode: (sharutils)uudecode Invocation.     Restore file from 7-bits.
+* uuencode: (sharutils)uuencode Invocation.     Force binary file to 7-bits.
+@end direntry
+
+@finalout
+@c %**end of header
+
+@include version.texi
+
+@copying
+@c --copyright-mark "(@copyright\\{\\} *)([12][90][0-9][0-9])"
+This manual documents version @value{VERSION} of the GNU shar utilities.
+
+Copyright @copyright{} 1994-2015 Free Software Foundation, Inc.
+
+@quotation
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled ``GNU
+Free Documentation License''.
+@end quotation
+@end copying
+
+@titlepage
+@title GNU sharutils, version @value{VERSION}
+@subtitle A set of shell archiver utilities
+@subtitle Edition @value{EDITION}, @value{UPDATED}
+@author Jan Dj@"arv
+@author Fran@,cois Pinard
+@author Bruce Korb
+
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@contents
+
+@ifnottex
+@node Top, Introduction, (dir), (dir)
+@top GNU @code{shar} utilities
+@end ifnottex
+
+@c @item @b{@code{sharutils}} @value{hfillkludge} (UtilD, SrcCD (??))
+@c
+GNU @code{shar} makes so-called shell archives out of many files,
+preparing them for transmission by electronic mail services,
+while @code{unshar} helps unpacking shell archives after reception.
+Other tools help using @code{shar} with the electronic mail system,
+and even allow synchronization of remote directory trees.
+This is release @value{VERSION}.
+
+@menu
+* Introduction::                Introduction to this toolset
+* Basic::                       The basic @code{shar} utilities
+* GNU Free Documentation License:: GNU Free Documentation License
+
+@detailmenu
+ --- The Detailed Node Listing ---
+
+The basic @code{shar} utilities
+
+* shar Invocation::             Invoking the @code{shar} program
+* unshar Invocation::           Invoking the @code{unshar} program
+* uuencode Invocation::         Invoking the @code{uuencode} program
+* uudecode Invocation::         Invoking the @code{uudecode} program
+
+@end detailmenu
+@end menu
+
+@node Introduction
+@chapter Introduction to this toolset
+
+GNU @code{uuencode} and @code{uudecode} have an history which roots
+are lost in ages, and we will not even try to trace it.  The current
+versions were brought into GNU by Ian Lance Taylor, and later
+modernized by Ulrich Drepper.  GNU @code{shar} surely has a long
+history, too.  All along this long road, numerous users contributed
+various improvements.  The file @file{THANKS} in the distribution,
+as far as we know, contain the names of all contributors we could
+identify, and for which email addresses are seemingly valid.
+
+Please help us getting the history straight, for the following
+information is somewhat approximative.  James Gosling wrote the
+public domain @code{shar 1.x}.  William Davidsen rewrote it as
+@code{shar 2.x}.  Warren Tucker implemented modifications and called
+it @code{shar 3.x}.  Richard Gumpertz maintained it until 1990.
+Fran@,cois Pinard, from the public domain @code{shar 3.49}, made
+@code{GNU shar 4.x}, in 1994.  Some modules and other code sections
+were freely borrowed from other GNU distributions, bringing this
+@code{shar} under the terms of the GNU General Public License.
+
+Your feedback helps us to make a better and more portable product.
+Mail suggestions and bug reports (including documentation errors)
+for these programs to @file{bug-gnu-utils@@prep.ai.mit.edu}.
+
+@node Basic
+@chapter The basic @code{shar} utilities
+
+GNU @code{shar} makes so-called shell archives out of many files,
+preparing them for transmission by electronic mail services.
+A @dfn{shell archive} is a collection of files that can be unpacked by
+@code{/bin/sh}.  A wide range of features provide extensive flexibility
+in manufacturing shars and in specifying shar @emph{smartness}.  For
+example, @code{shar} may compress files, uuencode binary files, split
+long files and construct multi-part mailings, ensure correct unsharing
+order, and provide simplistic checksums.  @xref{shar Invocation}.
+
+GNU @code{unshar} scans a set of mail messages looking for the start
+of shell archives.  It will automatically strip off the mail headers
+and other introductory text.  The archive bodies are then unpacked by
+a copy of the shell.  @code{unshar} may also process files containing
+concatenated shell archives.  @xref{unshar Invocation}.
+
+@menu
+* shar Invocation::             Invoking the @code{shar} program
+* unshar Invocation::           Invoking the @code{unshar} program
+* uuencode Invocation::         Invoking the @code{uuencode} program
+* uudecode Invocation::         Invoking the @code{uudecode} program
+@end menu
+
+@include invoke-shar.texi
+
+@include invoke-unshar.texi
+
+@include invoke-uuencode.texi
+
+@include invoke-uudecode.texi
+
+@node GNU Free Documentation License
+@appendix GNU Free Documentation License
+
+@include fdl.texi
+
+@bye
+
+@c Local variables:
+@c texinfo-column-for-description: 32
+@c End:

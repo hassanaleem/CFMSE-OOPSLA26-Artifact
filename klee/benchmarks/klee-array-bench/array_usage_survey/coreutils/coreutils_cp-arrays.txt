@@ -1,0 +1,12 @@
+I;C;reply_vals;[3 x i32]*;../../src/cp.c:117
+I;C;reply_args;[4 x i8*]*;../../src/cp.c:112
+I;C;preserve_vals;[6 x i32]*;../../src/cp.c:815
+I;C;preserve_args;[7 x i8*]*;../../src/cp.c:821
+I;C;sparse_type;[3 x i32]*;../../src/cp.c:105
+I;C;sparse_type_string;[4 x i8*]*;../../src/cp.c:101
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;backup_types;[8 x i32]*;../../lib/backupfile.c:322
+I;C;backup_args;[9 x i8*]*;../../lib/backupfile.c:311
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:77
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:91
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112

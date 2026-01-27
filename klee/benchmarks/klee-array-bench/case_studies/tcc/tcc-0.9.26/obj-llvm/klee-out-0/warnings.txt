@@ -1,0 +1,11 @@
+KLEE: WARNING ONCE: unsupported intrinsic llvm.fmuladd.f64
+KLEE: WARNING: undefined reference to function: dlclose
+KLEE: WARNING: undefined reference to function: dlopen
+KLEE: WARNING: undefined reference to function: dlsym
+KLEE: WARNING: undefined reference to function: mprotect
+KLEE: WARNING: undefined reference to function: puts
+KLEE: WARNING: executable has module level assembly (ignoring)
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 94247125872864) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: vprintf(94247125242896, 94247125856992) at libc/stdio/fprintf.c:35 14

@@ -1,0 +1,8 @@
+KLEE: WARNING: undefined reference to function: dlerror
+KLEE: WARNING: undefined reference to function: dlopen
+KLEE: WARNING: undefined reference to function: dlsym
+KLEE: WARNING: undefined reference to function: puts
+KLEE: WARNING: undefined reference to function: sbrk
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 140733033072680)
+KLEE: WARNING ONCE: calling external: sbrk(0)
+KLEE: WARNING ONCE: ioctl: (TCGETS) symbolic file, incomplete model

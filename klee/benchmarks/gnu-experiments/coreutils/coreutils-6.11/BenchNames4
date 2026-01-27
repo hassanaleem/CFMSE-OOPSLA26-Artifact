@@ -1,0 +1,8 @@
+chcon
+mkdir
+mkfifo 
+touch 
+unexpand 
+split
+chown
+chmod

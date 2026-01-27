@@ -1,0 +1,201 @@
+Running regex
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: ./test-driver.bc
+Program arguments	: 
+KLEE options		: --max-time=7200s -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=7200s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/cfm-rundir/sandbox  --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742931053_0 /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee  -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --max-time=7200s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-rundir/sandbox  --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-nocfm-test-driver-1742931053  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc 
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742931053_0"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-nocfm-test-driver-1742931053"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 9
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 8
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 1
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 9
+(klee_cfm_stdout) : CFMSE took 1.900000e-02 ms.
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: open
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: write
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 107755967306976) at libc/termios/tcgetattr.c:43 12
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: open
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: write
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 97294779906480) at libc/termios/tcgetattr.c:43 12
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12899 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12733 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12694 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13663 states (over memory cap: 32874MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12780 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13234 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13192 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12615 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13023 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12824 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13109 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12660 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13068 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12621 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13027 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12581 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13111 states (over memory cap: 32872MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12542 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13069 states (over memory cap: 32872MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12503 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 13316 states (over memory cap: 32877MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12903 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 13150 states (over memory cap: 32876MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12862 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12865 states (over memory cap: 32874MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12697 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12702 states (over memory cap: 32873MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12533 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12661 states (over memory cap: 32873MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12618 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12141 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12947 states (over memory cap: 32873MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12820 states (over memory cap: 32875MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 13028 states (over memory cap: 32874MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12421 states (over memory cap: 32872MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12619 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12144 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12335 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12461 states (over memory cap: 32873MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12783 states (over memory cap: 32873MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11949 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12378 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12147 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12701 states (over memory cap: 32873MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12460 states (over memory cap: 32874MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12420 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12620 states (over memory cap: 32873MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11835 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12579 states (over memory cap: 32873MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11915 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12062 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11761 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12143 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11840 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 12149 states (over memory cap: 32873MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12104 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11649 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11948 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11842 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11911 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11690 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 12224 states (over memory cap: 32872MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11951 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11539 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11797 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11843 states (over memory cap: 32872MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11875 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11691 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11722 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11541 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11800 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11616 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11762 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11691 states (over memory cap: 32872MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11723 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11540 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11685 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11280 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11355 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11533 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11207 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11723 states (over memory cap: 32871MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11281 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11571 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11354 states (over memory cap: 32871MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11420 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11206 states (over memory cap: 32870MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11494 states (over memory cap: 32870MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11059 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11343 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 11022 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11304 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 10984 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11264 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: WARNING: killing 10944 states (over memory cap: 32869MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 11221 states (over memory cap: 32869MB)
+(klee_cfm_stdout) : KLEE: ERROR: re.c:213: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 1363.1706926822662 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: re.c
+(klee_cfm_stdout) : Line: 213
+(klee_cfm_stdout) : assembly.ll line: 904
+(klee_cfm_stdout) : State: 1966028
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000000904 in re_compile (pattern=97294773878192) at re.c:213
+(klee_cfm_stdout) : #100002302 in __user_main () at re.c:537
+(klee_cfm_stdout) : #200000396 in __uClibc_main (main=97294773897088, argc=1, argv=97294772329792, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #300000558 in main (=1, =97294772329792)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 97294773878205
+(klee_cfm_stdout) : next: object at 7571597105088 of size 1536
+(klee_cfm_stdout) : MO128[1536] (no allocation info)
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742931053_0/test000024.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742931053_0/test000024.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/FP_test_out_0  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/test-driver.bc 
+(analyze) : Error detected when replaying test
+(analyze) : KLEE OUTPUT KLEE: ERROR: re.c:213: memory error: out of bound pointer
+(analyze) : Error detected when replaying test
+(analyze) : KLEE OUTPUT KLEE: ERROR: EXITING ON ERROR:
+(analyze) : Detected error is a TRUE ERROR!
+(main) : KLEE with CFM found true error in 1364 seconds
+(main) : Exiting the driver loop..!
+(main) : Waiting for KLEE without Transformation to finish execution
+(klee-nocfm-stdout) : KLEE: ERROR: re.c:213: memory error: out of bound pointer
+(klee-nocfm-stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee-nocfm-stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee-nocfm) : ERROR found in non-transformed KLEE run in 1561.7769856452942 seconds!
+(klee-nocfm-stdout) : Error: memory error: out of bound pointer
+(klee-nocfm-stdout) : File: re.c
+(klee-nocfm-stdout) : Line: 213
+(klee-nocfm-stdout) : assembly.ll line: 903
+(klee-nocfm-stdout) : State: 1544033
+(klee-nocfm-stdout) : Stack:
+(klee-nocfm-stdout) : #000000903 in re_compile (pattern=107755963481232) at re.c:213
+(klee-nocfm-stdout) : #100002305 in __user_main () at re.c:537
+(klee-nocfm-stdout) : #200000395 in __uClibc_main (main=107755963516832, argc=1, argv=107755962645824, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee-nocfm-stdout) : #300000557 in main (=1, =107755962645824)
+(klee-nocfm-stdout) : Info:
+(klee-nocfm-stdout) : address: 107755963481245
+(klee-nocfm-stdout) : next: object at 19662208964544 of size 1536
+(klee-nocfm-stdout) : MO128[1536] (no allocation info)
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-cfm-run-test-driver-1742931053_*
+(main) : KLEE output files in path : /home/grads/mhassan01/symbolicAnalysis/bugExperiments/regex/cfm_driver_output/regex/klee-nocfm-test-driver-1742931053

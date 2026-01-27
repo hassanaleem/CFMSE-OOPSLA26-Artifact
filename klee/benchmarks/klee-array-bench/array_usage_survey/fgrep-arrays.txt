@@ -1,0 +1,11 @@
+I;C;matchers;[2 x %struct.matcher]*;../../src/fgrep.c:4
+I;C;before_options;[54 x i8]*;../../src/fgrep.c:9
+I;C;after_options;[61 x i8]*;../../src/fgrep.c:11
+I;C;color_dict;[12 x %struct.color_cap]*;../../src/main.c:254
+I;C;directories_types;[3 x i32]*;../../src/main.c:373
+I;C;directories_args;[4 x i8*]*;../../src/main.c:369
+I;C;short_options;[59 x i8]*;../../src/main.c:274
+I;C;is_basic_table;[8 x i32]*;../../lib/mbchar.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:65
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:79
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26

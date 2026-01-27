@@ -1,0 +1,8 @@
+KLEE: WARNING: undefined reference to function: getrusage
+KLEE: WARNING: undefined reference to function: puts
+KLEE: WARNING: undefined reference to function: sbrk
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 140733033750928)
+KLEE: WARNING ONCE: calling external: getrusage(0, 140733033762416)
+KLEE: WARNING ONCE: calling external: sbrk(0)
+KLEE: WARNING ONCE: ioctl: (TCGETS) symbolic file, incomplete model
+KLEE: WARNING ONCE: calling external: getrlimit(7, 140733036018496)

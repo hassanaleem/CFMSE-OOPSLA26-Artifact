@@ -1,0 +1,16 @@
+I;N;http_strerror_tab;[33 x %struct.anon]*;http_parser.c:468
+I;C;unhex;[256 x i8]*;http_parser.c:224
+I;C;tokens;[256 x i8]*;http_parser.c:189
+I;C;normal_url_char;[32 x i8]*;http_parser.c:243
+I;N;method_strings;[33 x i8*]*;http_parser.c:174
+I;C;requests;[41 x %struct.message]*;test.c:92
+I;C;responses;[22 x %struct.message]*;test.c:1160
+I;C;url_tests;[43 x %struct.url_test]*;test.c:2541
+I;C;a;[57 x i8]*;test.c:3486
+I;C;b;[58 x i8]*;test.c:3487
+I;C;c;[58 x i8]*;test.c:3488
+I;C;a;[68 x i8]*;test.c:3504
+I;C;b;[69 x i8]*;test.c:3505
+I;C;c;[70 x i8]*;test.c:3506
+I;N;all_methods;[33 x i8*]*;test.c:3944
+I;N;bad_methods;[13 x i8*]*;test.c:3986

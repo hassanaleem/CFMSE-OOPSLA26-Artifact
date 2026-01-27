@@ -1,0 +1,94 @@
+## Target definition for special cases, i.e. cases in which the symbolic arguments are peculiar
+## Baseline run
+baseline-klee-ar: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program ar (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-ar $(BC_DIR)/binutils/ar.bc -M --sym-files 1 50 --sym-stdin 50 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-ar.log 2>&1
+baseline-klee-as: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program as (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-as $(BC_DIR)/gas/as-new.bc --itbl A B --sym-files 2 20 --sym-stdin 20 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-as.log 2>&1
+baseline-klee-cxxfilt: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program cxxfilt (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-cxxfilt $(BC_DIR)/binutils/cxxfilt.bc --sym-args 1 4 10 --sym-stdin 12 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-cxxfilt.log 2>&1
+baseline-klee-ld: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program ld (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-ld $(BC_DIR)/ld/ld-new.bc -T A B --sym-files 2 200 --sym-stdin 200 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-ld.log 2>&1
+baseline-klee-size: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program size (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-size $(BC_DIR)/binutils/size.bc -x A --sym-files 1 10 --sym-stdin 20 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-size.log 2>&1
+baseline-klee-objcopy: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program objcopy (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-objcopy $(BC_DIR)/binutils/objcopy.bc A --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-objcopy.log 2>&1
+baseline-klee-objdump: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program objdump (special sym args)"
+	-$(KLEE) --stats-write-interval=1000 --istats-write-interval=1000 \
+	$(KFLAGS) --output-dir=klee-out-objdump $(BC_DIR)/binutils/objdump.bc A --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-objdump.log 2>&1
+
+run-klee-ar_12304_410: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program ar (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=410 --istats-write-after-instructions=410 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=12304 \
+	$(KFLAGS) --output-dir=klee-out-ar $(BC_DIR)/binutils/ar.bc -M --sym-files 1 50 --sym-stdin 50 --sym-stdout \
+	> run-klee-$(KSEARCH)-ar_12304_410.log 2>&1
+run-klee-as_3488967904_116298930: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program as (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=116298930 --istats-write-after-instructions=116298930 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=3488967904 \
+	$(KFLAGS) --output-dir=klee-out-as $(BC_DIR)/gas/as-new.bc --itbl A B --sym-files 2 20 --sym-stdin 20 --sym-stdout \
+	> run-klee-$(KSEARCH)-as_3488967904_116298930.log 2>&1
+run-klee-cxxfilt_70769782_2358993: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program cxxfilt (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=2358993 --istats-write-after-instructions=2358993 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=70769782 \
+	$(KFLAGS) --output-dir=klee-out-cxxfilt $(BC_DIR)/binutils/cxxfilt.bc --sym-args 1 4 10 --sym-stdin 12 --sym-stdout \
+	> run-klee-$(KSEARCH)-cxxfilt_70769782_2358993.log 2>&1
+run-klee-ld_4571695_152390: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program ld (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=152390 --istats-write-after-instructions=152390 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=4571695 \
+	$(KFLAGS) --output-dir=klee-out-ld $(BC_DIR)/ld/ld-new.bc -T A B --sym-files 2 200 --sym-stdin 200 --sym-stdout \
+	> run-klee-$(KSEARCH)-ld_4571695_152390.log 2>&1
+run-klee-size_1473128554_49104285: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program size (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=49104285 --istats-write-after-instructions=49104285 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=1473128554 \
+	$(KFLAGS) --output-dir=klee-out-size $(BC_DIR)/binutils/size.bc -x A --sym-files 1 10 --sym-stdin 20 --sym-stdout \
+	> run-klee-$(KSEARCH)-size_1473128554_49104285.log 2>&1
+run-klee-objcopy_1853913168_61797106: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program objcopy (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=61797106 --istats-write-after-instructions=61797106 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=1853913168 \
+	$(KFLAGS) --output-dir=klee-out-objcopy $(BC_DIR)/binutils/objcopy.bc A --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> run-klee-$(KSEARCH)-objcopy_1853913168_61797106.log 2>&1
+run-klee-objdump_1283224241_42774141: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program objdump (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=42774141 --istats-write-after-instructions=42774141 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=974100533 \
+	$(KFLAGS) --output-dir=klee-out-objdump $(BC_DIR)/binutils/objdump.bc A --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> run-klee-$(KSEARCH)-objdump_974100533_42774141.log 2>&1

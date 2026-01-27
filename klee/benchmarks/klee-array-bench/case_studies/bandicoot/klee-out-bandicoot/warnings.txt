@@ -1,0 +1,25 @@
+KLEE: WARNING ONCE: function "sys_iready" has inline asm
+KLEE: WARNING ONCE: function "__libc_accept" has inline asm
+KLEE: WARNING ONCE: function "bind" has inline asm
+KLEE: WARNING ONCE: function "__libc_connect" has inline asm
+KLEE: WARNING ONCE: function "getsockname" has inline asm
+KLEE: WARNING ONCE: function "listen" has inline asm
+KLEE: WARNING ONCE: function "__libc_recvfrom" has inline asm
+KLEE: WARNING ONCE: function "__libc_sendto" has inline asm
+KLEE: WARNING ONCE: function "setsockopt" has inline asm
+KLEE: WARNING ONCE: function "shutdown" has inline asm
+KLEE: WARNING ONCE: function "socket" has inline asm
+KLEE: WARNING: undefined reference to function: pthread_cond_destroy
+KLEE: WARNING: undefined reference to function: pthread_cond_init
+KLEE: WARNING: undefined reference to function: pthread_cond_signal
+KLEE: WARNING: undefined reference to function: pthread_cond_timedwait
+KLEE: WARNING: undefined reference to function: pthread_cond_wait
+KLEE: WARNING: undefined reference to function: pthread_create
+KLEE: WARNING: undefined reference to function: pthread_detach
+KLEE: WARNING: undefined reference to function: pthread_mutex_destroy
+KLEE: WARNING: undefined reference to function: pthread_mutex_init
+KLEE: WARNING: undefined reference to function: pthread_mutex_lock
+KLEE: WARNING: undefined reference to function: pthread_mutex_unlock
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 140733032959984)
+KLEE: WARNING ONCE: __syscall_rt_sigaction: silently ignoring
+KLEE: WARNING ONCE: calling external: vprintf(140733032917032, 140733032976904)

@@ -1,0 +1,6 @@
+{
+  "KLEE_OPTIONS" : "--simplify-sym-indices --write-cov --output-module  --optimize --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --external-calls=all --only-output-states-covering-new  --max-sym-array-size=4096 --max-solver-time=60s --max-time=3h --watchdog  ",
+  "CFMSE_IGNORE_JSON" : "cfmse_ignore.json",
+  "CFM_OPTIONS" : "-klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic"
+}
+

@@ -1,0 +1,87 @@
+## Target definition for special cases, i.e. cases in which the symbolic arguments are peculiar
+## Baseline run
+baseline-klee-dircolors: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program dircolors (special sym args)"
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-dircolors $(BC_DIR)/dircolors.bc --sym-args 0 3 10 --sym-files 2 12 --sym-stdin 12 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-dircolors.log 2>&1
+baseline-klee-echo: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program echo (special sym args)"
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-echo $(BC_DIR)/echo.bc --sym-args 0 4 300 --sym-files 2 30 --sym-stdin 30 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-echo.log 2>&1
+baseline-klee-md5sum: $(KLEE)
+	$(MAKE) prepare
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-md5sum $(BC_DIR)/md5sum.bc --sym-args 0 1 10 --sym-args 0 3 2 --sym-files 1 256 --sym-stdin 256 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-md5sum.log 2>&1
+baseline-klee-mknod: $(KLEE)
+	$(MAKE) prepare
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-mknod $(BC_DIR)/mknod.bc --sym-args 0 1 10 --sym-args 0 3 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-mknod.log 2>&1
+baseline-klee-od: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program od (special sym args)"
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-od $(BC_DIR)/od.bc --sym-args 0 3 10 --sym-files 2 12 --sym-stdin 12 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-od.log 2>&1
+baseline-klee-pathchk: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program pathchk (special sym args)"
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-pathchk $(BC_DIR)/pathchk.bc --sym-args 0 1 2 --sym-args 0 1 300 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-pathchk.log 2>&1
+baseline-klee-printf: $(KLEE)
+	$(MAKE) prepare
+	@echo "Creating KLEE baseline with $(KSEARCH) on program printf (special sym args)"
+	-$(KLEE) --stats-write-interval=1500 --istats-write-interval=1500 \
+	$(KFLAGS) --output-dir=klee-out-printf $(BC_DIR)/printf.bc --sym-args 0 3 10 --sym-files 2 12 --sym-stdin 12 --sym-stdout \
+	> baseline-klee-$(KSEARCH)-printf.log 2>&1
+
+
+## Deterministic run - 30 min on mars
+run-klee-dircolors_2029592568_2029592568: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program dircolors (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=2029592568 --istats-write-after-instructions=2029592568 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=2029592568 \
+	$(KFLAGS) --output-dir=klee-out-dircolors $(BC_DIR)/dircolors.bc --sym-args 0 3 10 --sym-files 2 12 --sym-stdin 12 --sym-stdout \
+	> run-klee-$(KSEARCH)-dircolors_2029592568_2029592568.log 2>&1
+run-klee-echo_554418730_554418730: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program echo (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=554418730 --istats-write-after-instructions=554418730 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=554418730 \
+	$(KFLAGS) --output-dir=klee-out-echo $(BC_DIR)/echo.bc --sym-args 0 4 300 --sym-files 2 30 --sym-stdin 30 --sym-stdout \
+	> run-klee-$(KSEARCH)-echo_554418730_554418730.log 2>&1
+run-klee-md5sum_1236273_1236273: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program md5sum (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=1236273 --istats-write-after-instructions=1236273 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=1236273 \
+	$(KFLAGS) --output-dir=klee-out-md5sum $(BC_DIR)/md5sum.bc --sym-args 0 1 10 --sym-args 0 3 2 --sym-files 1 256 --sym-stdin 256 --sym-stdout \
+	> run-klee-$(KSEARCH)-md5sum_1236273_1236273.log 2>&1
+run-klee-mknod_448479943_448479943: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program mknod (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=448479943 --istats-write-after-instructions=448479943 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=448479943 \
+	$(KFLAGS) --output-dir=klee-out-mknod $(BC_DIR)/mknod.bc --sym-args 0 1 10 --sym-args 0 3 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> run-klee-$(KSEARCH)-mknod_448479943_448479943.log 2>&1
+run-klee-od_337234314_337234314: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program od (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=337234314 --istats-write-after-instructions=337234314 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=337234314 \
+	$(KFLAGS) --output-dir=klee-out-od $(BC_DIR)/od.bc --sym-args 0 3 10 --sym-files 2 12 --sym-stdin 12 --sym-stdout \
+	> run-klee-$(KSEARCH)-od_337234314_337234314.log 2>&1
+run-klee-pathchk_182221634_182221634: $(KLEE)
+	$(MAKE) prepare
+	@echo "Running KLEE with $(KSEARCH) on program pathchk (special sym args)"
+	-$(KLEE) --stats-write-after-instructions=182221634 --istats-write-after-instructions=182221634 --stats-write-interval=0 --istats-write-interval=0 \
+	--stop-after-n-instructions=182221634 \
+	$(KFLAGS) --output-dir=klee-out-pathchk $(BC_DIR)/pathchk.bc --sym-args 0 1 2 --sym-args 0 1 300 --sym-files 1 8 --sym-stdin 8 --sym-stdout \
+	> run-klee-$(KSEARCH)-pathchk_182221634_182221634.log 2>&1

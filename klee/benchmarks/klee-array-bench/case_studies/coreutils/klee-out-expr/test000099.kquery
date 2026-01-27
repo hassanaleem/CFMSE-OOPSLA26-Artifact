@@ -1,0 +1,129 @@
+array A-data-stat[144] : w32 -> w8 = symbolic
+array arg0[11] : w32 -> w8 = symbolic
+array arg1[3] : w32 -> w8 = symbolic
+array arg2[3] : w32 -> w8 = symbolic
+array model_version[4] : w32 -> w8 = symbolic
+array n_args[4] : w32 -> w8 = symbolic
+array n_args_1[4] : w32 -> w8 = symbolic
+array stdin-stat[144] : w32 -> w8 = symbolic
+array stdout-stat[144] : w32 -> w8 = symbolic
+(query [(Ult N0:(ReadLSB w32 0 n_args)
+              2)
+         (Slt 0 N0)
+         (Ult N1:(ReadLSB w32 0 n_args_1)
+              3)
+         (Slt 0 N1)
+         (Slt 1 N1)
+         (Eq false
+             (Eq 0
+                 (And w64 (ReadLSB w64 8 A-data-stat)
+                          2147483647)))
+         (Ult (ReadLSB w64 56 A-data-stat)
+              65536)
+         (Eq false
+             (Eq 0
+                 (And w64 (ReadLSB w64 8 stdin-stat)
+                          2147483647)))
+         (Ult (ReadLSB w64 56 stdin-stat)
+              65536)
+         (Eq false
+             (Eq 0
+                 (And w64 (ReadLSB w64 8 stdout-stat)
+                          2147483647)))
+         (Ult (ReadLSB w64 56 stdout-stat)
+              65536)
+         (Eq 1
+             (ReadLSB w32 0 model_version))
+         (Eq false
+             (Eq 45 N2:(Read w8 0 arg0)))
+         (Eq false (Eq 43 N2))
+         (Eq false (Eq 108 N2))
+         (Eq false (Eq 109 N2))
+         (Eq false (Eq 105 N2))
+         (Eq false (Eq 115 N2))
+         (Eq false (Eq 40 N2))
+         (Eq false (Eq 41 N2))
+         (Eq false (Eq 0 N2))
+         (Eq false
+             (Eq 0 N3:(Read w8 1 arg0)))
+         (Eq false
+             (Eq 0 N4:(Read w8 2 arg0)))
+         (Eq false
+             (Eq 0 N5:(Read w8 3 arg0)))
+         (Eq false
+             (Eq 0 N6:(Read w8 4 arg0)))
+         (Eq false
+             (Eq 0 N7:(Read w8 5 arg0)))
+         (Eq false
+             (Eq 0 N8:(Read w8 6 arg0)))
+         (Eq false
+             (Eq 0 N9:(Read w8 7 arg0)))
+         (Eq false
+             (Eq 0 N10:(Read w8 8 arg0)))
+         (Eq false
+             (Eq 0 N11:(Read w8 9 arg0)))
+         (Eq 42 (Read w8 0 arg1))
+         (Eq 0 (Read w8 1 arg1))
+         (Eq false
+             (Eq 43 N12:(Read w8 0 arg2)))
+         (Eq false (Eq 108 N12))
+         (Eq false (Eq 109 N12))
+         (Eq false (Eq 105 N12))
+         (Eq false (Eq 115 N12))
+         (Eq false (Eq 40 N12))
+         (Eq false (Eq 41 N12))
+         (Eq false (Eq 0 N12))
+         (Ult (Add w32 4294967248 (SExt w32 N2))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N3))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N4))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N5))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N6))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N7))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N8))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N9))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N10))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N11))
+              10)
+         (Ult (Add w32 4294967248 (SExt w32 N12))
+              10)
+         (Eq false
+             (Eq 0 N13:(Read w8 1 arg2)))
+         (Ult (Add w32 4294967248 (SExt w32 N13))
+              10)
+         (Eq false (Eq 45 N12))
+         (Eq false
+             (Eq 0
+                 (Add w64 (ZExt w64 (Add w8 208 N11))
+                          (Mul w64 10
+                                   (Add w64 (ZExt w64 (Add w8 208 N10))
+                                            (Mul w64 10
+                                                     (Add w64 (ZExt w64 (Add w8 208 N9))
+                                                              (Mul w64 10
+                                                                       (Add w64 (ZExt w64 (Add w8 208 N8))
+                                                                                (Mul w64 10
+                                                                                         (Add w64 (ZExt w64 (Add w8 208 N7))
+                                                                                                  (Mul w64 10
+                                                                                                           (Add w64 (ZExt w64 (Add w8 208 N6))
+                                                                                                                    (Mul w64 10
+                                                                                                                             (Add w64 (ZExt w64 (Add w8 208 N5))
+                                                                                                                                      (Mul w64 10
+                                                                                                                                               (Add w64 (ZExt w64 (Add w8 208 N4))
+                                                                                                                                                        (Mul w64 10
+                                                                                                                                                                 (Add w64 (ZExt w64 (Add w8 208 N3))
+                                                                                                                                                                          (Mul w64 10
+                                                                                                                                                                                   (ZExt w64 (Add w8 208 N2))))))))))))))))))))))
+         (Eq false
+             (Eq 0
+                 (Add w64 (ZExt w64 (Add w8 208 N13))
+                          (Mul w64 10
+                                   (ZExt w64 (Add w8 208 N12))))))]
+        false)

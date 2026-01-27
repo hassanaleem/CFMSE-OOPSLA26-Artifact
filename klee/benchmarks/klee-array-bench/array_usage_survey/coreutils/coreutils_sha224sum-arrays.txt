@@ -1,0 +1,7 @@
+I;C;bin2hex;[16 x i8]*;../../src/md5sum.c:492
+I;C;version_etc_copyright;[47 x i8]*;../../lib/version-etc-fsf.c:26
+I;C;quoting_style_args;[9 x i8*]*;../../lib/quotearg.c:77
+I;C;quoting_style_vals;[8 x i32]*;../../lib/quotearg.c:91
+I;C;sha256_round_constants;[64 x i32]*;../../lib/sha256.c:396
+I;C;fillbuf;[64 x i8]*;../../lib/sha256.c:48
+I;C;wide_null_string;[7 x i32]*;../../lib/printf-args.c:112

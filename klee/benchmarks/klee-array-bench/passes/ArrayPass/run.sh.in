@@ -1,0 +1,9 @@
+#!/bin/bash
+
+@CLANG_EXECUTABLE@ -emit-llvm -c -g simple_test.c
+
+echo "Run ArrayPass with OPT on simple_test.c"
+@LLVM_TOOLS_BINARY_DIR@/opt -load @MODULE_FILE@ -print_arrays simple_test.bc > /dev/null
+
+echo "Run ArrayPass inside CLANG on simple_test.c"
+@CLANG_EXECUTABLE@ -Xclang -load -Xclang @MODULE_FILE@ -c -g -O0 simple_test.c

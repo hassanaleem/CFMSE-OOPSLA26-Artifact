@@ -1,0 +1,10 @@
+CLANG=$(LLVM_BUILD_DIR)/bin/clang
+OPT=$(LLVM_BUILD_DIR)/bin/opt
+KLEE_BIN=$(KLEE_BUILD_DIR)/bin/klee
+
+CFMSE_FLAGS=-enable-new-pm -mem2reg -S
+KLEE_INCLUDE=$(KLEE_BUILD_DIR)/../include
+CLANG_FLAGS=-I $(KLEE_INCLUDE) -emit-llvm -S -Xclang -disable-O0-optnone -g
+
+KLEE_NOCFM_OPTIONS= --max-memory=51200 --only-output-states-covering-new --write-cov
+KLEE_CFM_OPTIONS = $(KLEE_NOCFM_OPTIONS) -klee-cfmse

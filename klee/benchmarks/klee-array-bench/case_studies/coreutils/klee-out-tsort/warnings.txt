@@ -1,0 +1,5 @@
+KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+KLEE: WARNING: undefined reference to function: __ctype_b_loc
+KLEE: WARNING: executable has module level assembly (ignoring)
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 140733032918256)
+KLEE: WARNING ONCE: calling close_stdout with extra arguments.

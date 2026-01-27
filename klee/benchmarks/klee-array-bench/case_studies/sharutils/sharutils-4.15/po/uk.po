@@ -1,0 +1,2380 @@
+# Ukrainian translation for sharutils.
+# Copyright (C) 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the sharutils package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012, 2013, 2014, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU sharutils 4.14.3\n"
+"Report-Msgid-Bugs-To: bug-gnu-utils@gnu.org\n"
+"POT-Creation-Date: 2015-02-07 10:53-0800\n"
+"PO-Revision-Date: 2015-01-03 11:01+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/scribble.c:166
+#, c-format
+msgid "could not allocate %u bytes of scribble space"
+msgstr "не вдалося отримати %u байтів тимчасової області у пам’яті"
+
+#. TRANSLATORS:  This is a phony function generated for the purpose of
+#. constructing the strings to be extracted for translation.  Each string
+#. is associated with a name (e.g. SM_ans_yes) that can be found in shar.c,
+#. if you need to look up context.  These strings are all inserted into
+#. the shar-generated shell script so the shar user can create shar archives
+#. with messages localized for one locale.
+#.
+#: src/scripts.x:449
+msgid "Note: not verifying md5sums.  Consider installing GNU coreutils."
+msgstr ""
+"Зауваження: контрольні суми md5 не перевірено. Щоб виконати перевірку, "
+"встановіть GNU coreutils."
+
+#: src/scripts.x:450
+msgid ""
+"WARNING: not restoring timestamps.  Consider getting and\n"
+"installing GNU 'touch', distributed in GNU coreutils..."
+msgstr ""
+"ПОПЕРЕДЖЕННЯ: часові позначки відновлено не буде. Звантажте і\n"
+"встановіть програму GNU «touch», яка є частиною пакунка GNU coreutils…"
+
+#: src/scripts.x:452
+#, c-format
+msgid "lock directory %s exists"
+msgstr "каталог блокування %s вже існує"
+
+#: src/scripts.x:453
+#, c-format
+msgid "failed to create %s lock directory"
+msgstr "не вдалося створити каталог блокування %s"
+
+#: src/scripts.x:454
+#, c-format
+msgid "x - created lock directory %s."
+msgstr "x — створено заблокований каталог %s."
+
+#: src/scripts.x:455
+#, c-format
+msgid "x - failed to create lock directory %s."
+msgstr "x — не вдалося заблокувати каталог %s."
+
+#: src/scripts.x:456
+#, c-format
+msgid "x - created directory %s."
+msgstr "x — створено каталог %s."
+
+#: src/scripts.x:457
+#, c-format
+msgid "x - failed to create directory %s."
+msgstr "x — не вдалося створити каталог %s."
+
+#: src/scripts.x:458
+msgid "yes"
+msgstr "так"
+
+#: src/scripts.x:459
+msgid "overwrite this file"
+msgstr "перезаписати цей файл"
+
+#: src/scripts.x:460
+msgid "no"
+msgstr "ні"
+
+#: src/scripts.x:461
+msgid "skip this file"
+msgstr "пропустити цей файл"
+
+#: src/scripts.x:462
+msgid "all"
+msgstr "всі"
+
+#: src/scripts.x:463
+msgid "overwrite all files"
+msgstr "перезаписати всі файли"
+
+#: src/scripts.x:464
+msgid "none"
+msgstr "жодного"
+
+#: src/scripts.x:465
+msgid "overwrite no files"
+msgstr "не перезаписувати файли"
+
+#: src/scripts.x:466
+msgid "help"
+msgstr "довідка"
+
+#: src/scripts.x:467
+msgid "explain choices"
+msgstr "надати пояснення щодо варіантів"
+
+#: src/scripts.x:468
+msgid "quit"
+msgstr "вийти"
+
+#: src/scripts.x:469
+msgid "exit immediately"
+msgstr "негайно завершити роботу"
+
+#: src/scripts.x:470
+#, c-format
+msgid "restore of %s failed"
+msgstr "помилка під час спроби відновлення %s"
+
+#: src/scripts.x:471
+#, c-format
+msgid "  chmod %04o %s\n"
+msgstr "  chmod %04o %s\n"
+
+#: src/scripts.x:472
+#, c-format
+msgid "End of part %d, continue with part %d"
+msgstr "Завершено обробку частини %d, переходимо до обробки частини %d"
+
+#: src/scripts.x:473
+#, c-format
+msgid "End of %s part %d"
+msgstr "Завершення частини %s з номером %d"
+
+#: src/scripts.x:474
+#, c-format
+msgid "restoration warning:  size of %s is not %s"
+msgstr "попередження щодо відновлення: розмір %s не дорівнює %s"
+
+#: src/scripts.x:475 src/shar.c:1456
+msgid "(text)"
+msgstr "(текстовий)"
+
+#: src/scripts.x:476
+msgid "(compressed)"
+msgstr "(стиснутий)"
+
+#: src/scripts.x:477
+msgid "(gzipped)"
+msgstr "(стиснутий gzip)"
+
+#: src/scripts.x:478
+msgid "(bzipped)"
+msgstr "(стиснутий bzip)"
+
+#: src/scripts.x:479
+msgid "(binary)"
+msgstr "(двійковий)"
+
+#: src/scripts.x:480
+msgid "archive"
+msgstr "архів"
+
+#: src/scripts.x:481
+#, c-format
+msgid "File %s is continued in part %d"
+msgstr "Продовження файла %s розміщено у частині %d"
+
+#: src/scripts.x:482
+msgid "Please unpack part 1 first!"
+msgstr "Будь ласка, спочатку розпакуйте першу частину!"
+
+#: src/scripts.x:483
+msgid "Please unpack part ${shar_sequence} next!"
+msgstr "Будь ласка, наступною розпакуйте частину ${shar_sequence}!"
+
+#: src/scripts.x:484
+#, c-format
+msgid "x - STILL SKIPPING %s"
+msgstr "x — ПРОПУСКАЄМО І %s"
+
+#: src/scripts.x:485
+#, c-format
+msgid "continuing file %s"
+msgstr "продовження файла %s"
+
+#: src/scripts.x:486
+msgid "(empty)"
+msgstr "(порожній)"
+
+#: src/scripts.x:487
+#, c-format
+msgid "x - overwriting %s"
+msgstr "x — перезапис %s"
+
+#: src/scripts.x:488
+#, c-format
+msgid "overwrite %s"
+msgstr "перезаписати %s"
+
+#: src/scripts.x:489
+#, c-format
+msgid "SKIPPING %s"
+msgstr "Пропускаємо %s"
+
+#: src/scripts.x:490
+msgid "extraction aborted"
+msgstr "видобування перервано"
+
+#: src/scripts.x:491
+#, c-format
+msgid "x - SKIPPING %s (file already exists)"
+msgstr "x — ПРОПУСКАЄМО %s (такий файл вже існує)"
+
+#: src/scripts.x:492
+#, c-format
+msgid "x - extracting %s %s"
+msgstr "x — видобування %s %s"
+
+#: src/scripts.x:493
+#, c-format
+msgid "File %s is complete"
+msgstr "Файл %s завершено"
+
+#: src/scripts.x:494
+#, c-format
+msgid "uudecoding file %s"
+msgstr "UUE-декодування файла %s"
+
+#: src/scripts.x:495
+msgid "MD5 check failed"
+msgstr "Невдала перевірка MD5"
+
+#: src/scripts.x:496
+msgid "You have unpacked the last part"
+msgstr "Розпаковано останню частину"
+
+#: src/scripts.x:497
+#, c-format
+msgid "x - removed lock directory %s."
+msgstr "x — вилучено каталог блокування %s."
+
+#: src/scripts.x:498
+#, c-format
+msgid "x - failed to remove lock directory %s."
+msgstr "x — не вдалося вилучити каталог блокування %s."
+
+#: src/shar-opts.c:1870
+#, c-format
+msgid "Cannot reopen %s as stdin"
+msgstr "Не вдалося повторно відкрити %s як stdin"
+
+#: src/shar-opts.c:1990
+msgid "shar usage error:\n"
+msgstr "помилка у використанні shar:\n"
+
+#: src/shar-opts.c:2027
+msgid "shar fatal error:\n"
+msgstr "критична помилка shar:\n"
+
+#: src/shar-opts.c:2064 src/unshar-opts.c:738 src/uudecode-opts.c:512
+#: src/uuencode-opts.c:463
+#, c-format
+msgid "fserr %d (%s) performing '%s' on %s\n"
+msgstr "fserr %d (%s), виконання «%s» над %s\n"
+
+#: src/shar-opts.c:2189 src/unshar-opts.c:863 src/uudecode-opts.c:637
+#: src/uuencode-opts.c:588
+msgid "No memory for duping translated strings\n"
+msgstr "Недостатньо пам’яті для дублювання перекладених рядків\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the sharOptions structure noted in the
+#. comments below.  The literal text is defined in shar_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. shar_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via sharOptions.pzCopyright
+#: src/shar-opts.c:2257
+#, fuzzy
+msgid ""
+"shar (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"shar (GNU sharutils) 4.15\n"
+"(C) Free Software Foundation, Inc., 1994-2014. Всі права захищено.\n"
+"Це вільне програмне забезпечення. Ліцензійними умовами щодо його\n"
+"використання передбачено можливість використання, внесення змін\n"
+"та поширення його відповідно до умов GNU General Public License,\n"
+"версії 3 або пізніших версій <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/shar-opts.c:2264
+msgid ""
+"shar is free software: you can redistribute it and/or modify it under the\n"
+"terms of the GNU General Public License as published by the Free Software\n"
+"Foundation, either version 3 of the License, or (at your option) any later\n"
+"version.\n"
+"\n"
+msgstr ""
+"shar є вільним програмним забезпеченням; ви можете поширювати та/або\n"
+"змінювати її за умов дотримання GNU General Public License у тому вигляді,\n"
+"що оприлюднений Free Software Foundation; версії 3 цієї Ліцензії, або (якщо\n"
+"забажаєте) будь-якої іншої версії, випущеної пізніше.\n"
+"\n"
+
+#: src/shar-opts.c:2268
+msgid ""
+"shar is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"Програма shar поширюється у сподіванні, що вона буде корисною, але БЕЗ "
+"БУДЬ-\n"
+"ЯКИХ ГАРАНТІЙНИХ ЗОБОВ’ЯЗАНЬ; навіть без очевидної гарантії ПРАЦЕЗДАТНОСТІ\n"
+"або ПРИДАТНОСТІ ДЛЯ ВИКОРИСТАННЯ З ПЕВНОЮ МЕТОЮ. Докладніше про це можна\n"
+"дізнатися з GNU General Public License.\n"
+"\n"
+
+#: src/shar-opts.c:2272 src/unshar-opts.c:946 src/uudecode-opts.c:720
+#: src/uuencode-opts.c:671
+msgid ""
+"You should have received a copy of the GNU General Public License along\n"
+"with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr ""
+"Ви маєте отримати копію GNU General Public License разом з цією програмою.\n"
+"Якщо цього не сталося, скористайтеся <http://www.gnu.org/licenses/>.\n"
+
+#: src/shar-opts.c:2276
+#, c-format
+msgid ""
+"shar (GNU sharutils) - create a shell archive\n"
+"Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+msgstr ""
+"shar (GNU sharutils) - програма для створення архівів командної оболонки\n"
+"Користування: %s [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>...]\n"
+
+#: src/shar-opts.c:2280
+msgid ""
+"If no 'file's are specified, the list of input files is read from standard\n"
+"input.  Standard input must not be a terminal.\n"
+msgstr ""
+"Якщо параметр файла не буде вказано, вхідні дані буде прочитано зі "
+"стандартного\n"
+"джерела даних. Стандартне джерело даних не повинно бути терміналом.\n"
+
+#: src/shar-opts.c:2284
+msgid ""
+"'shar' creates \"shell archives\" (or shar files) which are in text format\n"
+"and can be emailed.  These files may be unpacked later by executing them\n"
+"with '/bin/sh'.  The resulting archive is sent to standard out unless the\n"
+"'-o' option is given.  A wide range of features provide extensive\n"
+"flexibility in manufacturing shars and in specifying 'shar' \"smartness\".\n"
+"Archives may be fairly simple ('--vanilla-operation') or essentially a\n"
+"mailable 'tar' archive.\n"
+"\n"
+msgstr ""
+"shar створює архіви командної оболонки (або файли shar), які містять\n"
+"текстові дані, придатні до надсилання поштою. Такі файли згодом можна\n"
+"розпакувати, виконуючи їх у командній оболонці /bin/sh. Архів-результат\n"
+"буде виведено до стандартного каналу виведення, якщо не вказано параметра\n"
+"-o. Передбачено широкий діапазон можливостей, які надають надзвичайної\n"
+"гнучкості у використанні отриманих shar та у визначенні «рівня\n"
+"інтелекту» shar. Архіви можуть бути зовсім простими (--vanilla-operation)\n"
+"або просто придатними для надсилання архівами tar.\n"
+"\n"
+
+#: src/shar-opts.c:2291 src/shar-opts.c:2385
+msgid ""
+"Options may be specified in any order until a 'file' argument is\n"
+"recognized.  If the '--intermix-type' option has been specified, more\n"
+"compression and encoding options will be recognized between the 'file'\n"
+"arguments.\n"
+"\n"
+msgstr ""
+"Параметри можна вказувати у довільному порядку до аргументу файла.\n"
+"Якщо вказано параметр --intermix-type, розпізнаватимуться додаткові\n"
+"параметри стискання і кодування між аргументами файлів.\n"
+"\n"
+
+#: src/shar-opts.c:2295
+msgid ""
+"Though this program supports 'uuencode'-d files, they are deprecated.  If\n"
+"you are emailing files, please consider mime-encoded files.  If you do\n"
+"'uuencode', base64 is the preferred encoding method.\n"
+msgstr ""
+"Хоча у цій програмі передбачено підтримку файлів uuencode, така підтримка\n"
+"вважається застарілою Якщо ви надсилаєте файли електронною поштою, варто\n"
+"користуватися mime-кодуванням. Якщо ви все ж користуєтеся uuencode, слід\n"
+"використовувати основу 64 для кодування.\n"
+
+#: src/shar-opts.c:2300
+msgid "shar (GNU sharutils) 4.15"
+msgstr "shar (GNU sharutils) 4.15"
+
+#: src/shar-opts.c:2303
+msgid ""
+"shar (GNU sharutils) - create a shell archive\n"
+"Usage:  shar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"\n"
+msgstr ""
+"shar (GNU sharutils) - програма для створення архівів командної оболонки\n"
+"Користування:  shar [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>...]\n"
+"\n"
+
+#: src/shar-opts.c:2305
+msgid ""
+"Specify compression:\n"
+"   -p, --intermix-type        specify compression for input files\n"
+"                                - prohibits the option 'vanilla-operation'\n"
+msgstr ""
+"визначення параметрів стискання:\n"
+"   -p, --intermix-type        визначення стискання для файлів вхідних даних\n"
+"                                - виключає використання таких параметрів:\n"
+"                                vanilla-operation\n"
+
+#: src/shar-opts.c:2308
+msgid ""
+"   -C, --compactor=PROG       specify compaction (compression) program PROG\n"
+"                                - prohibits the option 'vanilla-operation'\n"
+"                                - may appear multiple times\n"
+"                                - it must be known to shar: xz gzip bzip2\n"
+msgstr ""
+"   -C, --compactor=рядок      визначення програми для ущільнення "
+"(стискання)\n"
+"                                - виключає використання таких параметрів:\n"
+"                                vanilla-operation\n"
+"                                - можна використовувати декілька разів\n"
+"\n"
+"                                - має бути вказано одну з відомих shar "
+"програм: xz gzip bzip2\n"
+
+#: src/shar-opts.c:2312
+msgid ""
+"   -g, --level-of-compression=LEVEL\n"
+"                              pass LEVEL for compression\n"
+"                                - it must be in the range: 1 to 9\n"
+"\n"
+msgstr ""
+"   -g, --level-of-compression=РІВЕНЬ\n"
+"                              визначення РІВНЯ стискання\n"
+"                                - діапазон припустимих значень:\n"
+"                                  від 1 до 9\n"
+
+#: src/shar-opts.c:2315
+msgid ""
+"Specify file encoding methodology:\n"
+"   -M, --mixed-uuencode       decide uuencoding for each file\n"
+msgstr ""
+"Визначення способу кодування файлів:\n"
+"   -M, --mixed-uuencode       визначати кодування uuencode для кожного з "
+"файлів\n"
+
+#: src/shar-opts.c:2317
+msgid ""
+"   -B, --uuencode             treat all files as binary\n"
+"                                - an alternate for mixed-uuencode\n"
+msgstr ""
+"   -B, --uuencode             вважати всі файли бінарними\n"
+"                                - альтернативний варіант параметра mixed-"
+"uuencode\n"
+"\n"
+
+#: src/shar-opts.c:2319
+msgid ""
+"   -T, --text-files           treat all files as text\n"
+"                                - an alternate for mixed-uuencode\n"
+"\n"
+msgstr ""
+"   -T, --text-files           вважати всі файли текстовими\n"
+"                                - альтернативний варіант параметра mixed-"
+"uuencode\n"
+"\n"
+
+#: src/shar-opts.c:2321
+msgid "Specifying file selection and output modes:\n"
+msgstr "Визначення параметрів вибору файлів та режимів виведення даних:\n"
+
+#: src/shar-opts.c:2322
+msgid "   -o, --output-prefix=str    print output to file PREFIX.nn\n"
+msgstr "   -o, --output-prefix=рядок  вивести дані до файла ПРЕФІКС.nn\n"
+
+#: src/shar-opts.c:2323
+msgid ""
+"   -l, --whole-size-limit=SIZE\n"
+"                              split archive, not files, to SIZE\n"
+"                                - requires the option 'output-prefix'\n"
+"                                - is scalable with a suffix: k/K/m/M/g/G/t/"
+"T\n"
+"                                - it must lie in one of the ranges:\n"
+"                                  8 to 1023, or 8192 to 4194304\n"
+msgstr ""
+"   -l, --whole-size-limit=число поділити архів, але не файли на блоки "
+"вказаного розміру\n"
+"                                - потребує використання таких параметрів:\n"
+"                                output-prefix\n"
+"                                - масштаб можна вказати за допомогою "
+"суфіксів: k/K/m/M/g/G/t/T\n"
+"                                - Діапазони можливих значень:\n"
+"                                  від 8 до 1023 або\n"
+"                                  від 8192 до 4194304\n"
+
+#: src/shar-opts.c:2329
+msgid ""
+"   -L, --split-size-limit=SIZE\n"
+"                              split archive or files to SIZE\n"
+"                                - requires the option 'output-prefix'\n"
+"                                - is scalable with a suffix: k/K/m/M/g/G/t/"
+"T\n"
+"                                - it must lie in one of the ranges:\n"
+"                                  8 to 1023, or 8192 to 4194304\n"
+"                                - an alternate for 'whole-size-limit'\n"
+msgstr ""
+"   -L, --split-size-limit=число поділити архів або файли на блоки вказаного "
+"розміру\n"
+"                                - потребує використання таких параметрів:\n"
+"                                output-prefix\n"
+"                                - масштаб можна вказати за допомогою "
+"суфіксів: k/K/m/M/g/G/t/T\n"
+"                                - Діапазони можливих значень:\n"
+"                                  від 8 до 1023 або\n"
+"                                  від 8192 до 4194304\n"
+"                                - альтернативний варіант щодо whole-size-"
+"limit\n"
+
+#: src/shar-opts.c:2336
+msgid ""
+"   -I, --input-file-list=FILE read file list from FILE\n"
+"\n"
+msgstr ""
+"   -I, --input-file-list=рядок читати список файлів з вказаного файла\n"
+"\n"
+
+#: src/shar-opts.c:2337
+msgid ""
+"Controlling the shar headers:\n"
+"   -n, --archive-name=NAME    use NAME to document the archive\n"
+msgstr ""
+"Керування заголовками shar:\n"
+"   -n, --archive-name=рядок   використовувати вказану назву документа "
+"архіву\n"
+
+#: src/shar-opts.c:2339
+msgid "   -s, --submitter=NAME       override the submitter name with NAME\n"
+msgstr "   -s, --submitter=рядок      перевизначити назву надавача\n"
+
+#: src/shar-opts.c:2340
+msgid ""
+"   -a, --net-headers          output Submitted-by: & Archive-name: headers\n"
+"                                - requires the option 'archive-name'\n"
+msgstr ""
+"   -a, --net-headers          вивести заголовки Надано: і Назва архіву:\n"
+"                                - потребує використання таких параметрів:\n"
+"                                archive-name\n"
+
+#: src/shar-opts.c:2342
+msgid "   -c, --cut-mark             start the shar with a cut line\n"
+msgstr "   -c, --cut-mark             почати shar з рядка відрізання\n"
+
+#: src/shar-opts.c:2343
+msgid ""
+"   -t, --translate            translate messages in the script\n"
+"\n"
+msgstr ""
+"   -t, --translate            перекладати повідомлення у скрипті\n"
+"\n"
+
+#: src/shar-opts.c:2344
+msgid ""
+"Protecting against transmission issues:\n"
+"       --no-character-count   do not use `wc -c' to check size\n"
+msgstr ""
+"Захист від помилок під час передавання:\n"
+"       --no-character-count   не використовувати «wc -c» для перевірки "
+"розміру\n"
+
+#: src/shar-opts.c:2346
+msgid "   -D, --no-md5-digest        do not use md5sum digest to verify\n"
+msgstr ""
+"   -D, --no-md5-digest        не використовувати суми md5sum для перевірки\n"
+
+#: src/shar-opts.c:2347
+msgid ""
+"   -F, --force-prefix         apply the prefix character on every line\n"
+msgstr ""
+"   -F, --force-prefix         додавати символ префікса до кожного рядка\n"
+
+#: src/shar-opts.c:2348
+msgid ""
+"   -d, --here-delimiter=DELIM use DELIM to delimit the files\n"
+"\n"
+msgstr ""
+"   -d, --here-delimiter=рядок використовувати вказаний рядок для "
+"відокремлення файлів\n"
+"\n"
+
+#: src/shar-opts.c:2349
+msgid ""
+"Producing different kinds of shars:\n"
+"   -V, --vanilla-operation    produce very simple shars\n"
+msgstr ""
+"Створення різних типів shar:\n"
+"   -V, --vanilla-operation    створювати дуже прості shar\n"
+
+#: src/shar-opts.c:2351
+msgid "   -P, --no-piping            use temporary files between programs\n"
+msgstr ""
+"   -P, --no-piping            використовувати тимчасові файли обміну даними "
+"між програмами\n"
+
+#: src/shar-opts.c:2352
+msgid "   -x, --no-check-existing    blindly overwrite existing files\n"
+msgstr ""
+"   -x, --no-check-existing    перезаписувати вже створені файли без питань\n"
+
+#: src/shar-opts.c:2353
+msgid ""
+"   -X, --query-user           ask user before overwriting files\n"
+"                                - prohibits the option 'vanilla-operation'\n"
+msgstr ""
+"   -X, --query-user           запитувати користувача перед перезаписом\n"
+"                                - не можна використовувати з такими "
+"параметрами:\n"
+
+#: src/shar-opts.c:2355
+msgid "   -m, --no-timestamp         do not restore modification times\n"
+msgstr "   -m, --no-timestamp         не відновлювати дані щодо часу зміни\n"
+
+#: src/shar-opts.c:2356
+msgid "   -Q, --quiet-unshar         avoid verbose messages at unshar time\n"
+msgstr ""
+"   -Q, --quiet-unshar         уникати докладних повідомлень під час "
+"розпаковування unshar\n"
+
+#: src/shar-opts.c:2357
+msgid ""
+"   -f, --basename             restore in one directory, despite hierarchy\n"
+"\n"
+msgstr ""
+"   -f, --basename             розпаковувати до одного каталогу, не зважати "
+"на ієрархію\n"
+"\n"
+
+#: src/shar-opts.c:2358
+msgid ""
+"Internationalization options:\n"
+"       --no-i18n              do not internationalize\n"
+msgstr ""
+"Параметри, пов’язані з перекладом:\n"
+"       --no-i18n              не перекладати\n"
+
+#: src/shar-opts.c:2360
+msgid ""
+"       --print-text-domain-dir  print directory with shar messages\n"
+"\n"
+msgstr ""
+"       --print-text-domain-dir  вивести дані щодо каталогу з повідомленнями "
+"shar\n"
+"\n"
+
+#: src/shar-opts.c:2361
+msgid ""
+"User feedback/entertainment:\n"
+"   -q, --quiet                do not output verbose messages\n"
+msgstr ""
+"Діагностика:\n"
+"   -q, --quiet                не виводити докладних повідомлень\n"
+
+#: src/shar-opts.c:2363
+msgid ""
+"       --silent               an alias for the 'quiet' option\n"
+"\n"
+msgstr ""
+"       --silent               інший варіант параметра quiet\n"
+"\n"
+
+#: src/shar-opts.c:2364
+msgid "Version, usage and configuration options:\n"
+msgstr "Версія, користування та параметри налаштування:\n"
+
+#: src/shar-opts.c:2365 src/unshar-opts.c:978 src/uudecode-opts.c:754
+#: src/uuencode-opts.c:701
+msgid "   -v, --version[=MODE]       output version information and exit\n"
+msgstr ""
+"   -v, --version[=РЕЖИМ]      вивести дані щодо версії і завершити роботу\n"
+
+#: src/shar-opts.c:2366 src/unshar-opts.c:979 src/uudecode-opts.c:755
+#: src/uuencode-opts.c:702
+msgid ""
+"   -h, --help                 display extended usage information and exit\n"
+msgstr ""
+"   -h, --help                 показати розширені дані щодо використання і "
+"завершити роботу\n"
+
+#: src/shar-opts.c:2367 src/unshar-opts.c:980 src/uudecode-opts.c:756
+#: src/uuencode-opts.c:703
+msgid ""
+"   -!, --more-help            extended usage information passed thru pager\n"
+msgstr ""
+"   -!, --more-help            показати розширені дані щодо використання з "
+"поділом на сторінки\n"
+
+#: src/shar-opts.c:2368 src/uudecode-opts.c:757 src/uuencode-opts.c:704
+msgid ""
+"   -R, --save-opts[=FILE]     save the option state to a config file FILE\n"
+msgstr ""
+"   -R, --save-opts[=ФАЙЛ]     зберегти стан параметрів до файла налаштувань\n"
+
+#: src/shar-opts.c:2369 src/uudecode-opts.c:758 src/uuencode-opts.c:705
+msgid ""
+"   -r, --load-opts=FILE       load options from the config file FILE\n"
+"                                - disabled with '--no-load-opts'\n"
+"                                - may appear multiple times\n"
+"\n"
+msgstr ""
+"   -r, --load-opts=рядок      завантажити параметри з файла налаштувань\n"
+"                                - вимикається --no-load-opts\n"
+"                                - можна використовувати декілька разів\n"
+"\n"
+
+#: src/shar-opts.c:2372
+msgid ""
+"Options are specified by doubled hyphens and their name or by a single\n"
+"hyphen and the flag character.\n"
+"If no 'file's are specified, the list of input files is read from a\n"
+"standard input.  Standard input must not be a terminal.\n"
+"\n"
+msgstr ""
+"Параметри задаються за допомогою подвійних дефісів, а їхні назви — за "
+"допомогою\n"
+"одинарного дефіса та символу-прапорця.\n"
+"Якщо не буде вказано жодних файлів, дані буде прочитано зі стандартного "
+"джерела\n"
+"вхідних даних.\n"
+"\n"
+
+#: src/shar-opts.c:2376 src/unshar-opts.c:990 src/uudecode-opts.c:764
+#: src/uuencode-opts.c:710
+msgid "The following option preset mechanisms are supported:\n"
+msgstr "Передбачено підтримку таких механізмів шаблонів параметрів:\n"
+
+#: src/shar-opts.c:2377
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'shar' creates \"shell archives\" (or shar files) which are in text format\n"
+"and can be emailed.  These files may be unpacked later by executing them\n"
+"with '/bin/sh'.  The resulting archive is sent to standard out unless the\n"
+"'-o' option is given.  A wide range of features provide extensive\n"
+"flexibility in manufacturing shars and in specifying 'shar' \"smartness\".\n"
+"Archives may be fairly simple ('--vanilla-operation') or essentially a\n"
+"mailable 'tar' archive.\n"
+"\n"
+msgstr ""
+" - читання файла $HOME/.sharrc\n"
+"\n"
+"shar створює архіви командної оболонки (або файли shar), які містять\n"
+"текстові дані, придатні до надсилання поштою. Такі файли згодом можна\n"
+"розпакувати, виконуючи їх у командній оболонці /bin/sh. Архів-результат\n"
+"буде виведено до стандартного каналу виведення, якщо не вказано параметра\n"
+"-o. Передбачено широкий діапазон можливостей, які надають надзвичайної\n"
+"гнучкості у використанні отриманих shar та у визначенні «рівня\n"
+"інтелекту» shar. Архіви можуть бути зовсім простими (--vanilla-operation)\n"
+"або просто придатними для надсилання архівами tar.\n"
+"\n"
+
+#: src/shar-opts.c:2389
+msgid ""
+"Though this program supports 'uuencode'-d files, they are deprecated.  If\n"
+"you are emailing files, please consider mime-encoded files.  If you do\n"
+"'uuencode', base64 is the preferred encoding method.\n"
+"\n"
+"Please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+msgstr ""
+"Хоча у цій програмі передбачено підтримку файлів uuencode, така підтримка\n"
+"вважається застарілою. Якщо ви надсилаєте файли електронною поштою, варто\n"
+"користуватися mime-кодуванням. Якщо ви все ж користуєтеся uuencode, слід\n"
+"використовувати основу 64 для кодування.\n"
+"\n"
+"Про вади, будь ласка, повідомляйте за адресою:  <bug-gnu-utils@gnu.org>\n"
+
+#: src/shar-opts.c:2395
+msgid ""
+"shar (GNU sharutils) - create a shell archive\n"
+"Usage:  shar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"Try 'shar --help' for more information.\n"
+msgstr ""
+"shar (GNU sharutils) - програма для створення архівів командної оболонки\n"
+"Користування:  shar [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>...]\n"
+"Віддайте команду «shar --help», щоб дізнатися більше.\n"
+
+#: ../autoopts.c:67 ../autoopts.c:93
+#, c-format
+msgid "allocation of %d bytes failed\n"
+msgstr "не вдалося розмістити у пам’яті %d байтів\n"
+
+#: ../init.c:53
+msgid "AutoOpts function called without option descriptor\n"
+msgstr "Функцію AutoOpts викликано без дескриптора параметра\n"
+
+#: ../init.c:86
+msgid "\tThis exceeds the compiled library version:  "
+msgstr "\tЄ більшим за значення версії зібраної бібліотеки:  "
+
+#: ../init.c:84
+#, c-format
+msgid ""
+"Automated Options Processing Error!\n"
+"\t%s called AutoOpts function with structure version %d:%d:%d.\n"
+msgstr ""
+"Помилка засобу автоматичної обробки параметрів!\n"
+"\t%s викликано функцію AutoOpts з даними щодо версії структури %d:%d:%d.\n"
+
+#: ../autoopts.c:80
+#, c-format
+msgid "realloc of %d bytes at 0x%p failed\n"
+msgstr "помилка виконання realloc для отримання %d байтів за адресою 0x%p\n"
+
+#: ../init.c:88
+msgid "\tThis is less than the minimum library version:  "
+msgstr "\tЗначення версії є меншим за мінімальне значення версії бібліотеки:  "
+
+#: ../version.c:121
+#, c-format
+msgid ""
+"Automated Options version %s\n"
+"\tCopyright (C) 1999-2014 by Bruce Korb - all rights reserved\n"
+msgstr ""
+"Засіб автоматичної обробки параметрів версії %s\n"
+"\t© Bruce Korb, 1999–2014, всі права захищено\n"
+
+#: ../makeshell.c:87
+#, c-format
+msgid "(AutoOpts bug):  %s.\n"
+msgstr "(Вада AutoOpts):  %s.\n"
+
+#: ../reset.c:90
+msgid "optionResetOpt() called, but reset-option not configured"
+msgstr "Викликано optionResetOpt(), але не налаштовано reset-option"
+
+#: ../usage.c:292
+msgid "could not locate the 'help' option"
+msgstr "не вдалося виявити дані для параметра «help»"
+
+#: ../autoopts.c:336
+msgid "optionProcess() was called with invalid data"
+msgstr "optionProcess() було викликано з некоректними даними"
+
+#: ../usage.c:748
+msgid "invalid argument type specified"
+msgstr "вказано некоректний тип аргументу"
+
+#: ../find.c:598
+msgid "defaulted to option with optional arg"
+msgstr "повертаємося до типового стану параметра з додатковим аргументом"
+
+#: ../alias.c:76
+msgid "aliasing option is out of range."
+msgstr "значення альтернативного параметра поза припустимим діапазоном."
+
+#: ../enum.c:234
+#, c-format
+msgid "%s error:  the keyword '%s' is ambiguous for %s\n"
+msgstr "Помилка %s:  ключове слово «%s» має декілька значень для %s\n"
+
+#: ../find.c:108
+msgid "  The following options match:\n"
+msgstr "  Відповідними є такі параметри:\n"
+
+#: ../find.c:293
+#, c-format
+msgid "%s: ambiguous option name: %s (matches %d options)\n"
+msgstr "%s: неоднозначна назва параметра: %s (відповідає %d параметрам)\n"
+
+#: ../check.c:161
+#, c-format
+msgid "%s: Command line arguments required\n"
+msgstr "%s: потрібні параметри командного рядка\n"
+
+#: ../alias.c:43
+#, c-format
+msgid "%d %s%s options allowed\n"
+msgstr "Можна використовувати параметри %d %s%s\n"
+
+#: ../makeshell.c:94
+#, c-format
+msgid "%s error %d (%s) calling %s for '%s'\n"
+msgstr "Помилка %s %d (%s) під час виклику %s для виконання «%s»\n"
+
+#: ../makeshell.c:306
+msgid "interprocess pipe"
+msgstr "канал даних між процесами"
+
+#: ../version.c:168
+#, c-format
+msgid ""
+"error: version option argument '%c' invalid.  Use:\n"
+"\t'v' - version only\n"
+"\t'c' - version and copyright\n"
+"\t'n' - version and full copyright notice\n"
+msgstr ""
+"помилка: аргумент параметра версії, «%c» є некоректним. Користування:\n"
+"\tv — лише версія\n"
+"\tc — версія і авторські права\n"
+"\tn — версія і повідомлення щодо авторських прав\n"
+
+#: ../check.c:58
+#, c-format
+msgid "%s error:  the '%s' and '%s' options conflict\n"
+msgstr ""
+"Помилка %s:  визначення параметрів «%s» і «%s» суперечать один одному\n"
+
+#: ../find.c:217 ../find.c:430
+#, c-format
+msgid "%s: The '%s' option has been disabled."
+msgstr "%s: параметр «%s» вимкнено."
+
+#: ../alias.c:38
+msgid "-equivalence"
+msgstr "-еквівалентність"
+
+#: ../find.c:469 ../reset.c:110
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: некоректний параметр -- %c\n"
+
+#: ../find.c:271 ../find.c:755 ../reset.c:118
+#, c-format
+msgid "%s: illegal option -- %s\n"
+msgstr "%s: неправильний параметр -- %s\n"
+
+#: ../find.c:335
+#, c-format
+msgid "%s: unknown vendor extension option -- %s\n"
+msgstr "%s: невідомий параметр розширення виробника -- %s\n"
+
+#: ../enum.c:159 ../enum.c:169
+#, c-format
+msgid "  or an integer from %d through %d\n"
+msgstr "  або ціле число від %d до %d\n"
+
+#: ../usage.c:747 ../usage.c:1081
+#, c-format
+msgid "%s error:  invalid option descriptor for %s\n"
+msgstr "Помилка %s:  некоректний дескриптор параметра для %s\n"
+
+#: ../find.c:385
+#, c-format
+msgid "%s: invalid option name: %s\n"
+msgstr "%s: некоректна назва параметра: %s\n"
+
+#: ../find.c:527
+#, c-format
+msgid "%s: The '%s' option requires an argument.\n"
+msgstr "Помилка %s: параметр «%s» потребує аргументу.\n"
+
+#: ../autoopts.c:156
+#, c-format
+msgid ""
+"(AutoOpts bug):  Equivalenced option '%s' was equivalenced to both\n"
+"\t'%s' and '%s'."
+msgstr ""
+"(Вада AutoOpts):  Еквівалентний параметр «%s» відповідає одночасно\n"
+"\t«%s» і «%s»."
+
+#: ../check.c:94
+#, c-format
+msgid "%s error:  The %s option is required\n"
+msgstr "Помилка %s:  має бути вказано параметр %s\n"
+
+#: ../find.c:632
+#, c-format
+msgid "%s: The '%s' option cannot have an argument.\n"
+msgstr "%s: додавання аргументів до параметра «%s» не передбачено.\n"
+
+#: ../check.c:151
+#, c-format
+msgid "%s: Command line arguments are not allowed.\n"
+msgstr "%s: параметрів командного рядка не передбачено.\n"
+
+#: ../save.c:535
+#, c-format
+msgid "error %d (%s) creating %s\n"
+msgstr "помилка %d (%s) під час спроби створення %s\n"
+
+#: ../enum.c:234
+#, c-format
+msgid "%s error:  '%s' does not match any %s keywords.\n"
+msgstr "Помилка %s:  «%s» не відповідає жодному з ключових слів %s.\n"
+
+#: ../reset.c:93
+#, c-format
+msgid "%s error: The '%s' option requires an argument.\n"
+msgstr "Помилка %s: параметр «%s» потребує аргументу.\n"
+
+#: ../save.c:184 ../save.c:238
+#, c-format
+msgid "error %d (%s) stat-ing %s\n"
+msgstr "помилка %d (%s) під час обробки за допомогою stat %s\n"
+
+#: ../restore.c:143
+#, c-format
+msgid "%s error: no saved option state\n"
+msgstr "Помилка %s: немає збереженого стану параметра\n"
+
+#: ../autoopts.c:231
+#, c-format
+msgid "'%s' is not a command line option.\n"
+msgstr "«%s» не є параметром командного рядка.\n"
+
+#: ../time.c:111
+#, c-format
+msgid "%s error:  '%s' is not a recognizable date/time.\n"
+msgstr "Помилка %s:  «%s» не є придатним для обробки записом дати або часу\n"
+
+#: ../save.c:132
+#, c-format
+msgid "'%s' not defined\n"
+msgstr "«%s» не визначено\n"
+
+#: ../time.c:50
+#, c-format
+msgid "%s error:  '%s' is not a recognizable time duration.\n"
+msgstr "Помилка %s:  «%s» не є придатним для обробки записом часу\n"
+
+#: ../check.c:92
+#, c-format
+msgid "%s error:  The %s option must appear %d times.\n"
+msgstr "Помилка %s:  параметр %s мало бути вказано %d разів.\n"
+
+#: ../numeric.c:164
+#, c-format
+msgid "%s error:  '%s' is not a recognizable number.\n"
+msgstr "Помилка %s:  «%s» не є придатним для обробки числом\n"
+
+#: ../enum.c:200
+#, c-format
+msgid "%s error:  %s exceeds %s keyword count\n"
+msgstr "Помилка %s:  у %s перевищено кількість ключових слів %s\n"
+
+#: ../usage.c:330
+#, c-format
+msgid "Try '%s %s' for more information.\n"
+msgstr "Віддайте команду «%s %s», щоб дізнатися більше.\n"
+
+#: ../alias.c:45
+#, c-format
+msgid "one %s%s option allowed\n"
+msgstr "один параметр %s%s може бути використано\n"
+
+#: ../makeshell.c:208 ../makeshell.c:943 ../usage.c:274 ../usage.c:415
+#: ../usage.c:625 ../version.c:175 src/uuencode.c:107 src/uuencode.c:184
+#: src/uuencode.c:273 src/uuencode.c:278 src/uuencode.c:280 src/uuencode.c:282
+msgid "standard output"
+msgstr "стандартний потік виводу"
+
+#: ../usage.c:274 ../usage.c:415 ../usage.c:625 ../version.c:175
+msgid "standard error"
+msgstr "стандартний потік помилок"
+
+#: ../makeshell.c:208 ../makeshell.c:943 ../usage.c:273 ../usage.c:414
+#: ../usage.c:624 ../version.c:174
+msgid "write"
+msgstr "запис"
+
+#: ../numeric.c:60
+#, c-format
+msgid "%s error:  %s option value %ld is out of range.\n"
+msgstr ""
+"Помилка %s:  значення параметра %s, %ld, лежить поза межами припустимого "
+"діапазону.\n"
+
+#: ../check.c:44
+#, c-format
+msgid "%s error:  %s option requires the %s option\n"
+msgstr ""
+"Помилка %s:  для того, щоб працювати з параметром %s, слід вказати параметр "
+"%s\n"
+
+#: ../save.c:131 ../save.c:183 ../save.c:237 ../save.c:256 ../save.c:534
+#, c-format
+msgid "%s warning:  cannot save options - %s not regular file\n"
+msgstr ""
+"Попередження %s:  не вдалося зберегти параметри - %s не є звичайним файлом\n"
+
+#: src/shar.c:360
+#, c-format
+msgid "printf formatting error:  %s\n"
+msgstr "помилка форматування даних у printf: %s\n"
+
+#: src/shar.c:407
+msgid "sharutils bug - no status"
+msgstr "вада sharutils — стан не визначено"
+
+#: src/shar.c:756
+msgid "Too many directories for mkdir generation"
+msgstr "Занадто багато каталогів для створення команди mkdir"
+
+#: src/shar.c:839 src/shar.c:1699
+#, c-format
+msgid "Cannot access %s"
+msgstr "Не вдалося отримати доступ до %s"
+
+#: src/shar.c:934
+#, c-format
+msgid "Cannot get current directory name"
+msgstr "Не вдалося визначити назву поточного каталогу"
+
+#: src/shar.c:1023
+#, c-format
+msgid "Starting file %s\n"
+msgstr "Запуск файла %s\n"
+
+#: src/shar.c:1117
+msgid "Could not popen command"
+msgstr "Не вдалося виконати команду popen"
+
+#: src/shar.c:1177
+#, c-format
+msgid "Cannot open file %s"
+msgstr "Не вдалося відкрити файл %s"
+
+#: src/shar.c:1303 src/shar.c:1314 src/shar.c:1923
+msgid "call"
+msgstr "виклик"
+
+#: src/shar.c:1326
+msgid "pipe fd"
+msgstr "дескриптор файла каналу"
+
+#: src/shar.c:1441 src/shar.c:1455
+msgid "text"
+msgstr "текст"
+
+#: src/shar.c:1559
+#, c-format
+msgid "Continuing file %s\n"
+msgstr "Продовження файла %s\n"
+
+#: src/shar.c:1694
+#, c-format
+msgid "%s: Not a regular file"
+msgstr "%s: не є звичайним файлом"
+
+#: src/shar.c:1742
+msgid "empty"
+msgstr "порожній"
+
+#: src/shar.c:1769
+#, c-format
+msgid "Saving %s (%s)"
+msgstr "Збереження %s (%s)"
+
+#: src/shar.c:1970
+#, c-format
+msgid "Invalid format for output file names (%s): %s"
+msgstr "Помилкове форматування назв файлів виведених даних (%s): %s"
+
+#: src/shar.c:1985
+msgid "more than one format element"
+msgstr "більше за один запис формату"
+
+#: src/shar.c:1990
+msgid "no conversion character"
+msgstr "немає символу перетворення"
+
+#: src/shar.c:1999
+msgid "format is too wide"
+msgstr "формат є надто довгим"
+
+#: src/shar.c:2011
+msgid "invalid conversion character"
+msgstr "некоректний символ перетворення"
+
+#: src/shar.c:2056
+msgid "Opening"
+msgstr "Відкриття"
+
+#: src/shar.c:2071
+msgid "Closing"
+msgstr "Закриття"
+
+#: src/shar.c:2158
+#, c-format
+msgid "reopening stderr to /dev/null"
+msgstr "повторно відкриваємо stderr з переспрямовуванням до /dev/null"
+
+#: src/shar.c:2211
+msgid "No input files"
+msgstr "Не вказано вхідних файлів"
+
+#: src/shar.c:2228
+#, c-format
+msgid "PLEASE avoid -X shars on Usenet or public networks"
+msgstr ""
+"БУДЬ ЛАСКА, не використовуйте режим -X у Usenet та мережах з відкритим "
+"доступом"
+
+#: src/shar.c:2252
+#, c-format
+msgid ""
+"The '%s' option may not be intermixed with file names\n"
+"unless the --intermix-type option has been specified."
+msgstr ""
+"Параметр «%s» не можна використовувати з заданими назвами файлів,\n"
+"якщо не було вказано параметра --intermix-type."
+
+#: src/shar.c:2270
+#, c-format
+msgid "The '%s' option must appear before any file names"
+msgstr "Параметр «%s» слід вказувати до назв файлів"
+
+#: src/shar.c:2306
+#, c-format
+msgid ""
+"invalid compaction type:  %s\n"
+"the known types are:\n"
+msgstr ""
+"некоректний тип ущільнення:  %s\n"
+"відомі програмі типи:\n"
+
+#: src/shar.c:2345
+msgid "files on command line and --input-file-list specified"
+msgstr "вказано файли у командному рядку і за допомогою --input-file-list"
+
+#: src/shar.c:2394
+#, c-format
+msgid "Created %d files\n"
+msgstr "Створено %d файлів\n"
+
+#: src/unshar-opts.c:583
+#, c-format
+msgid "fs error %d (%s) %s-ing %s\n"
+msgstr "помилка файлової системи %d (%s) під час обробки за допомогою %s %s\n"
+
+#: src/unshar-opts.c:585 src/unshar-opts.c:647 src/uudecode.c:515
+#: src/uuencode.c:207
+msgid "standard input"
+msgstr "стандартне джерело даних"
+
+#: src/unshar-opts.c:664
+msgid "unshar usage error:\n"
+msgstr "помилка у використанні unshar:\n"
+
+#: src/unshar-opts.c:701
+msgid "unshar fatal error:\n"
+msgstr "критична помилка unshar:\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the unsharOptions structure noted in the
+#. comments below.  The literal text is defined in unshar_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. unshar_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via unsharOptions.pzCopyright
+#: src/unshar-opts.c:931
+#, fuzzy
+msgid ""
+"unshar (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"unshar (GNU sharutils) 4.15\n"
+"(C) Free Software Foundation, Inc., 1994-2014. Всі права захищено.\n"
+"Це вільне програмне забезпечення. Ліцензійними умовами щодо його\n"
+"використання передбачено можливість використання, внесення змін\n"
+"та поширення його відповідно до умов GNU General Public License,\n"
+"версії 3 або пізніших версій <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/unshar-opts.c:938
+msgid ""
+"unshar is free software: you can redistribute it and/or modify it under the\n"
+"terms of the GNU General Public License as published by the Free Software\n"
+"Foundation, either version 3 of the License, or (at your option) any later\n"
+"version.\n"
+"\n"
+msgstr ""
+"unshar є вільним програмним забезпеченням; ви можете поширювати та/або\n"
+"змінювати її за умов дотримання GNU General Public License у тому вигляді,\n"
+"що оприлюднений Free Software Foundation; версії 3 цієї Ліцензії, або (якщо\n"
+"забажаєте) будь-якої іншої версії, випущеної пізніше.\n"
+"\n"
+
+#: src/unshar-opts.c:942
+msgid ""
+"unshar is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"Програма unshar поширюється у сподіванні, що вона буде корисною, але БЕЗ "
+"БУДЬ-\n"
+"ЯКИХ ГАРАНТІЙНИХ ЗОБОВ’ЯЗАНЬ; навіть без очевидної гарантії ПРАЦЕЗДАТНОСТІ\n"
+"або ПРИДАТНОСТІ ДЛЯ ВИКОРИСТАННЯ З ПЕВНОЮ МЕТОЮ. Докладніше про це можна\n"
+"дізнатися з GNU General Public License.\n"
+"\n"
+
+#: src/unshar-opts.c:950
+#, c-format
+msgid ""
+"unshar (GNU sharutils) - unpack a shar archive\n"
+"Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+msgstr ""
+"unshar (GNU sharutils) - програма для розпаковування архівів командної "
+"оболонки\n"
+"Користування: %s [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>...]\n"
+
+#: src/unshar-opts.c:954
+msgid ""
+"\n"
+"If no arguments are provided, input arguments are read from stdin,\n"
+"one per line; blank and '#'-prefixed lines are comments.\n"
+"'stdin' may not be a terminal (tty).\n"
+msgstr ""
+"\n"
+"Якщо аргументів вказано не буде, вхідні аргументи буде прочитано зі\n"
+"стандартного джерела даних (stdin), по одному на рядок. Порожні рядки і\n"
+"рядки з префіксом «#» вважатимуться коментарями.\n"
+"«stdin» не повинно бути терміналом (tty).\n"
+
+#: src/unshar-opts.c:960
+msgid ""
+"Unshar scans the input files (typically email messages) looking for the\n"
+"start of a shell archive.  If no files are given, then standard input is\n"
+"processed instead.  It then passes each archive discovered through an\n"
+"invocation of the shell program to unpack it.\n"
+msgstr ""
+"Unshar виконує пошук у файлах вхідних даних (зазвичай, повідомленнях\n"
+"електронної пошти) початку архіву командної оболонки. Якщо не буде\n"
+"вказано файлів вхідних даних, оброблятимуться дані зі стандартного\n"
+"джерела вхідних даних системи. Після виявлення початку архіву\n"
+"його буде розпаковано передаванням команди програмі командної\n"
+"оболонки системи.\n"
+
+#: src/unshar-opts.c:966
+msgid "unshar (GNU sharutils) 4.15"
+msgstr "shar (GNU sharutils) 4.15"
+
+#: src/unshar-opts.c:969
+msgid ""
+"unshar (GNU sharutils) - unpack a shar archive\n"
+"Usage:  unshar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"\n"
+msgstr ""
+"unshar (GNU sharutils) - програма для розпаковування архівів командної "
+"оболонки\n"
+"Користування: unshar [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ] [<файл>]\n"
+"\n"
+
+#: src/unshar-opts.c:971
+msgid "   -d, --directory=DIR        unpack into the directory DIR\n"
+msgstr "   -d, --directory=КАТАЛОГ    видобути дані до каталогу КАТАЛОГ\n"
+
+#: src/unshar-opts.c:972
+msgid "   -c, --overwrite            overwrite any pre-existing files\n"
+msgstr "   -c, --overwrite            перезаписати всі вже створені файли\n"
+
+#: src/unshar-opts.c:973
+msgid "   -f, --force                an alias for the 'overwrite' option\n"
+msgstr "   -f, --force                інша назва параметра «overwrite»\n"
+
+#: src/unshar-opts.c:974
+msgid "   -E, --split-at=SPLIT-PAT   split input on SPLIT-PAT lines\n"
+msgstr "   -E, --split-at=РОЗРІЗ      розрізати вхідні дані на рядках РОЗРІЗ\n"
+
+#: src/unshar-opts.c:975
+msgid ""
+"   -e, --exit-0               split input on \"exit 0\" lines\n"
+"                                - prohibits the option 'split-at'\n"
+msgstr ""
+"   -e, --exit-0               розділяти вхідні дані за рядком «exit 0»\n"
+"                                - несумісний з параметром «split-at»\n"
+
+#: src/unshar-opts.c:977
+msgid "   -D, --debug                debug the shell code\n"
+msgstr ""
+"   -D, --debug                виконати діагностичну обробку коду команд "
+"оболонки\n"
+
+#: src/unshar-opts.c:981
+msgid ""
+"   -R, --save-opts[=FILE]     save the option state to the config file FILE\n"
+msgstr ""
+"   -R, --save-opts[=ФАЙЛ]     зберегти стан параметрів до файла налаштувань\n"
+
+#: src/unshar-opts.c:982
+msgid ""
+"   -r, --load-opts=FILE       load options from the config file FILE\n"
+"                                - disabled as '--no-load-opts'\n"
+"                                - may appear multiple times\n"
+"\n"
+msgstr ""
+"   -r, --load-opts=ФАЙЛ       завантажити параметри з файла налаштувань\n"
+"                                - вимикається --no-load-opts\n"
+"                                - можна використовувати декілька разів\n"
+"\n"
+
+#: src/unshar-opts.c:985 src/uuencode-opts.c:708
+msgid ""
+"Options are specified by doubled hyphens and their name or by a single\n"
+"hyphen and the flag character.\n"
+"\n"
+msgstr ""
+"Параметри задаються за допомогою подвійних дефісів, а їхні назви — за "
+"допомогою\n"
+"одинарного дефіса та символу-прапорця.\n"
+"\n"
+
+#: src/unshar-opts.c:987
+msgid ""
+"If no arguments are provided, input arguments are read from stdin,\n"
+"one per line; blank and '#'-prefixed lines are comments.\n"
+"'stdin' may not be a terminal (tty).\n"
+"\n"
+msgstr ""
+"Якщо аргументів вказано не буде, вхідні аргументи буде прочитано зі\n"
+"стандартного джерела даних (stdin), по одному на рядок. Порожні рядки і\n"
+"рядки з префіксом «#» вважатимуться коментарями.\n"
+"«stdin» не повинно бути терміналом (tty).\n"
+"\n"
+
+#: src/unshar-opts.c:991
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'unshar' scans the input files (typically email messages) looking for the\n"
+"start of a shell archive.  If no files are given, then standard input is\n"
+"processed instead.  It then passes each archive discovered through an\n"
+"invocation of the shell program to unpack it.\n"
+"\n"
+msgstr ""
+"  - читання файла $HOME/.sharrc\n"
+"\n"
+"Unshar виконує пошук у файлах вхідних даних (зазвичай, повідомленнях\n"
+"електронної пошти) початку архіву командної оболонки. Якщо не буде\n"
+"вказано файлів вхідних даних, оброблятимуться дані зі стандартного\n"
+"джерела вхідних даних системи. Після виявлення початку архіву\n"
+"його буде розпаковано передаванням команди програмі командної\n"
+"оболонки системи.\n"
+"\n"
+
+#: src/unshar-opts.c:996 src/uudecode-opts.c:780
+msgid "Please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+msgstr ""
+"Про вади, будь ласка, повідомляйте за адресою:  <bug-gnu-utils@gnu.org>\n"
+
+#: src/unshar-opts.c:999
+msgid ""
+"unshar (GNU sharutils) - unpack a shar archive\n"
+"Usage:  unshar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"Try 'unshar --help' for more information.\n"
+msgstr ""
+"unshar (GNU sharutils) - програма для розпаковування архівів командної "
+"оболонки\n"
+"Користування: unshar [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ] [<файл>]\n"
+"Віддайте команду «unshar --help», щоб дізнатися більше.\n"
+"\n"
+
+#: src/unshar-opts.h:263 src/uudecode-opts.h:241
+#, c-format
+msgid "could not allocate %zu bytes for %s\n"
+msgstr "не вдалося отримати %zu байтів пам’яті для %s\n"
+
+#: src/unshar.c:203
+#, c-format
+msgid "Found no shell commands after cut line in %s"
+msgstr "У %s не виявлено команд оболонки після рядка обрізання"
+
+#: src/unshar.c:222
+#, c-format
+msgid "%s is probably not a shell archive"
+msgstr "%s, ймовірно, не є архівом командної оболонки"
+
+#: src/unshar.c:223
+#, c-format
+msgid "The 'cut line' was followed by: %s"
+msgstr "Після рядка обрізання вказано: %s"
+
+#: src/unshar.c:246
+#, c-format
+msgid "Found no shell commands in %s"
+msgstr "У %s не виявлено команд оболонки"
+
+#: src/unshar.c:255
+#, c-format
+msgid "%s looks like raw C code, not a shell archive"
+msgstr "Дані %s схожі на код мовою C, а не на дані архіву оболонки"
+
+#: src/unshar.c:326
+msgid "file name buffer"
+msgstr "буфер назви файла"
+
+#: src/unshar.c:452
+msgid "read/write buffer"
+msgstr "буфер читання-запису"
+
+#: src/uudecode-opts.c:438
+msgid "uudecode usage error:\n"
+msgstr "помилка використання uudecode:\n"
+
+#: src/uudecode-opts.c:475
+msgid "uudecode fatal error:\n"
+msgstr "критична помилка uudecode:\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the uudecodeOptions structure noted in the
+#. comments below.  The literal text is defined in uudecode_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. uudecode_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via uudecodeOptions.pzCopyright
+#: src/uudecode-opts.c:705
+#, fuzzy
+msgid ""
+"uudecode (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"uudecode (GNU sharutils) 4.15\n"
+"(C) Free Software Foundation, Inc., 1994-2014. Всі права захищено.\n"
+"Це вільне програмне забезпечення. Ліцензійними умовами щодо його\n"
+"використання передбачено можливість використання, внесення змін\n"
+"та поширення його відповідно до умов GNU General Public License,\n"
+"версії 3 або пізніших версій <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/uudecode-opts.c:712
+msgid ""
+"uudecode is free software: you can redistribute it and/or modify it under\n"
+"the terms of the GNU General Public License as published by the Free\n"
+"Software Foundation, either version 3 of the License, or (at your option)\n"
+"any later version.\n"
+"\n"
+msgstr ""
+"uudecode є вільним програмним забезпеченням; ви можете поширювати та/або\n"
+"змінювати її за умов дотримання GNU General Public License у тому вигляді,\n"
+"що оприлюднений Free Software Foundation; версії 3 цієї Ліцензії, або (якщо\n"
+"забажаєте) будь-якої іншої версії, випущеної пізніше.\n"
+"\n"
+
+#: src/uudecode-opts.c:716
+msgid ""
+"uudecode is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"Програма uudecode поширюється у сподіванні, що вона буде корисною, але БЕЗ "
+"БУДЬ-\n"
+"ЯКИХ ГАРАНТІЙНИХ ЗОБОВ’ЯЗАНЬ; навіть без очевидної гарантії ПРАЦЕЗДАТНОСТІ\n"
+"або ПРИДАТНОСТІ ДЛЯ ВИКОРИСТАННЯ З ПЕВНОЮ МЕТОЮ. Докладніше про це можна\n"
+"дізнатися з GNU General Public License.\n"
+"\n"
+
+#: src/uudecode-opts.c:724
+#, c-format
+msgid ""
+"uudecode (GNU sharutils) - decode an encoded file\n"
+"Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+msgstr ""
+"uudecode (GNU sharutils) - програма для декодування закодованого файла\n"
+"Користування:  %s [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>... ]\n"
+
+#: src/uudecode-opts.c:728
+msgid "If no 'file'(s) are provided, then standard input is decoded.\n"
+msgstr ""
+"Якщо файл не буде вказано, декодуватимуться дані зі стандартного джерела "
+"даних.\n"
+
+#: src/uudecode-opts.c:731
+msgid ""
+"'uudecode' transforms uuencoded files into their original form.\n"
+"\n"
+msgstr ""
+"uudecode відновлює початкові дані файлів, закодованих за допомогою "
+"uuencode.\n"
+"\n"
+
+#: src/uudecode-opts.c:732 src/uudecode-opts.c:767
+msgid ""
+"The encoded file(s) may be specified on the command line, or one may be\n"
+"read from standard input.  The output file name is specified in the encoded\n"
+"file, but may be overridden with the '-o' option.  It will have the mode of\n"
+"the original file, except that setuid and execute bits are not retained.  "
+"If\n"
+"the output file is specified to be '/dev/stdout' or '-', the result will be\n"
+"written to standard output.  If there are multiple input files and the\n"
+"second or subsquent file specifies standard output, the decoded data will\n"
+"be written to the same file as the previous output.  Don't do that.\n"
+"\n"
+msgstr ""
+"Закодовані файли може бути вказано у рядку команди програми або прочитано\n"
+"зі стандартного джерела вхідних даних системи. Назву файла-результату\n"
+"може бути взято з закодованого файла, але цю назву можна перевизначити\n"
+"за допомогою параметра -o. Режим доступу до початкового файла також буде\n"
+"збережено, окрім бітів setuid та придатності до виконання. Якщо визначено\n"
+"адресу результату /dev/stdout або -, результат буде виведено до "
+"стандартного\n"
+"виведення системи. Якщо вказано декілька файлів вхідних даних і другий\n"
+"або якийсь і з наступних файлів визначає стандартне виведення, декодовані\n"
+"дані буде записано до того ж файла, що і дані попереднього файла. Не\n"
+"варто цим користуватися, якщо ви не хочете втратити дані.\n"
+"\n"
+
+#: src/uudecode-opts.c:740
+msgid ""
+"'uudecode' ignores any leading and trailing lines.  It looks for a line\n"
+"that starts with \"'begin'\" and proceeds until the end-of-encoding marker "
+"is\n"
+"found.  The program determines from the header line of the encoded file\n"
+"which of the two supported encoding schemes was used and whether or not the\n"
+"output file name has been encoded with base64 encoding.  See 'uuencode(5)'.\n"
+msgstr ""
+"uudecode ігнорує початкові і завершальні рядки файлів. програма шукає\n"
+"у даних рядок, що починається з \"'begin'\" і починає обробку наступних\n"
+"рядків, аж доки не буде виявлено позначку завершення закодованих\n"
+"даних. Схему кодування даних програма визначає з рядка заголовка\n"
+"закодованого файла. Див. uuencode(5).\n"
+
+#: src/uudecode-opts.c:747
+msgid "uudecode (GNU sharutils) 4.15"
+msgstr "uudecode (GNU sharutils) 4.15"
+
+#: src/uudecode-opts.c:750
+msgid ""
+"uudecode (GNU sharutils) - decode an encoded file\n"
+"Usage:  uudecode [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"\n"
+msgstr ""
+"uudecode (GNU sharutils) - програма для декодування закодованого файла\n"
+"Користування:  uudecode [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>... ]\n"
+"\n"
+
+#: src/uudecode-opts.c:752
+msgid "   -o, --output-file=str      direct output to file\n"
+msgstr "   -o, --output-file=рядок    вивести дані безпосередньо до файла\n"
+
+#: src/uudecode-opts.c:753
+msgid "   -c, --ignore-chmod         ignore fchmod(3P) errors\n"
+msgstr "   -c, --ignore-chmod         ігнорувати помилки fchmod(3P)\n"
+
+#: src/uudecode-opts.c:761
+msgid ""
+"Options are specified by doubled hyphens and their name or by a single\n"
+"hyphen and the flag character.\n"
+"If no 'file'(s) are provided, then standard input is decoded.\n"
+"\n"
+msgstr ""
+"Параметри задаються за допомогою подвійних дефісів, а їхні назви — за "
+"допомогою\n"
+"одинарного дефіса та символу-прапорця.\n"
+"Якщо не буде вказано жодних файлів, дані буде прочитано зі стандартного "
+"джерела\n"
+"вхідних даних.\n"
+"\n"
+
+#: src/uudecode-opts.c:765
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'uudecode' transforms uuencoded files into their original form.\n"
+"\n"
+msgstr ""
+" - читання файла $HOME/.sharrc\n"
+"\n"
+"Uudecode відновлює початкові дані файлів, закодованих за допомогою "
+"uuencode.\n"
+"\n"
+
+#: src/uudecode-opts.c:775
+msgid ""
+"'uudecode' ignores any leading and trailing lines.  It looks for a line\n"
+"that starts with \"'begin'\" and proceeds until the end-of-encoding marker "
+"is\n"
+"found.  The program determines from the header line of the encoded file\n"
+"which of the two supported encoding schemes was used and whether or not the\n"
+"output file name has been encoded with base64 encoding.  See 'uuencode(5)'.\n"
+"\n"
+msgstr ""
+"uudecode ігнорує початкові і завершальні рядки файлів. програма шукає\n"
+"у даних рядок, що починається з \"'begin'\" і починає обробку наступних\n"
+"рядків, аж доки не буде виявлено позначку завершення закодованих\n"
+"даних. Схему кодування даних програма визначає з рядка заголовка\n"
+"закодованого файла. Див. uuencode(5).\n"
+
+#: src/uudecode-opts.c:783
+msgid ""
+"uudecode (GNU sharutils) - decode an encoded file\n"
+"Usage:  uudecode [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
+"Try 'uudecode --help' for more information.\n"
+msgstr ""
+"uudecode (GNU sharutils) - програма для декодування закодованого файла\n"
+"Користування:  uudecode [ -<прапорець> [<значення>] | --<назва>[{=| }"
+"<значення>] ]... [<файл>... ]\n"
+"Доступ до додаткових довідкових даних можна отримати за допомогою команди "
+"«uudecode --help».\n"
+
+#: src/uudecode.c:122 src/uudecode.c:186
+#, c-format
+msgid "%s: Short file"
+msgstr "%s: незавершений файл"
+
+#: src/uudecode.c:168
+#, c-format
+msgid "%s: No `end' line"
+msgstr "%s: не виявлено рядка «end»"
+
+#: src/uudecode.c:192
+#, c-format
+msgid "%s: invalid input"
+msgstr "%s: некоректні вхідні дані"
+
+#: src/uudecode.c:214 src/uudecode.c:228
+msgid "cannot expand $HOME"
+msgstr "не вдалося обробити $HOME"
+
+#: src/uudecode.c:264
+#, c-format
+msgid "%s: Illegal file name: %s"
+msgstr "%s: некоректна назва файла: %s"
+
+#: src/uudecode.c:271
+#, c-format
+msgid "No user '%s'"
+msgstr "Не виявлено користувача «%s»"
+
+#: src/uudecode.c:282 src/uudecode.c:344
+msgid "output file name"
+msgstr "назва файла вихідних даних"
+
+#: src/uudecode.c:301
+#, c-format
+msgid "cannot access %s"
+msgstr "не вдалося отримати доступ до %s"
+
+#: src/uudecode.c:314
+#, c-format
+msgid "chmod of %s"
+msgstr "виконання chmod над %s"
+
+#: src/uudecode.c:338
+msgid "output name is empty"
+msgstr "порожня назва файла результату"
+
+#: src/uudecode.c:349
+#, c-format
+msgid "invalid base64 encoded name: %s"
+msgstr "некоректна назва у кодуванні base64: %s"
+
+#: src/uudecode.c:384
+#, c-format
+msgid "%s: Invalid or missing 'begin' line\n"
+msgstr "%s: некоректний рядок «begin» або такого рядка взагалі немає\n"
+
+#: src/uudecode.c:481
+#, c-format
+msgid "%s: Write error"
+msgstr "%s: помилка запису"
+
+#: src/uudecode.c:521
+msgid ""
+"You cannot specify an output file when processing\n"
+"multiple input files.\n"
+msgstr ""
+"Не можна вказувати один файл виведення даних у разі\n"
+"обробки декількох файлів вхідних даних.\n"
+
+#: src/uuencode-opts.c:389
+msgid "uuencode usage error:\n"
+msgstr "помилка використання uuencode:\n"
+
+#: src/uuencode-opts.c:426
+msgid "uuencode fatal error:\n"
+msgstr "критична помилка uuencode:\n"
+
+#. TRANSLATORS:
+#.
+#. The following dummy function was crated solely so that xgettext can
+#. extract the correct strings.  These strings are actually referenced
+#. by a field name in the uuencodeOptions structure noted in the
+#. comments below.  The literal text is defined in uuencode_opt_strs.
+#.
+#. NOTE: the strings below are segmented with respect to the source string
+#. uuencode_opt_strs.  The strings above are handed off for translation
+#. at run time a paragraph at a time.  Consequently, they are presented here
+#. for translation a paragraph at a time.
+#.
+#. ALSO: often the description for an option will reference another option
+#. by name.  These are set off with apostrophe quotes (I hope).  Do not
+#. translate option names.
+#.
+#. referenced via uuencodeOptions.pzCopyright
+#: src/uuencode-opts.c:656
+#, fuzzy
+msgid ""
+"uuencode (GNU sharutils) 4.15\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights "
+"reserved.\n"
+"This is free software. It is licensed for use, modification and\n"
+"redistribution under the terms of the GNU General Public License,\n"
+"version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+msgstr ""
+"uuencode (GNU sharutils) 4.15\n"
+"(C) Free Software Foundation, Inc., 1994-2014. Всі права захищено.\n"
+"Це вільне програмне забезпечення. Ліцензійними умовами щодо його\n"
+"використання передбачено можливість використання, внесення змін\n"
+"та поширення його відповідно до умов GNU General Public License,\n"
+"версії 3 або пізніших версій <http://gnu.org/licenses/gpl.html>\n"
+
+#: src/uuencode-opts.c:663
+msgid ""
+"uuencode is free software: you can redistribute it and/or modify it under\n"
+"the terms of the GNU General Public License as published by the Free\n"
+"Software Foundation, either version 3 of the License, or (at your option)\n"
+"any later version.\n"
+"\n"
+msgstr ""
+"uuencode є вільним програмним забезпеченням; ви можете поширювати та/або\n"
+"змінювати її за умов дотримання GNU General Public License у тому вигляді,\n"
+"що оприлюднений Free Software Foundation; версії 3 цієї Ліцензії, або (якщо\n"
+"забажаєте) будь-якої іншої версії, випущеної пізніше.\n"
+"\n"
+
+#: src/uuencode-opts.c:667
+msgid ""
+"uuencode is distributed in the hope that it will be useful, but WITHOUT ANY\n"
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n"
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more\n"
+"details.\n"
+"\n"
+msgstr ""
+"Програма uuencode поширюється у сподіванні, що вона буде корисною, але БЕЗ "
+"БУДЬ-\n"
+"ЯКИХ ГАРАНТІЙНИХ ЗОБОВ’ЯЗАНЬ; навіть без очевидної гарантії ПРАЦЕЗДАТНОСТІ\n"
+"або ПРИДАТНОСТІ ДЛЯ ВИКОРИСТАННЯ З ПЕВНОЮ МЕТОЮ. Докладніше про це можна\n"
+"дізнатися з GNU General Public License.\n"
+"\n"
+
+#: src/uuencode-opts.c:675
+#, c-format
+msgid ""
+"uuencode (GNU sharutils) - encode a file into email friendly text\n"
+"Usage:  %s [ -<flag> | --<name> ]... [<in-file>] <output-name>\n"
+msgstr ""
+"uuencode (GNU sharutils) - програма для кодування вмісту файлів у придатний "
+"для надсилання\n"
+"поштою текст\n"
+"Користування: %s [ -<прапорець> | --<назва> ]... [<файл вхідних даних>] "
+"<результат>\n"
+
+#: src/uuencode-opts.c:679
+msgid ""
+"'uuencode' is used to create an ASCII representation of a file that can be\n"
+"sent over channels that may otherwise corrupt the data.  Specifically,\n"
+"email cannot handle binary data and will often even insert a character when\n"
+"the six character sequence \"\\nFrom \" is seen.\n"
+"\n"
+msgstr ""
+"uuencode використовується для створення ASCII-представлення файла,\n"
+"яке можна надсилати каналами даних, які призначено лише для ASCII-даних.\n"
+"Таким каналом, зокрема, може бути електронна пошта, програми для роботи з\n"
+"якого часто навіть вставляють певний символ, якщо зустрінуться з\n"
+"послідовністю шести символів \"\\nFrom \".\n"
+"\n"
+
+#: src/uuencode-opts.c:683 src/uuencode-opts.c:716
+msgid ""
+"'uuencode' will read 'in-file' if provided and otherwise read data from\n"
+"standard in and write the encoded form to standard out.  The output will\n"
+"begin with a header line for use by 'uudecode' giving it the resulting\n"
+"suggested file 'output-name' and access mode.  If the 'output-name' is\n"
+"specifically '/dev/stdout', then 'uudecode' will emit the decoded file to\n"
+"standard out.\n"
+"\n"
+msgstr ""
+"uuencode читає дані з файла вхідних даних, якщо такий вказано. Якщо файл\n"
+"не вказано, дані буде прочитано зі стандартного джерела даних. Результат\n"
+"кодування буде записано до стандартного виведення системи. Дані результату\n"
+"починатимуться з рядка заголовка, який буде використано програмою\n"
+"uudecode для визначення назви декодованого файла та режиму доступу до "
+"нього.\n"
+"Якщо для декодованого файла буде вказано адресу /dev/stdout, uudecode\n"
+"виведе дані файла до стандартного каналу виведення даних системи.\n"
+"\n"
+
+#: src/uuencode-opts.c:689
+msgid ""
+"'Note': 'uuencode' uses buffered input and assumes that it is not hand\n"
+"typed from a tty.  The consequence is that at a tty, you may need to hit\n"
+"Ctl-D several times to terminate input.\n"
+msgstr ""
+"Зауваження: uuencode використовує буферизацію вхідних даних, вважаючи, що\n"
+"дані не вводяться вручну з термінала. Це означає, що для переривання "
+"вхідних\n"
+"вхідних даних, що вводяться з термінала, можливо, доведеться декілька разів\n"
+"натиснути комбінацію клавіш Ctrl-D.\n"
+
+#: src/uuencode-opts.c:694
+msgid "uuencode (GNU sharutils) 4.15"
+msgstr "uuencode (GNU sharutils) 4.15"
+
+#: src/uuencode-opts.c:697
+msgid ""
+"uuencode (GNU sharutils) - encode a file into email friendly text\n"
+"Usage:  uuencode [ -<flag> | --<name> ]... [<in-file>] <output-name>\n"
+"\n"
+msgstr ""
+"uuencode (GNU sharutils) - програма для кодування вмісту файлів у придатний "
+"для надсилання\n"
+"поштою текст\n"
+"Користування:  uuencode [ -<прапорець> | --<назва> ]... [<файл вхідних "
+"даних>] <результат>\n"
+"\n"
+
+#: src/uuencode-opts.c:699
+msgid "   -m, --base64               convert using base64\n"
+msgstr "   -m, --base64               виконати перетворення за основою 64\n"
+
+#: src/uuencode-opts.c:700
+msgid "   -e, --encode-file-name     encode the output file name\n"
+msgstr "   -e, --encode-file-name     кодувати назву декодованого файла\n"
+
+#: src/uuencode-opts.c:711
+msgid ""
+" - reading file $HOME/.sharrc\n"
+"\n"
+"'uuencode' is used to create an ASCII representation of a file that can be\n"
+"sent over channels that may otherwise corrupt the data.  Specifically,\n"
+"email cannot handle binary data and will often even insert a character when\n"
+"the six character sequence \"\\nFrom \" is seen.\n"
+"\n"
+msgstr ""
+" - читання файла $HOME/.sharrc\n"
+"\n"
+"uuencode використовується для створення ASCII-представлення файла,\n"
+"яке можна надсилати каналами даних, які призначено лише для ASCII-даних.\n"
+"Таким каналом, зокрема, може бути електронна пошта, програми для роботи з\n"
+"якого часто навіть вставляють певний символ, якщо зустрінуться з\n"
+"послідовністю шести символів \"\\nFrom \".\n"
+"\n"
+
+#: src/uuencode-opts.c:722
+msgid ""
+"'Note': 'uuencode' uses buffered input and assumes that it is not hand\n"
+"typed from a tty.  The consequence is that at a tty, you may need to hit\n"
+"Ctl-D several times to terminate input.\n"
+"\n"
+"Please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+msgstr ""
+"Зауваження: uuencode використовує буферизацію вхідних даних, вважаючи, що\n"
+"дані не вводяться вручну з термінала. Це означає, що для переривання "
+"вхідних\n"
+"вхідних даних, що вводяться з термінала, можливо, доведеться декілька разів\n"
+"натиснути комбінацію клавіш Ctrl-D.\n"
+"\n"
+"Будь ласка, надсилайте сповіщення про вади на адресу <bug-gnu-utils@gnu."
+"org>\n"
+
+#: src/uuencode-opts.c:728
+msgid ""
+"uuencode (GNU sharutils) - encode a file into email friendly text\n"
+"Usage:  uuencode [ -<flag> | --<name> ]... [<in-file>] <output-name>\n"
+"Try 'uuencode --help' for more information.\n"
+msgstr ""
+"uuencode (GNU sharutils) - програма для кодування вмісту файлів у придатний "
+"для надсилання\n"
+"поштою текст\n"
+"Користування:  uuencode [ -<прапорець> | --<назва> ]... [<файл вхідних "
+"даних>] <результат>\n"
+"Додаткові довідкові дані можна отримати за допомогою команди «uuencode --"
+"help».\n"
+
+#: src/uuencode.c:228
+msgid "freopen of stdin"
+msgstr "виконання freopen над stdin"
+
+#: src/uuencode.c:257
+msgid "file name"
+msgstr "назва файла"
+
+#: lib/error.c:191
+msgid "Unknown system error"
+msgstr "Невідома системна помилка"
+
+#: lib/getopt.c:547 lib/getopt.c:576
+#, c-format
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: параметр «%s» не є однозначним. Можливі варіанти:"
+
+#: lib/getopt.c:624 lib/getopt.c:628
+#, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: додавання аргументів до параметра «--%s» не передбачено\n"
+
+#: lib/getopt.c:637 lib/getopt.c:642
+#, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: додавання аргументів до параметра «%c%s» не передбачено\n"
+
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
+msgid "%s: option '--%s' requires an argument\n"
+msgstr "%s: до параметра «--%s» слід додати аргумент\n"
+
+#: lib/getopt.c:742 lib/getopt.c:745
+#, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: невідомий параметр «--%s»\n"
+
+#: lib/getopt.c:753 lib/getopt.c:756
+#, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: невідомий параметр «%c%s»\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: некоректний параметр — «%c»\n"
+
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: до параметра слід додати аргумент — «%c»\n"
+
+#: lib/getopt.c:934 lib/getopt.c:950
+#, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: параметр «-W %s» не є однозначним\n"
+
+#: lib/getopt.c:974 lib/getopt.c:992
+#, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: додавання аргументів до параметра «-W %s» не передбачено\n"
+
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: до параметра «-W %s» слід додати аргумент\n"
+
+#: lib/openat-die.c:38
+#, c-format
+msgid "unable to record current working directory"
+msgstr "не вдалося зберегти поточний робочий каталог"
+
+#: lib/openat-die.c:57
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "не вдалося повернутись до початкового робочого каталогу"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:312
+msgid "`"
+msgstr "«"
+
+#: lib/quotearg.c:313
+msgid "'"
+msgstr "»"
+
+#: lib/spawn-pipe.c:135 lib/spawn-pipe.c:138 lib/spawn-pipe.c:259
+#: lib/spawn-pipe.c:262
+#, c-format
+msgid "cannot create pipe"
+msgstr "не вдалося створити канал"
+
+#: lib/spawn-pipe.c:229 lib/spawn-pipe.c:343 lib/wait-process.c:282
+#: lib/wait-process.c:356
+#, c-format
+msgid "%s subprocess failed"
+msgstr "Підпроцес %s завершив роботу у аварійному режимі"
+
+#: lib/w32spawn.h:43
+#, c-format
+msgid "_open_osfhandle failed"
+msgstr "помилка _open_osfhandle"
+
+#: lib/w32spawn.h:84
+#, c-format
+msgid "cannot restore fd %d: dup2 failed"
+msgstr "не вдалося відновити дескриптор файла %d: помилка dup2"
+
+#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
+#, c-format
+msgid "%s subprocess"
+msgstr "Підпроцес %s"
+
+#: lib/wait-process.c:274 lib/wait-process.c:346
+#, c-format
+msgid "%s subprocess got fatal signal %d"
+msgstr "Підпроцесом %s отримано сигнал щодо критичної події %d"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "пам’ять вичерпано"
+
+#: lib/xstrtol-error.c:63
+#, c-format
+msgid "invalid %s%s argument '%s'"
+msgstr "некоректний аргумент %s%s — «%s»"
+
+#: lib/xstrtol-error.c:68
+#, c-format
+msgid "invalid suffix in %s%s argument '%s'"
+msgstr "некоректний суфікс у аргументі %s%s «%s»"
+
+#: lib/xstrtol-error.c:72
+#, c-format
+msgid "%s%s argument '%s' too large"
+msgstr "%s%s, аргумент «%s» є занадто об'ємним"
+
+#~ msgid "pipe[1]"
+#~ msgstr "канал[1]"
+
+#~ msgid ""
+#~ "       --level-for-gzip=num   This is an alias for 'level-of-"
+#~ "compression'\n"
+#~ "\n"
+#~ msgstr ""
+#~ "       --level-for-gzip=число   альтернативний варіант параметра level-of-"
+#~ "compression\n"
+#~ "\n"
+
+#~ msgid "   -v, --version[=arg]        Output version information and exit\n"
+#~ msgstr ""
+#~ "   -v, --version[=аргумент]   вивести дані щодо версії і завершити "
+#~ "роботу\n"
+
+#~ msgid ""
+#~ "   -h, --help                 Display extended usage information and "
+#~ "exit\n"
+#~ msgstr ""
+#~ "   -h, --help                 показати розширені дані щодо використання і "
+#~ "завершити роботу\n"
+
+#~ msgid ""
+#~ "   -!, --more-help            Extended usage information passed thru "
+#~ "pager\n"
+#~ msgstr ""
+#~ "   -!, --more-help            показати розширені дані щодо використання з "
+#~ "поділом на сторінки\n"
+
+#~ msgid ""
+#~ "   -R, --save-opts[=arg]      Save the option state to a config file\n"
+#~ msgstr ""
+#~ "   -R, --save-opts[=аргумент] зберегти стан параметрів до файла "
+#~ "налаштувань\n"
+
+#~ msgid ""
+#~ "   -r, --load-opts=str        Load options from a config file\n"
+#~ "                                - disabled as --no-load-opts\n"
+#~ "                                - may appear multiple times\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   -r, --load-opts=рядок      завантажити параметри з файла налаштувань\n"
+#~ "                                - вимикається --no-load-opts\n"
+#~ "                                - можна використовувати декілька разів\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "If no 'file's are specified, the list of input files is read from a\n"
+#~ "standard input.  Standard input must not be a terminal.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Якщо параметр файла не буде вказано, вхідні дані буде прочитано зі "
+#~ "стандартного\n"
+#~ "джерела даних. Стандартне джерело даних не повинно бути терміналом.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Though this program supports 'uuencode'-d files, they are deprecated.\n"
+#~ "If you are emailing files, please consider mime-encoded files.\n"
+#~ "If you do 'uuencode', base 64 is the preferred encoding method.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Хоча у цій програмі передбачено підтримку файлів uuencode, така "
+#~ "підтримка\n"
+#~ "вважається застарілою. Якщо ви надсилаєте файли електронною поштою, "
+#~ "варто\n"
+#~ "користуватися mime-кодуванням. Якщо ви все ж користуєтеся uuencode, слід\n"
+#~ "використовувати основу 64 для кодування.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "shar (GNU sharutils) - create a shell archive\n"
+#~ "Usage:  shar [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [file ...]\n"
+#~ msgstr ""
+#~ "shar (GNU sharutils) - програма для створення архівів командної оболонки\n"
+#~ "Користування:  shar [ -<прапорець> [<значення>] | --<назва>[{=| }"
+#~ "<значення>] ]... [файл ...]\n"
+
+#~ msgid "%s: option '%s' requires an argument\n"
+#~ msgstr "%s: до параметра «%s» слід додати аргумент\n"
+
+#~ msgid "More info with: \"%s %s\"\n"
+#~ msgstr "Докладніші відомості можна отримати за допомогою «%s %s»\n"
+
+#~ msgid "New file, remaining %s, "
+#~ msgstr "Новий файл, залишилося %s, "
+
+#~ msgid "Limit still %s\n"
+#~ msgstr "Обмеженням все ще є %s\n"
+
+#~ msgid "In shar: remaining size %s\n"
+#~ msgstr "У shar: об’єм даних, які ще не оброблено, — %s\n"
+
+#~ msgid "Starting `sh' process"
+#~ msgstr "Запуск процесу «sh»"
+
+#~ msgid "Usage: %s [OPTION]... [FILE]...\n"
+#~ msgstr "Використання: %s [ПАРАМЕТР]... [ФАЙЛ]...\n"
+
+#~ msgid ""
+#~ "Mandatory arguments to long options are mandatory for short options too.\n"
+#~ "\n"
+#~ "  -d, --directory=DIRECTORY   change to DIRECTORY before unpacking\n"
+#~ "  -c, --overwrite             pass -c to shar script for overwriting "
+#~ "files\n"
+#~ "  -e, --exit-0                same as `--split-at=\"exit 0\"'\n"
+#~ "  -E, --split-at=STRING       split concatenated shars after STRING\n"
+#~ "  -f, --force                 same as `-c'\n"
+#~ "      --help                  display this help and exit\n"
+#~ "      --version               output version information and exit\n"
+#~ "\n"
+#~ "If no FILE, standard input is read.\n"
+#~ msgstr ""
+#~ "Обов’язкові аргументи для параметрів у форматі повного запису є "
+#~ "обов’язковими і для параметрів у скороченому форматі запису.\n"
+#~ "\n"
+#~ "  -d, --directory=КАТАЛОГ     перейти до КАТАЛОГУ, перед розпакуванням\n"
+#~ "  -c, --overwrite             передати скрипту shar параметр -c для "
+#~ "перезапису файлів\n"
+#~ "  -e, --exit-0                те саме, що і  «--split-at=\"exit 0\"»\n"
+#~ "  -E, --split-at=РЯДОК        розділити з’єднані shars за позначкою "
+#~ "РЯДОК\n"
+#~ "  -f, --force                 те саме, що і «-c»\n"
+#~ "      --help                  показати ці довідкові дані і завершити "
+#~ "роботу\n"
+#~ "      --version               показати дані щодо версії і завершити "
+#~ "роботу\n"
+#~ "\n"
+#~ "Якщо не буде вказано значення ФАЙЛ, дані буде прочитано зі стандартного "
+#~ "джерела вхідних даних.\n"
+
+#~ msgid "Report bugs to <%s>.\n"
+#~ msgstr "Про вади слід повідомляти на адресу <%s>.\n"
+
+#~ msgid "Cannot chdir to `%s'"
+#~ msgstr "Не вдалося перейти до каталогу «%s»"
+
+#~ msgid ""
+#~ "Copyright (C) %s Free Software Foundation, Inc.\n"
+#~ "This is free software; see the source for copying conditions.  There is "
+#~ "NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR "
+#~ "PURPOSE.\n"
+#~ msgstr ""
+#~ "© Free Software Foundation, Inc., %s\n"
+#~ "Це програмне забезпечення є вільним, умови копіювання викладено у його "
+#~ "початкових кодах. Умовами ліцензування програми НЕ передбачено жодних "
+#~ "гарантій, зокрема гарантій працездатності або придатності для певної "
+#~ "мети.\n"
+
+#~ msgid "allocate file buffer"
+#~ msgstr "встановлення буфера файла"
+
+#~ msgid ""
+#~ "'Uudecode' supports reading a configuration file:  $HOME/.sharrc\n"
+#~ "\n"
+#~ "please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+#~ msgstr ""
+#~ "У uudecode передбачено читання файла налаштувань:  $HOME/.sharrc\n"
+#~ "\n"
+#~ "Про вади, будь ласка, повідомляйте за адресою:  <bug-gnu-utils@gnu.org>\n"
+
+#~ msgid ""
+#~ "uudecode (GNU sharutils) - decode an encoded file\n"
+#~ "Usage:  uudecode [ -<flag> [<val>] | --<name>[{=| }<val>] ]... "
+#~ "[ file ... ]\n"
+#~ msgstr ""
+#~ "uudecode (GNU sharutils) - програма для декодування закодованого файла\n"
+#~ "Користування:  uudecode [ -<прапорець> [<значення>] | --<назва>[{=| }"
+#~ "<значення>] ]... [ файл ... ]\n"
+
+#~ msgid ""
+#~ "uuencode supports reading a configuration file:  $HOME/.sharrc\n"
+#~ "\n"
+#~ "please send bug reports to:  <bug-gnu-utils@gnu.org>\n"
+#~ msgstr ""
+#~ "У uuencode передбачено читання файла налаштувань:  $HOME/.sharrc\n"
+#~ "\n"
+#~ "Про вади, будь ласка, повідомляйте за адресою:  <bug-gnu-utils@gnu.org>\n"
+
+#~ msgid ""
+#~ "uuencode (GNU sharutils) - encode a file into email friendly text\n"
+#~ "Usage:  uuencode [ -<flag> | --<name> ]... [ in-file ] output-name\n"
+#~ msgstr ""
+#~ "uuencode (GNU sharutils) - програма для кодування вмісту файлів у "
+#~ "придатний для надсилання\n"
+#~ "поштою текст\n"
+#~ "Користування:  uuencode [ -<прапорець> | --<назва> ]... [ файл вхідних "
+#~ "даних ] результат\n"

@@ -1,0 +1,1 @@
+add_library(SRGLLVMConditionRewriterPass MODULE ConditionRewriterPass.cpp)
