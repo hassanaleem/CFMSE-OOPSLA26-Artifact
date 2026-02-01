@@ -1,0 +1,16 @@
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:62
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:69
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:75
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:76
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:81
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:328
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1433
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1440
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1444
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1445
+libc/string/strncpy.c:17
+libc/string/strncpy.c:28
+libc/string/strncpy.c:29
+libc/string/strncpy.c:30
+libc/string/strncpy.c:31
+libc/string/strncpy.c:35

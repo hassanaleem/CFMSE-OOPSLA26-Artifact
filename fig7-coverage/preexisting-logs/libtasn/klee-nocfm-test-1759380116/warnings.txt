@@ -1,0 +1,28 @@
+KLEE: WARNING: undefined reference to function: __isoc23_strtol
+KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 235295568) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: __isoc23_strtoul(234751656, 0, 10) at main.c:43 22
+KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: vprintf(234942432, 235356352) at libc/stdio/fprintf.c:35 14
+KLEE: ERROR: EXITING ON ERROR:
+Error: concretized symbolic size
+File: libtasn1-2.11//lib/parser_aux.c
+Line: 222
+assembly.ll line: 11685
+State: 829
+Stack: 
+	#000011685 in _asn1_set_value (node=236042736, value=236265987, len) at libtasn1-2.11//lib/parser_aux.c:222
+	#100020299 in asn1_der_decoding (element=234757896, ider=236265984, len=32, errorDescription=186896896) at libtasn1-2.11//lib/decoding.c:1043
+	#200033478 in run (buf_size=32) at main.c:32
+	#300033521 in __klee_posix_wrapped_main (argc=2, argv=235357728, envp=186198488) at main.c:44
+	#400007132 in __user_main (argcPtr=2, argvPtr=186198464, envp=186198488) at runtime/POSIX/klee_init_env.c:245
+	#500000750 in __uClibc_main (main=234752448, argc=2, argv=186198464, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+	#600000905 in main (=2, =186198464)
+Info: 
+  size expr: (ZExt w64 (Add w32 1
+                                 (Extract w32 0 (ZExt w64 (Read w8 3 buf)))))
+  concretization : 16
+  unbound example: 17
+
+

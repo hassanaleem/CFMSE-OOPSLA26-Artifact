@@ -1,0 +1,3 @@
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:50
+../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:51
+libc/string/strchr.c:22

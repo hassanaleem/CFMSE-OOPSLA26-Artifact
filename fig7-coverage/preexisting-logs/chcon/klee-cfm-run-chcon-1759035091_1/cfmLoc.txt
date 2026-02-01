@@ -1,0 +1,21 @@
+Symbolic branches :
+../../src/chcon.c:433
+libc/string/strchr.c:21
+libc/string/strcmp.c:34
+libc/string/strcmp.c:35
+libc/string/strlen.c:22
+libc/unistd/getopt.c:1102
+libc/unistd/getopt.c:478
+libc/unistd/getopt.c:488
+libc/unistd/getopt.c:517
+libc/unistd/getopt.c:549
+libc/unistd/getopt.c:815
+libc/unistd/getopt.c:818
+runtime/POSIX/fd.c:1405
+runtime/POSIX/fd.c:1408
+runtime/POSIX/fd.c:43
+runtime/POSIX/fd.c:60
+runtime/POSIX/klee_init_env.c:158
+CFM locations :
+../../lib/fts.c:-2,1614
+../../lib/fts.c:465,-2

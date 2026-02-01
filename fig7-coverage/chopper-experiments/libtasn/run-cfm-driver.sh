@@ -4,12 +4,6 @@ ulimit -s unlimited
 make clean
 make test.bc
 
-# mkdir -p /local/scratch/a/cgusthin/libtasn1_CVE-2012-1569
-# python3 ${KLEE_BUILD_DIR}/../scripts/cfm_driver/driver.py -e -i test.bc -k driver_options.json -r /local/scratch/a/cgusthin/libtasn1_CVE-2012-1569
-
-# echo "Done" | mail -s "libtasn1 run complete!" $USER
-# echo "Done" | mail -s "libosip run complete!" $USER
-
 benchName=libtasn
 
 main_dir=$(realpath .)/cfm_driver_output

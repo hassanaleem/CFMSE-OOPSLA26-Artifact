@@ -24,6 +24,8 @@ This artifact is packaged as a Docker image and requires no manual dependency in
 
 **Warning** Building the image may take from a few minutes on a 128-core machine up to an hour on smaller machines, as LLVM and KLEE are built from source.
 
+By default, this build uses 4 cores to avoid out-of-memory failures. On systems with sufficient memory and CPU resources, build time can be reduced by replacing `-j4` in the Dockerfile with  `-j\$(nproc)`.
+
 To build the Docker image:
 
 ```bash
@@ -46,10 +48,16 @@ docker exec -it cfmse-session bash
 ## Kick The Tires
 To verify that the artifact is functioning correctly, we provide a small test script. Navigate to the `KickTheTires` directory in the artifact and run the provided `runme` script. This script applies the CFMSE transformation and runs KLEE on the `ToUpper` function and produces a CSV file named `toupper.csv`.
 
+We include a `reference-toupper.csv` file in the directory to allow comparison with a reference. The results may not be identical across systems, but should remain qualitatively consistent. 
+
 If the generated file contains non-zero values, the artifact is working as expected. Some fields in the CSV may contain `OOT`, which is expected and indicates KLEE has hit a timeout (60s) for this particular analysis. This script takes approximately 3 minutes to complete. Once this check succeeds, you may proceed to the remaining experiments.
 
 ## Building From Scratch
 These build instructions were tested on `Ubuntu 24.04`. 
+If you installed the artifact using the provided Dockerfile as described in the previous section, all dependencies are already installed, and the artifact is already built, so you may skip to the next section. 
+However, if you wish to build the artifact from scratch, follow the instructions below. 
+
+By default, these instructions use 4 cores to avoid out-of-memory failures. On systems with sufficient memory and CPU resources, build time can be reduced by replacing `-j4` with `-j\$(nproc)`.
 
 ### 1 install all system dependencies
 
@@ -260,9 +268,9 @@ This script takes approximately 158 hours (6.5 days) to run.
 * `Tiny-regex-c`: 1 hour
 * `utf8`: 1 hour
 * `json.h`: 1 hour
-* `libosip`: 125 hours
-* `libyaml`: 30 hours
-* `total`: 158 hours
+* `libosip`: 72 hours
+* `libyaml`: 21 hours
+* `total`: 96 hours
 
 Plots for **Figure 11** depend on the results of Libyaml and Libosip. The framework will auto generate them.
 

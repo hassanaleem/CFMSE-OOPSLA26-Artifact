@@ -1,0 +1,1782 @@
+Running json.h
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: ./test-driver.bc
+Program arguments	: 
+KLEE options		: --max-time=7200s -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=7200s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfm-rundir/sandbox  --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_0 /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee  -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --max-time=7200s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-rundir/sandbox  --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-nocfm-test-driver-1759261500  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-nocfm-test-driver-1759261500"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: open
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: write
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_0"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 1080611232) at libc/termios/tcgetattr.c:43 12
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 19
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 564
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 595
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 10471
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 48
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 32
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 16
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 117
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 136
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 516
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 583
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 10220
+(klee_cfm_stdout) : CFMSE took 1.170000e-01 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: open
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: write
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 1005274000) at libc/termios/tcgetattr.c:43 12
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: ERROR: ./json.h:2073: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 0.9387562274932861 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: ./json.h
+(klee_cfm_stdout) : Line: 2073
+(klee_cfm_stdout) : assembly.ll line: 5799
+(klee_cfm_stdout) : State: 1
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000005799 in json_parse_ex (src=1005793264, src_size=10, flags_bitset=0, alloc_func_ptr=0, user_data=0, result=0) at ./json.h:2073
+(klee_cfm_stdout) : #100006084 in json_parse (src=1005793264, src_size=10) at ./json.h:2175
+(klee_cfm_stdout) : #200010117 in __user_main () at main.c:9
+(klee_cfm_stdout) : #300000393 in __uClibc_main (main=1002984064, argc=1, argv=971445952, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #400000555 in main (=1, =971445952)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 0
+(klee_cfm_stdout) : next: object at 970108672 of size 589
+(klee_cfm_stdout) : MO31[589] allocated at main():  call void @__uClibc_main(i32 (i32, i8**, i8**)* bitcast (i32 ()* @__user_main to i32 (i32, i8**, i8**)*), i32 %0, i8** %1, void ()* null, void ()* null, void ()* null, i8* null), !sourceFile !71, !mergedLineNum !72
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_0/test000001.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_0/test000001.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/FP_test_out_0  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 1 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'./json.h': {'json_parse_ex': {'2073'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=7199s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfm-rundir/sandbox  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfmse_ignore.json --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_1 --seed-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_0 /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_1"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 19
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 564
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 595
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 10471
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 47
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 31
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 16
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 113
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 132
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 517
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 584
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 10214
+(klee_cfm_stdout) : CFMSE took 1.200000e-01 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: open
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: write
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: KLEE: using 1 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: 1 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 565398048) at libc/termios/tcgetattr.c:43 12
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: ERROR: ./json.h:2112: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 2.4692840576171875 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: ./json.h
+(klee_cfm_stdout) : Line: 2112
+(klee_cfm_stdout) : assembly.ll line: 5883
+(klee_cfm_stdout) : State: 12
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000005883 in json_parse_ex (src=571043792, src_size=10, flags_bitset=0, alloc_func_ptr=0, user_data=0, result=0) at ./json.h:2112
+(klee_cfm_stdout) : #100006082 in json_parse (src=571043792, src_size=10) at ./json.h:2175
+(klee_cfm_stdout) : #200010115 in __user_main () at main.c:9
+(klee_cfm_stdout) : #300000393 in __uClibc_main (main=565342856, argc=1, argv=536786624, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #400000555 in main (=1, =536786624)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 0
+(klee_cfm_stdout) : next: object at 535449984 of size 589
+(klee_cfm_stdout) : MO31[589] allocated at main():  call void @__uClibc_main(i32 (i32, i8**, i8**)* bitcast (i32 ()* @__user_main to i32 (i32, i8**, i8**)*), i32 %0, i8** %1, void ()* null, void ()* null, void ()* null, i8* null), !sourceFile !71, !mergedLineNum !72
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_1/test000001.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_1/test000001.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/FP_test_out_1  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 3 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'./json.h': {'json_parse_ex': {'2112', '2073'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=7197s --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfm-rundir/sandbox  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfmse_ignore.json --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_2 --seed-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_1 /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_2"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 19
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 564
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 595
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 10471
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 46
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 30
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 16
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 109
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 128
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 518
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 585
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 10208
+(klee_cfm_stdout) : CFMSE took 1.190000e-01 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: open
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: write
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: KLEE: using 1 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: 1 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 950193392) at libc/termios/tcgetattr.c:43 12
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: seeding done (11 states remain)
+(klee-nocfm-stdout) : KLEE: ERROR: ./json.h:1118: ASSERTION FAIL: 0
+(klee-nocfm-stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee-nocfm-stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee-nocfm) : ERROR found in non-transformed KLEE run in 9.72998046875 seconds!
+(klee-nocfm-stdout) : Error: ASSERTION FAIL: 0
+(klee-nocfm-stdout) : File: ./json.h
+(klee-nocfm-stdout) : Line: 1118
+(klee-nocfm-stdout) : assembly.ll line: 2898
+(klee-nocfm-stdout) : State: 10699
+(klee-nocfm-stdout) : Stack:
+(klee-nocfm-stdout) : #000002898 in json_get_array_size (state=1088274912) at ./json.h:1118
+(klee-nocfm-stdout) : #100002333 in json_get_value_size (state=1088274912, is_global_object=0) at ./json.h:1395
+(klee-nocfm-stdout) : #200005812 in json_parse_ex (src=1099737200, src_size=10, flags_bitset=0, alloc_func_ptr=0, user_data=0, result=0) at ./json.h:2094
+(klee-nocfm-stdout) : #300006023 in json_parse (src=1099737200, src_size=10) at ./json.h:2175
+(klee-nocfm-stdout) : #400010045 in __user_main () at main.c:9
+(klee-nocfm-stdout) : #500000392 in __uClibc_main (main=1080553552, argc=1, argv=1067419840, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee-nocfm-stdout) : #600000554 in main (=1, =1067419840)
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(klee_cfm_stdout) : KLEE: ERROR: ./json.h:1118: ASSERTION FAIL: 0
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 11.560739755630493 seconds!
+(klee_cfm_stdout) : Error: ASSERTION FAIL: 0
+(klee_cfm_stdout) : File: ./json.h
+(klee_cfm_stdout) : Line: 1118
+(klee_cfm_stdout) : assembly.ll line: 2907
+(klee_cfm_stdout) : State: 8082
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000002907 in json_get_array_size (state=920264800) at ./json.h:1118
+(klee_cfm_stdout) : #100002341 in json_get_value_size (state=920264800, is_global_object=0) at ./json.h:1395
+(klee_cfm_stdout) : #200005849 in json_parse_ex (src=955838368, src_size=10, flags_bitset=0, alloc_func_ptr=0, user_data=0, result=0) at ./json.h:2094
+(klee_cfm_stdout) : #300006080 in json_parse (src=955838368, src_size=10) at ./json.h:2175
+(klee_cfm_stdout) : #400010113 in __user_main () at main.c:9
+(klee_cfm_stdout) : #500000393 in __uClibc_main (main=950137456, argc=1, argv=921581248, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #600000555 in main (=1, =921581248)
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_2/test000033.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_2/test000033.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/FP_test_out_2  /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/test-driver.bc 
+(analyze) : Error detected when replaying test
+(analyze) : KLEE OUTPUT KLEE: ERROR: ./json.h:1118: ASSERTION FAIL: 0
+(analyze) : Error detected when replaying test
+(analyze) : KLEE OUTPUT KLEE: ERROR: EXITING ON ERROR:
+(analyze) : Detected error is a TRUE ERROR!
+(main) : KLEE with CFM found true error in 12 seconds
+(main) : Exiting the driver loop..!
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-cfm-run-test-driver-1759261500_*
+(main) : KLEE output files in path : /home/grads/mhassan01/symbolicAnalysis/bugExperiments/json.h/cfm_driver_output/json.h/klee-nocfm-test-driver-1759261500

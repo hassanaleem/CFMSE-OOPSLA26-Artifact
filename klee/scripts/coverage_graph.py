@@ -13,14 +13,17 @@ def plot_coverage_graph(klee_file, cfm_file, benchmark_name):
     for label, path in files.items():
         df = pd.read_csv(path, header=None, names=["timestamp","coverage"])
         # normalize time to start at 0
-        t0 = df["timestamp"].iloc[0]
-        x = df["timestamp"] - t0
-        y = df["coverage"]
-        # x less than 150 
-        x = x[x < 150]
-        y = y[:len(x)]
-        # plot with label
-        plt.plot(x, y, label=label)
+        if (df.empty):
+            plt.plot([0], [0], label=label)
+        else:
+            t0 = df["timestamp"].iloc[0]
+            x = df["timestamp"] - t0
+            y = df["coverage"]
+            # x less than 150 
+            # x = x[x < 150]
+            # y = y[:len(x)]
+            # plot with label
+            plt.plot(x, y, label=label)
 
 
     # draw a veritical line at last point in cfm_file
@@ -45,6 +48,7 @@ if __name__ == "__main__":
     # python3 ${KLEE_BUILD_DIR}/../scripts/coverage_graph.py $main_dir/$benchName/coverage-cfmse.csv $main_dir/$benchName/coverage-nocfmse.csv
 
     print("KLEE file:", klee_file)
+    print("here")
 
     benchmark_name = klee_file.split("/")[-2]
 

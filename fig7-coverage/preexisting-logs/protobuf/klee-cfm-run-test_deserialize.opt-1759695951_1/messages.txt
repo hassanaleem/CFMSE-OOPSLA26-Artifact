@@ -1,0 +1,8 @@
+KLEE: Using STP solver backend
+KLEE: KLEE: using 26 seeds
+
+KLEE: 26 seeds remaining over: 1 states
+KLEE: 11 seeds remaining over: 11 states
+KLEE: seeding done (85 states remain)
+KLEE: ERROR: ../protobuf-c/protobuf-c.c:2410: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location

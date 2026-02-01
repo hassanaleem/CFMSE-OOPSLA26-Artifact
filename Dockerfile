@@ -47,7 +47,7 @@ RUN cd llvm-project-cfmse && \
     -DCMAKE_CXX_COMPILER=g++ \
     -DLLVM_USE_LINKER=gold \
     -DCMAKE_INSTALL_PREFIX=/cfmse/llvm-project-cfmse/install && \
-    ninja -C build_cfmse && \
+    ninja -C build_cfmse -j4 && \
     ninja -C build_cfmse install
 
 

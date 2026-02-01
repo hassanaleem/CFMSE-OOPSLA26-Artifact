@@ -1,0 +1,183 @@
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: ./obj-llvm/src/mkfifo.bc
+Program arguments	:  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+KLEE options		: --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s --max-time=3600s --watchdog --search=nurs:covnew 
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/mkfifo.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee  --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=3600s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/cfm-rundir/sandbox  --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-cfm-run-mkfifo-1759038709_0 /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/mkfifo.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  --max-time=3600s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-rundir/sandbox  --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-nocfm-mkfifo-1759038709  /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/mkfifo.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(klee_cfm_stdout) : KLEE: KLEE: WATCHDOG: watching 884441
+(klee_cfm_stdout) : 
+(klee-nocfm-stdout) : KLEE: KLEE: WATCHDOG: watching 884442
+(klee-nocfm-stdout) : 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee-nocfm-stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-nocfm-mkfifo-1759038709"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-cfm-run-mkfifo-1759038709_0"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 107
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 1524
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 1913
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 27372
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+(klee-nocfm-stdout) : KLEE: WARNING: executable has module level assembly (ignoring)
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 343591456) at runtime/POSIX/fd.c:1007 10
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : missing operand
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: vprintf(342940848, 344985056) at libc/stdio/fprintf.c:35 14
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 90
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 38
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 52
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 193
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 300
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 1434
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 1883
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 26073
+(klee_cfm_stdout) : CFMSE took 7.580000e-01 ms.
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+(klee_cfm_stdout) : KLEE: WARNING: executable has module level assembly (ignoring)
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 219237376) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : missing operand
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(218569952, 219958880) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: printf(343145792, 337036160) at ../../src/mkfifo.c:56 7
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: printf(218757344, 203559072) at ../../src/mkfifo.c:56 7
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: ERROR: ../../lib/xmalloc.c:49: concretized symbolic size
+(klee-nocfm-stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: WARNING: mkfifo: ignoring (EIO)
+(klee-nocfm-stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee-nocfm) : ERROR found in non-transformed KLEE run in 4.808736562728882 seconds!
+(klee-nocfm-stdout) : Error: concretized symbolic size
+(klee-nocfm-stdout) : File: ../../lib/xmalloc.c
+(klee-nocfm-stdout) : Line: 49
+(klee-nocfm-stdout) : assembly.ll line: 9812
+(klee-nocfm-stdout) : State: 1094
+(klee-nocfm-stdout) : Stack:
+(klee-nocfm-stdout) : #000009812 in xmalloc (n) at ../../lib/xmalloc.c:49
+(klee-nocfm-stdout) : #100009791 in xnmalloc (n, s=16) at ../../lib/xalloc.h:116
+(klee-nocfm-stdout) : #200009237 in mode_compile (mode_string=343520594) at ../../lib/modechange.c:168
+(klee-nocfm-stdout) : #300008901 in __klee_posix_wrapped_main (argc=3, argv=344639968) at ../../src/mkfifo.c:124
+(klee-nocfm-stdout) : #400007063 in __user_main (argcPtr=15, argvPtr=303672128, envp=303672256) at runtime/POSIX/klee_init_env.c:245
+(klee-nocfm-stdout) : #500000681 in __uClibc_main (main=343027760, argc=15, argv=303672128, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee-nocfm-stdout) : #600000836 in main (=15, =303672128)
+(klee-nocfm-stdout) : Info:
+(klee-nocfm-stdout) : size expr: (Mul w64 16
+(klee-nocfm-stdout) : (Add w64 1
+(klee-nocfm-stdout) : (Add w64 (SExt w64 (ZExt w32 (Eq 45 (Read w8 2 arg00))))
+(klee-nocfm-stdout) : (SExt w64 (ZExt w32 (Eq 45 (Read w8 3 arg00)))))))
+(klee-nocfm-stdout) : concretization : 16
+(klee-nocfm-stdout) : unbound example: 32
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(klee_cfm_stdout) : KLEE: ERROR: ../../lib/xmalloc.c:49: concretized symbolic size
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 5.665318250656128 seconds!
+(klee_cfm_stdout) : Error: concretized symbolic size
+(klee_cfm_stdout) : File: ../../lib/xmalloc.c
+(klee_cfm_stdout) : Line: 49
+(klee_cfm_stdout) : assembly.ll line: 9814
+(klee_cfm_stdout) : State: 994
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000009814 in xmalloc (n) at ../../lib/xmalloc.c:49
+(klee_cfm_stdout) : #100009792 in xnmalloc (n, s=16) at ../../lib/xalloc.h:116
+(klee_cfm_stdout) : #200009242 in mode_compile (mode_string=219135890) at ../../lib/modechange.c:168
+(klee_cfm_stdout) : #300008906 in __klee_posix_wrapped_main (argc=3, argv=220005792) at ../../src/mkfifo.c:124
+(klee_cfm_stdout) : #400007065 in __user_main (argcPtr=15, argvPtr=174729568, envp=174729696) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #500000682 in __uClibc_main (main=218664960, argc=15, argv=174729568, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #600000837 in main (=15, =174729568)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : size expr: (Mul w64 16
+(klee_cfm_stdout) : (Add w64 1
+(klee_cfm_stdout) : (Add w64 (SExt w64 (ZExt w32 (Or (Eq 61 N0:(Read w8 2 arg00))
+(klee_cfm_stdout) : (Or (Eq 43 N0) (Eq 45 N0)))))
+(klee_cfm_stdout) : (SExt w64 (ZExt w32 (Or (Eq 61 N1:(Read w8 3 arg00))
+(klee_cfm_stdout) : (Or (Eq 43 N1) (Eq 45 N1))))))))
+(klee_cfm_stdout) : concretization : 16
+(klee_cfm_stdout) : unbound example: 32
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(main) : Memory limit error detected!
+(main) : KLEE with CFM found true error in 6 seconds
+(main) : Exiting the driver loop..!
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-cfm-run-mkfifo-1759038709_*
+(main) : KLEE output files in path : /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/mkfifo/klee-nocfm-mkfifo-1759038709

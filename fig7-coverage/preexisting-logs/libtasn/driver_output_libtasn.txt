@@ -1,0 +1,304 @@
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: test.bc
+Program arguments	:  32 
+KLEE options		: --max-time=3h -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=10800s  --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_0 /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee  -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --max-time=10800s  --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-nocfm-test-1759380116  /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+(klee-nocfm-stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_0"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-nocfm-test-1759380116"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 27
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2202
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2994
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 34337
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtol
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 235295568) at runtime/POSIX/fd.c:1007 10
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: __isoc23_strtoul(234751656, 0, 10) at main.c:43 22
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: vprintf(234942432, 235356352) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 151
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 98
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 53
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 189
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 216
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 2051
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2945
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 32907
+(klee_cfm_stdout) : CFMSE took 1.595000e+00 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtol
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 840846672) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __isoc23_strtoul(840517360, 0, 10) at main.c:43 22
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(840779264, 852312672) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: ERROR: libtasn1-2.11//lib/parser_aux.c:445: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 3.7519021034240723 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: libtasn1-2.11//lib/parser_aux.c
+(klee_cfm_stdout) : Line: 445
+(klee_cfm_stdout) : assembly.ll line: 11556
+(klee_cfm_stdout) : State: 15
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000011556 in _asn1_set_down (node=832680960, down=0) at libtasn1-2.11//lib/parser_aux.c:445
+(klee_cfm_stdout) : #100018534 in asn1_delete_structure (structure=852238352) at libtasn1-2.11//lib/structure.c:317
+(klee_cfm_stdout) : #200020556 in asn1_der_decoding (element=840523616, ider=851867712, len=32, errorDescription=797454336) at libtasn1-2.11//lib/decoding.c:1162
+(klee_cfm_stdout) : #300033215 in run (buf_size=32) at main.c:32
+(klee_cfm_stdout) : #400033256 in __klee_posix_wrapped_main (argc=2, argv=840891488, envp=828503768) at main.c:44
+(klee_cfm_stdout) : #500007134 in __user_main (argcPtr=2, argvPtr=828503744, envp=828503768) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #600000751 in __uClibc_main (main=840518152, argc=2, argv=828503744, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #700000906 in main (=2, =828503744)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 48
+(klee_cfm_stdout) : next: object at 796758912 of size 400
+(klee_cfm_stdout) : MO786[400] allocated at global:static_utmp
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_0/test000001.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_0/test000001.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/FP_test_out_0  /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+asn1_parser2tree: 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 4 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'libtasn1-2.11//lib/parser_aux.c': {'_asn1_set_down': {'445'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=10796s  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/cfmse_ignore.json --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_1 --seed-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_0 /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_1"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 27
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2202
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2994
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 34337
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 150
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 97
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 53
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 188
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 215
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 2052
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2946
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 32907
+(klee_cfm_stdout) : CFMSE took 1.573000e+00 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtol
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+(klee_cfm_stdout) : KLEE: KLEE: using 1 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: 1 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 684493920) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __isoc23_strtoul(684164888, 0, 10) at main.c:43 22
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(684426848, 696033952) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: ERROR: libtasn1-2.11//lib/parser_aux.c:538: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 7.609913349151611 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: libtasn1-2.11//lib/parser_aux.c
+(klee_cfm_stdout) : Line: 538
+(klee_cfm_stdout) : assembly.ll line: 14221
+(klee_cfm_stdout) : State: 6
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000014221 in _asn1_find_up (node=676701760) at libtasn1-2.11//lib/parser_aux.c:538
+(klee_cfm_stdout) : #100018529 in asn1_delete_structure (structure=684171128) at libtasn1-2.11//lib/structure.c:315
+(klee_cfm_stdout) : #200021156 in asn1_der_decoding (element=684171128, ider=695580800, len=32, errorDescription=641042304) at libtasn1-2.11//lib/decoding.c:1337
+(klee_cfm_stdout) : #300033219 in run (buf_size=32) at main.c:32
+(klee_cfm_stdout) : #400033260 in __klee_posix_wrapped_main (argc=2, argv=684539040, envp=640348248) at main.c:44
+(klee_cfm_stdout) : #500007134 in __user_main (argcPtr=2, argvPtr=640348224, envp=640348248) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #600000751 in __uClibc_main (main=684165680, argc=2, argv=640348224, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #700000906 in main (=2, =640348224)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 40
+(klee_cfm_stdout) : next: object at 640348224 of size 416
+(klee_cfm_stdout) : MO0[416] allocated at main():  call void @__uClibc_main(i32 (i32, i8**, i8**)* @__user_main, i32 %0, i8** %1, void ()* null, void ()* null, void ()* null, i8* null), !sourceFile !199, !mergedLineNum !200
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_1/test000001.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_1/test000001.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/FP_test_out_1  /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+asn1_parser2tree: 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 8 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'libtasn1-2.11//lib/parser_aux.c': {'_asn1_set_down': {'445'}, '_asn1_find_up': {'538'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=10792s  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/cfmse_ignore.json --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_2 --seed-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_1 /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_2"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 27
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2202
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2994
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 34337
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 149
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 96
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 53
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 187
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 214
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 2053
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2947
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 32909
+(klee_cfm_stdout) : CFMSE took 1.588000e+00 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtol
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+(klee_cfm_stdout) : KLEE: KLEE: using 1 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: 1 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 151408048) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __isoc23_strtoul(150808360, 0, 10) at main.c:43 22
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(151340864, 162956160) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: ERROR: libtasn1-2.11//lib/structure.c:321: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 11.502284526824951 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: libtasn1-2.11//lib/structure.c
+(klee_cfm_stdout) : Line: 321
+(klee_cfm_stdout) : assembly.ll line: 18556
+(klee_cfm_stdout) : State: 6
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000018556 in asn1_delete_structure (structure=150814600) at libtasn1-2.11//lib/structure.c:321
+(klee_cfm_stdout) : #100021162 in asn1_der_decoding (element=150814600, ider=151468384, len=32, errorDescription=107931520) at libtasn1-2.11//lib/decoding.c:1337
+(klee_cfm_stdout) : #200033225 in run (buf_size=32) at main.c:32
+(klee_cfm_stdout) : #300033266 in __klee_posix_wrapped_main (argc=2, argv=151428480, envp=108077496) at main.c:44
+(klee_cfm_stdout) : #400007134 in __user_main (argcPtr=2, argvPtr=108077472, envp=108077496) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #500000751 in __uClibc_main (main=150809152, argc=2, argv=108077472, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #600000906 in main (=2, =108077472)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 48
+(klee_cfm_stdout) : next: object at 107650368 of size 190
+(klee_cfm_stdout) : MO555[190] allocated at global:yystos
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_2/test000001.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_2/test000001.ktest   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --run-in-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/FP_test_out_2  /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+asn1_parser2tree: 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 12 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'libtasn1-2.11//lib/parser_aux.c': {'_asn1_set_down': {'445'}, '_asn1_find_up': {'538'}}, 'libtasn1-2.11//lib/structure.c': {'asn1_delete_structure': {'321'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=10788s  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/cfmse_ignore.json --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_3 --seed-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_2 /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc  32 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_3"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 27
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2202
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2994
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 34337
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 148
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 95
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 53
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 186
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 213
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 2054
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2948
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 32909
+(klee_cfm_stdout) : CFMSE took 1.589000e+00 ms.
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtol
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+(klee_cfm_stdout) : KLEE: KLEE: using 1 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: 1 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 392932976) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __isoc23_strtoul(381749032, 0, 10) at main.c:43 22
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(392603520, 393626560) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: seeding done (5 states remain)
+(klee-nocfm-stdout) : KLEE: ERROR: libtasn1-2.11//lib/parser_aux.c:222: concretized symbolic size
+(klee-nocfm-stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee-nocfm-stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee-nocfm) : ERROR found in non-transformed KLEE run in 27.44370126724243 seconds!
+(klee-nocfm-stdout) : Error: concretized symbolic size
+(klee-nocfm-stdout) : File: libtasn1-2.11//lib/parser_aux.c
+(klee-nocfm-stdout) : Line: 222
+(klee-nocfm-stdout) : assembly.ll line: 11685
+(klee-nocfm-stdout) : State: 829
+(klee-nocfm-stdout) : Stack:
+(klee-nocfm-stdout) : #000011685 in _asn1_set_value (node=236042736, value=236265987, len) at libtasn1-2.11//lib/parser_aux.c:222
+(klee-nocfm-stdout) : #100020299 in asn1_der_decoding (element=234757896, ider=236265984, len=32, errorDescription=186896896) at libtasn1-2.11//lib/decoding.c:1043
+(klee-nocfm-stdout) : #200033478 in run (buf_size=32) at main.c:32
+(klee-nocfm-stdout) : #300033521 in __klee_posix_wrapped_main (argc=2, argv=235357728, envp=186198488) at main.c:44
+(klee-nocfm-stdout) : #400007132 in __user_main (argcPtr=2, argvPtr=186198464, envp=186198488) at runtime/POSIX/klee_init_env.c:245
+(klee-nocfm-stdout) : #500000750 in __uClibc_main (main=234752448, argc=2, argv=186198464, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee-nocfm-stdout) : #600000905 in main (=2, =186198464)
+(klee-nocfm-stdout) : Info:
+(klee-nocfm-stdout) : size expr: (ZExt w64 (Add w32 1
+(klee-nocfm-stdout) : (Extract w32 0 (ZExt w64 (Read w8 3 buf)))))
+(klee-nocfm-stdout) : concretization : 16
+(klee-nocfm-stdout) : unbound example: 17
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(klee_cfm_stdout) : KLEE: ERROR: libtasn1-2.11//lib/parser_aux.c:222: concretized symbolic size
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 36.182039737701416 seconds!
+(klee_cfm_stdout) : Error: concretized symbolic size
+(klee_cfm_stdout) : File: libtasn1-2.11//lib/parser_aux.c
+(klee_cfm_stdout) : Line: 222
+(klee_cfm_stdout) : assembly.ll line: 11656
+(klee_cfm_stdout) : State: 559
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000011656 in _asn1_set_value (node=378728592, value=392993187, len) at libtasn1-2.11//lib/parser_aux.c:222
+(klee_cfm_stdout) : #100020179 in asn1_der_decoding (element=381755272, ider=392993184, len=32, errorDescription=338720512) at libtasn1-2.11//lib/decoding.c:1043
+(klee_cfm_stdout) : #200033229 in run (buf_size=32) at main.c:32
+(klee_cfm_stdout) : #300033270 in __klee_posix_wrapped_main (argc=2, argv=392953280, envp=338862936) at main.c:44
+(klee_cfm_stdout) : #400007134 in __user_main (argcPtr=2, argvPtr=338862912, envp=338862936) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #500000751 in __uClibc_main (main=381749824, argc=2, argv=338862912, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #600000906 in main (=2, =338862912)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : size expr: (ZExt w64 (Add w32 1
+(klee_cfm_stdout) : (Extract w32 0 (ZExt w64 (Read w8 3 buf)))))
+(klee_cfm_stdout) : concretization : 16
+(klee_cfm_stdout) : unbound example: 17
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(main) : Memory limit error detected!
+(main) : KLEE with CFM found true error in 36 seconds
+(main) : Exiting the driver loop..!
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-cfm-run-test-1759380116_*
+(main) : KLEE output files in path : /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-nocfm-test-1759380116

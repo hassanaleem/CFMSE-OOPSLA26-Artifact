@@ -1,0 +1,53 @@
+array buf[10] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Ult N0:(Read w8 0 buf) 8))
+         (Slt 255 N0)
+         (Eq false
+             (Eq 1
+                 N1:(And w8 (LShr w8 N0 3) 15)))
+         (Eq false
+             (Slt (ZExt w32 N1) 3))
+         (Eq 2 (And w8 N0 7))
+         (Slt 255 N2:(Read w8 1 buf))
+         (Eq false
+             (Ult 2147483647
+                  N3:(Shl w64 (ZExt w64 (And w8 N2 127))
+                              0)))
+         (Eq false
+             (Ult 9 (Add w64 1 N3)))
+         (Eq false (Eq 18446744073709551615 N3))
+         (Eq false (Eq 8 N3))
+         (Eq false
+             (Ult N4:(Read w8 (Extract w32 0 (Add w64 2 N3))
+                              buf)
+                  8))
+         (Eq false (Slt 255 N4))
+         (Ult 1
+              (Extract w32 0 (Select w64 (Ult N5:(Sub w64 8 N3) 5)
+                                         N5
+                                         5)))
+         (Slt 255
+              N6:(Read w8 (Extract w32 0 (Add w64 3 N3))
+                          buf))
+         (Eq 1
+             (Or w32 (Shl w32 (ZExt w32 N6) 4)
+                     (ZExt w32 (And w8 (LShr w8 N4 3) 15))))
+         (Eq 2 (And w8 N4 7))
+         (Eq false
+             (Eq 0
+                 (Extract w32 0 (Select w64 (Ult N7:(Sub w64 6 N3) 5)
+                                            N7
+                                            5))))
+         (Slt 255
+              N8:(Read w8 (Extract w32 0 (Add w64 4 N3))
+                          buf))
+         (Eq false
+             (Ult 2147483647
+                  N9:(Shl w64 (ZExt w64 (And w8 N8 127))
+                              0)))
+         (Eq false
+             (Ult N7 (Add w64 1 N9)))
+         (Eq false (Eq 18446744073709551615 N9))
+         (Eq 5 (Add w64 N3 N9))
+         (Eq false (Eq 5 N3))]
+        false)

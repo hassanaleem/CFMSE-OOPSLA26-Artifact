@@ -1,0 +1,9 @@
+KLEE: Using STP solver backend
+KLEE: KLEE: using 33 seeds
+
+KLEE: 33 seeds remaining over: 1 states
+KLEE: 23 seeds remaining over: 23 states
+KLEE: 12 seeds remaining over: 12 states
+KLEE: seeding done (103 states remain)
+KLEE: ERROR: ../protobuf-c/protobuf-c.c:154: concretized symbolic size
+KLEE: NOTE: now ignoring this error at this location

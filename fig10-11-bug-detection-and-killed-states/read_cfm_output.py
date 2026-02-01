@@ -3,6 +3,8 @@ import os
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
+import re
+
 
 def read_output(input_directory):
 
@@ -19,25 +21,25 @@ def read_output(input_directory):
 
                 # Extract the time for CFM true error
                 cfm_true_error = None
-                for line in lines:
-                    if "CFM found true error" in line:
-                        try:
-                            # Assuming the time is at index 7 and converting to float
-                            cfm_true_error = float(line.split()[9])
-                        except (IndexError, ValueError):
-                            cfm_true_error = None
-                        break
-
-                # Extract the time for no-cfm error
                 no_cfm_error = None
+                max_time = None
                 for line in lines:
+                    if "--max-time=" in line:
+                        match = re.search(r"--max-time=(\d+)s", line)
+                        if match:
+                            max_time = float(match.group(1))
+                    if "CFM found true error" in line:
+                        cfm_true_error = float(line.split()[9])
                     if "ERROR found in non-transformed KLEE run" in line:
-                        try:
-                            # Assuming the time is at index 7 and converting to float
-                            no_cfm_error = float(line.split()[9])
-                        except (IndexError, ValueError):
-                            no_cfm_error = None
-                        break
+                        no_cfm_error = float(line.split()[9])
+
+                        
+
+                # If either time is missing, use max_time
+                if cfm_true_error is None:
+                    cfm_true_error = max_time
+                if no_cfm_error is None:
+                    no_cfm_error = max_time
 
                 # Append a record for this file
                 input_size = os.path.basename(file_path
@@ -45,8 +47,8 @@ def read_output(input_directory):
 
                 records.append({
                     "input_size": int(input_size),
-                    "cfm_true_error": float(cfm_true_error),
-                    "no_cfm_error": float(no_cfm_error)
+                    "cfm_true_error": cfm_true_error,
+                    "no_cfm_error": no_cfm_error
                 })
 
     # Create DataFrame and write to CSV
@@ -109,7 +111,7 @@ if __name__ == "__main__":
 
     
     df_final = pd.concat(dfs, axis=0)
-    df_final = df_final.dropna()
+    # df_final = df_final.dropna()
     df_avg = df_final.groupby('input_size', as_index=False)[['cfm_true_error', 'no_cfm_error']].mean()
     df_avg = df_avg.sort_values(by=["input_size"])
     df_avg.to_csv("output.csv", index=False)

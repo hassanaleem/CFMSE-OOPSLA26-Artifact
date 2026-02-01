@@ -1,0 +1,17 @@
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1433
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1450
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1451
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1460
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1461
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1462
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1468
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1469
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:1484
+libc/string/memmove.c:17
+libc/string/memmove.c:37
+libc/string/memmove.c:38
+libc/string/memmove.c:40
+libc/string/memmove.c:46
+libc/string/memmove.c:47
+libc/string/memmove.c:48
+libc/string/memmove.c:52

@@ -1,0 +1,22 @@
+/home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/klee/benchmarks/json.h/cfm_driver_output/json_test/klee-cfm-run-json_test.opt-1769901896_2/test000066.ktest --simplify-sym-indices --write-cov --output-module --optimize --max-memory=32000 --use-forked-solver --use-cex-cache --libc=uclibc --external-calls=all --only-output-states-covering-new --max-sym-array-size=4096 --max-solver-time=60s --watchdog --exit-on-error --run-in-dir=/home/grads/mhassan01/klee/benchmarks/json.h/cfm_driver_output/json_test/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/klee/benchmarks/json.h/cfm_driver_output/json_test/FP_test_out_2 /home/grads/mhassan01/klee/benchmarks/json.h/json_test.opt.bc
+PID: 2072167
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2026-02-01 00:26:46
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2026-02-01 00:26:46
+Elapsed: 00:00:00
+KLEE: done: explored paths = 1
+KLEE: done: total queries = 0
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 0
+KLEE: done: query cex = 0
+
+KLEE: done: total instructions = 14740
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 1

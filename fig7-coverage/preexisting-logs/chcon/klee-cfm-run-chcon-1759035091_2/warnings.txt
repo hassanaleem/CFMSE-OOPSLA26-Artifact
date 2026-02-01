@@ -1,0 +1,25 @@
+KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+KLEE: WARNING: undefined reference to function: fdopendir
+KLEE: WARNING: executable has module level assembly (ignoring)
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 459450240) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: vprintf(448090960, 460361120) at libc/stdio/fprintf.c:35 14
+KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+KLEE: WARNING ONCE: calling external: printf(413667232, 445659712, 445659712, 445659712) at ../../src/chcon.c:369 7
+KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+KLEE: WARNING: killing 5268 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 5149 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5184 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5167 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5100 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5134 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5068 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5052 states (over memory cap: 32101MB)
+KLEE: ERROR: EXITING ON ERROR:
+Execution halting.
+
+

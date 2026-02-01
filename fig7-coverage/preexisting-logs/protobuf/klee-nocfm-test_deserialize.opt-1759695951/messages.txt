@@ -1,0 +1,3 @@
+KLEE: Using STP solver backend
+KLEE: ERROR: ../protobuf-c/protobuf-c.c:154: concretized symbolic size
+KLEE: NOTE: now ignoring this error at this location

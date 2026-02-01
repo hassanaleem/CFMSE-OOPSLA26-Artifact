@@ -1,0 +1,20 @@
+Error: concretized symbolic size
+File: ../../lib/xmalloc.c
+Line: 49
+assembly.ll line: 18880
+State: 1896
+Stack: 
+	#000018880 in xmalloc (n) at ../../lib/xmalloc.c:49
+	#100018859 in xnmalloc (n, s=16) at ../../lib/xalloc.h:116
+	#200009307 in mode_compile (mode_string=724157378) at ../../lib/modechange.c:168
+	#300008950 in __klee_posix_wrapped_main (argc=3, argv=724745536) at ../../src/mkdir.c:205
+	#400007079 in __user_main (argcPtr=15, argvPtr=683415408, envp=683415536) at runtime/POSIX/klee_init_env.c:245
+	#500000697 in __uClibc_main (main=722983088, argc=15, argv=683415408, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+	#600000852 in main (=15, =683415408)
+Info: 
+  size expr: (Mul w64 16
+                       (Add w64 2
+                                (Add w64 (SExt w64 (ZExt w32 (Eq 45 (Read w8 3 arg00))))
+                                         (SExt w64 (ZExt w32 (Eq 45 (Read w8 4 arg00)))))))
+  concretization : 32
+  unbound example: 48

@@ -1,0 +1,26 @@
+array buf[10] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Ult N0:(Read w8 0 buf) 8))
+         (Slt 255 N0)
+         (Eq false
+             (Eq 1
+                 N1:(And w8 (LShr w8 N0 3) 15)))
+         (Eq false
+             (Slt (ZExt w32 N1) 3))
+         (Eq 5 (And w8 N0 7))
+         (Eq false
+             (Ult N2:(Read w8 5 buf) 8))
+         (Eq false (Slt 255 N2))
+         (Eq false
+             (Slt 255 N3:(Read w8 6 buf)))
+         (Slt 255 N4:(Read w8 7 buf))
+         (Eq 1
+             (Or w32 (Shl w32 (ZExt w32 N4) 11)
+                     (Or w32 (Shl w32 (ZExt w32 (And w8 N3 127))
+                                      4)
+                             (ZExt w32 (And w8 (LShr w8 N2 3) 15)))))
+         (Eq 0 (And w8 N2 7))
+         (Eq false
+             (Slt 255 (Read w8 8 buf)))
+         (Slt 255 (Read w8 9 buf))]
+        false)

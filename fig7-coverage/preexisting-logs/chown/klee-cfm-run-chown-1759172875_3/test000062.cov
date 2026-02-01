@@ -1,0 +1,11 @@
+runtime/POSIX/fd.c:1409
+runtime/POSIX/fd.c:1410
+../../lib/fts.c:522
+../../lib/fts.c:523
+../../lib/fts.c:524
+../../lib/fts.c:525
+../../lib/fts.c:526
+libc/string/memmove.c:41
+libc/string/memmove.c:42
+libc/string/memmove.c:43
+libc/string/memmove.c:45

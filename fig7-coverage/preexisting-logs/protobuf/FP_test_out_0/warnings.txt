@@ -1,0 +1,8 @@
+KLEE: WARNING: undefined reference to function: fcntl
+KLEE: WARNING: undefined reference to function: fstat
+KLEE: WARNING: undefined reference to function: ioctl
+KLEE: WARNING: undefined reference to function: lseek64
+KLEE: WARNING: undefined reference to function: open
+KLEE: WARNING: undefined reference to function: putchar
+KLEE: WARNING: undefined reference to function: write
+KLEE: WARNING ONCE: replay did not consume all objects in test input.

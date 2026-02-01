@@ -32,8 +32,6 @@ def parse_log(logfile_path, loc_value):
         'merges': re.compile(r'Number of successful applications of CFMSE : (\d+)'),
         'select_added': re.compile(r'Number of select instructions added : (\d+)'),
         'instr_after': re.compile(r'Total Instructions after CFMSE : (\d+)'),
-        # For time, we find the line with CFMSEPass and grab the wall time
-        # which is the second-to-last field, a float.
         'time_pass': re.compile(r'^\s*([\d\.]+)\s*\(.*CFMSEPass'),
     }
     
@@ -46,7 +44,6 @@ def parse_log(logfile_path, loc_value):
         'instr_after': 0,
     }
     
-    # --- Read and parse the log file ---
     try:
         with open(logfile_path, 'r') as f:
             for line in f:
@@ -54,14 +51,11 @@ def parse_log(logfile_path, loc_value):
                 for key, pattern in patterns.items():
                     match = pattern.search(line)
                     if match:
-                        # If a match is found, store the captured value
-                        # We grab group(1), which is the part in parentheses ( )
                         if key == 'time_pass':
-                            data[key] = float(match.group(1))  # Keep ms as is
+                            data[key] = float(match.group(1))  
                         else:
                             data[key] = int(match.group(1))
                         
-                        # No need to check other patterns on this line
                         break
                         
     except FileNotFoundError:
@@ -83,9 +77,9 @@ def parse_log(logfile_path, loc_value):
 
 def main():
 
-    
+    file = sys.argv[1]
     # --- Get the data and print the CSV ---
-    data = parse_log("libosip.txt", 0)
+    data = parse_log(file, 0)
     
     # Define the CSV header
     header = [
@@ -108,7 +102,12 @@ def main():
     print(",".join(header))
         
     # Print the data row
-    print(",".join(row))
+    # save to a csv file
+    with open(f"{file}.csv", "w") as f:
+        f.write(",".join(header) + "\n")
+        f.write(",".join(row) + "\n")
+
+    # print(",".join(row))
 
 if __name__ == "__main__":
     main()

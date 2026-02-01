@@ -1,0 +1,15 @@
+amessage.pb-c.c:42
+amessage.pb-c.c:52
+amessage.pb-c.c:53
+../protobuf-c/protobuf-c.c:2404
+../protobuf-c/protobuf-c.c:2405
+../protobuf-c/protobuf-c.c:2496
+../protobuf-c/protobuf-c.c:3028
+../protobuf-c/protobuf-c.c:3284
+../protobuf-c/protobuf-c.c:3300
+../protobuf-c/protobuf-c.c:3302
+libc/misc/internals/__uClibc_main.c:401
+test_deserialize.c:41
+test_deserialize.c:42
+test_deserialize.c:44
+test_deserialize.c:48

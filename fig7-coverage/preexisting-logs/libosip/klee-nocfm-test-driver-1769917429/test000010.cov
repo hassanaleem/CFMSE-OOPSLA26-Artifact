@@ -1,0 +1,17 @@
+../../../libosip2-4.0.0/src/osipparser2/osip_uri.c:127
+../../../libosip2-4.0.0/src/osipparser2/osip_uri.c:128
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:488
+../../../libosip2-4.0.0/src/osipparser2/osip_port.c:504
+libc/misc/ctype/ctype.c:311
+libc/misc/ctype/ctype.c:316
+libc/string/strncasecmp.c:0
+libc/string/strncasecmp.c:41
+libc/string/strncasecmp.c:43
+libc/string/strncasecmp.c:50
+libc/string/strncasecmp.c:67
+libc/string/strncasecmp.c:69
+libc/string/strncasecmp.c:70
+libc/string/strncasecmp.c:71
+libc/string/strncasecmp.c:72
+libc/string/strncasecmp.c:73
+libc/string/strncasecmp.c:74

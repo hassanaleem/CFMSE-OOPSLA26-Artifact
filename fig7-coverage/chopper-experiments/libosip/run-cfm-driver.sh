@@ -4,10 +4,6 @@ ulimit -s unlimited
 make clean
 make test-driver.bc
 
-# mkdir -p ~/local/scratch/a/$USER/libosip
-# python3 ${KLEE_BUILD_DIR}/../scripts/cfm_driver/driver.py -i test-driver.bc -k driver_options.json -r ~/local/scratch/a/$USER/libosip
-
-# echo "Done" | mail -s "libosip run complete!" $USER
 
 benchName=libosip
 
@@ -27,4 +23,4 @@ python3 ${KLEE_BUILD_DIR}/../scripts/cfm_driver/driver.py -e -i ./test-driver.bc
 python3 ${KLEE_BUILD_DIR}/../scripts/coverage_graph.py $main_dir/$benchName/klee-cfm-*/coverage.csv $main_dir/$benchName/klee-nocfm-*/coverage.csv
 #echo "hello" | mail -s "Done running $benchName" $USER
 
-cp *.pdf libosip-coverage.pdf
+mv *.pdf libosip-coverage.pdf

@@ -1,0 +1,314 @@
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: ./obj-llvm/src/chcon.bc
+Program arguments	:  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+KLEE options		: --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s --max-time=3600s --watchdog --search=nurs:covnew 
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee  --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=3600s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfm-rundir/sandbox  --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_0 /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  --max-time=3600s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-rundir/sandbox  --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-nocfm-chcon-1759035091  /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(klee_cfm_stdout) : KLEE: KLEE: WATCHDOG: watching 853372
+(klee_cfm_stdout) : 
+(klee-nocfm-stdout) : KLEE: KLEE: WATCHDOG: watching 853373
+(klee-nocfm-stdout) : 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee-nocfm-stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-nocfm-chcon-1759035091"
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_0"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 156
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2017
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2370
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 35248
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fdopendir
+(klee-nocfm-stdout) : KLEE: WARNING: executable has module level assembly (ignoring)
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 862567744) at runtime/POSIX/fd.c:1007 10
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : missing operand
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: vprintf(861858864, 863771968) at libc/stdio/fprintf.c:35 14
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 149
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 77
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 72
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 296
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 452
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 1868
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2320
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 33683
+(klee_cfm_stdout) : CFMSE took 9.010000e-01 ms.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+(klee_cfm_stdout) : KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fdopendir
+(klee_cfm_stdout) : KLEE: WARNING: executable has module level assembly (ignoring)
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 766352464) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : missing operand
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(759321280, 780640928) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: printf(847516672, 847166464, 847166464, 847166464) at ../../src/chcon.c:369 7
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: printf(734128960, 766113136, 766113136, 766113136) at ../../src/chcon.c:369 7
+(klee_cfm_stdout) : KLEE: ERROR: ../../lib/fts.c:458: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 108.21891355514526 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: ../../lib/fts.c
+(klee_cfm_stdout) : Line: 458
+(klee_cfm_stdout) : assembly.ll line: 19598
+(klee_cfm_stdout) : State: 40405
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000019598 in fts_open (argv=780727728, options=536, compar=0) at ../../lib/fts.c:458
+(klee_cfm_stdout) : #100009489 in xfts_open (argv=780727728, options=24, compar=0) at ../../lib/xfts.c:40
+(klee_cfm_stdout) : #200009411 in process_files (files=780727728, bit_flags=24) at ../../src/chcon.c:326
+(klee_cfm_stdout) : #300009206 in __klee_posix_wrapped_main (argc=3, argv=780727712) at ../../src/chcon.c:584
+(klee_cfm_stdout) : #400007141 in __user_main (argcPtr=15, argvPtr=725629504, envp=725629632) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #500000758 in __uClibc_main (main=768571664, argc=15, argv=725629504, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #600000913 in main (=15, =725629504)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 16
+(klee_cfm_stdout) : next: object at 725235328 of size 464
+(klee_cfm_stdout) : MO614[464] allocated at global:.str.5.79
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_0/test000006.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_0/test000006.ktest  --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/FP_test_out_0  /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 111 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'../../lib/fts.c': {'fts_open': {'458'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee  --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=3489s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfm-rundir/sandbox  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfmse_ignore.json --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_1 --seed-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_0 /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(klee_cfm_stdout) : KLEE: KLEE: WATCHDOG: watching 857760
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_1"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 156
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2017
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2370
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 35248
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 148
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 77
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 71
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 290
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 446
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 1869
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2321
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 33674
+(klee_cfm_stdout) : CFMSE took 8.960000e-01 ms.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fdopendir
+(klee_cfm_stdout) : KLEE: KLEE: using 6 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: WARNING: executable has module level assembly (ignoring)
+(klee_cfm_stdout) : KLEE: 6 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 985204416) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(984502976, 986127776) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+(klee_cfm_stdout) : missing operand
+(klee_cfm_stdout) : KLEE: ERROR: ../../lib/fts.c:463: memory error: out of bound pointer
+(klee_cfm_stdout) : KLEE: NOTE: now ignoring this error at this location
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 113.74530220031738 seconds!
+(klee_cfm_stdout) : Error: memory error: out of bound pointer
+(klee_cfm_stdout) : File: ../../lib/fts.c
+(klee_cfm_stdout) : Line: 463
+(klee_cfm_stdout) : assembly.ll line: 19607
+(klee_cfm_stdout) : State: 37
+(klee_cfm_stdout) : Stack:
+(klee_cfm_stdout) : #000019607 in fts_open (argv=985975568, options=536, compar=0) at ../../lib/fts.c:463
+(klee_cfm_stdout) : #100009489 in xfts_open (argv=985975568, options=24, compar=0) at ../../lib/xfts.c:40
+(klee_cfm_stdout) : #200009411 in process_files (files=985975568, bit_flags=24) at ../../src/chcon.c:326
+(klee_cfm_stdout) : #300009206 in __klee_posix_wrapped_main (argc=3, argv=985975552) at ../../src/chcon.c:584
+(klee_cfm_stdout) : #400007141 in __user_main (argcPtr=15, argvPtr=930044480, envp=930044608) at runtime/POSIX/klee_init_env.c:245
+(klee_cfm_stdout) : #500000758 in __uClibc_main (main=984579296, argc=15, argv=930044480, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+(klee_cfm_stdout) : #600000913 in main (=15, =930044480)
+(klee_cfm_stdout) : Info:
+(klee_cfm_stdout) : address: 16
+(klee_cfm_stdout) : next: object at 929650304 of size 464
+(klee_cfm_stdout) : MO614[464] allocated at global:.str.5.79
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(analyze) : Analyzing Erroring Test: /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_1/test000005.ktest
+(analyze) : Executing : /home/grads/mhassan01/klee/build/bin/klee --replay-ktest-file=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_1/test000005.ktest  --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfm-rundir/sandbox --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/FP_test_out_1  /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(analyze) : Detected error is a FALSE POSITIVE!
+(main) : KLEE with CFM found a false positive in 116 seconds
+(main) : Updading false positives info..!
+(main) : False positives so far : 
+(main) : {'../../lib/fts.c': {'fts_open': {'458', '463'}}}
+(main) : New false positive found! Re-executing KLEE with transformation..
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee  --simplify-sym-indices --write-cov  --max-memory=32000 --use-forked-solver  --use-cex-cache --libc=uclibc --posix-runtime  --external-calls=all --only-output-states-covering-new --env-file=test.env  --max-sym-array-size=4096 --max-solver-time=30s  --watchdog --search=nurs:covnew  --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=3484s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfm-rundir/sandbox  -klee-cfmse-dont-touch-locs=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/cfmse_ignore.json --output-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_2 --seed-dir=/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_1 /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/obj-llvm/src/chcon.bc  --sym-args 0 1 10 --sym-args 0 2 2 --sym-files 1 8 --sym-stdin 8 --sym-stdout 
+(klee_cfm_stdout) : KLEE: KLEE: WATCHDOG: watching 857910
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: NOTE: Using POSIX model: /home/grads/mhassan01/klee/build/runtime/lib/libkleeRuntimePOSIX64_Debug+Asserts.bca
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_2"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 156
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2017
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 2370
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 35248
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 147
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 77
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 70
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 287
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 443
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 1870
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 2322
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 33672
+(klee_cfm_stdout) : CFMSE took 9.020000e-01 ms.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fdopendir
+(klee_cfm_stdout) : KLEE: KLEE: using 5 seeds
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: WARNING: executable has module level assembly (ignoring)
+(klee_cfm_stdout) : KLEE: 5 seeds remaining over: 1 states
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 459450240) at runtime/POSIX/fd.c:1007 10
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: vprintf(448090960, 460361120) at libc/stdio/fprintf.c:35 14
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+(klee_cfm_stdout) : cannot access `\001/'
+(klee_cfm_stdout) : KLEE: seeding done (48 states remain)
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: printf(413667232, 445659712, 445659712, 445659712) at ../../src/chcon.c:369 7
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5296 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 5296: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5228 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 10524: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5263 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 15787: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5348 states (over memory cap: 32104MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 21135: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5229 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 26364: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5212 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 31576: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5297 states (over memory cap: 32104MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 36873: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5268 states (over memory cap: 32103MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 5268: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5280 states (over memory cap: 32104MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 42153: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5149 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5263 states (over memory cap: 32104MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 10417: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 47416: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5145 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 52561: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5184 states (over memory cap: 32102MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 15601: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5229 states (over memory cap: 32104MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 57790: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5167 states (over memory cap: 32102MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 20768: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5062 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 62852: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5100 states (over memory cap: 32101MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 25868: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5046 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 67898: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5134 states (over memory cap: 32102MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 31002: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5080 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 72978: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5064 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 78042: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5068 states (over memory cap: 32101MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 36070: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4999 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 83041: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5081 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 88122: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 5065 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 93187: memory limit exceeded
+(klee_cfm_stdout) : KLEE: WARNING: killing 5052 states (over memory cap: 32101MB)
+(klee_cfm_stdout) : KLEE: Killed State by hassan 41122: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4951 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 98138: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4935 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 103073: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4968 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 108041: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4904 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 112945: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4985 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 117930: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4969 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 122899: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4905 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 127804: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4938 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 132742: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4874 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 137616: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4811 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 142427: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4843 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 147270: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4875 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 152145: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4813 states (over memory cap: 32102MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 156958: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4750 states (over memory cap: 32101MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 161708: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: WARNING: killing 4829 states (over memory cap: 32103MB)
+(klee-nocfm-stdout) : KLEE: Killed State by hassan 166537: memory limit exceeded
+(klee-nocfm-stdout) : KLEE: HaltTimer invoked
+(klee-nocfm-stdout) : KLEE: halting execution, dumping remaining states
+(klee_cfm_stdout) : KLEE: HaltTimer invoked
+(klee_cfm_stdout) : KLEE: halting execution, dumping remaining states
+(klee-nocfm-stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee-nocfm) : ERROR found in non-transformed KLEE run in 3603.0628814697266 seconds!
+(klee-nocfm-stdout) : Execution halting.
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(klee_cfm_stdout) : KLEE: ERROR: EXITING ON ERROR:
+(klee_cfm_stdout) : ERROR found in CFM-transformed KLEE run in 3606.169895172119 seconds!
+(klee_cfm_stdout) : Execution halting.
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with transform failed!
+(main) : No error files found! Exiting the driver loop..!
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-cfm-run-chcon-1759035091_*
+(main) : KLEE output files in path : /home/grads/mhassan01/klee/benchmarks/gnu-experiments/coreutils/coreutils-6.11/cfm_driver_output/chcon/klee-nocfm-chcon-1759035091

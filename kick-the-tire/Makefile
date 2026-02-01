@@ -1,4 +1,6 @@
-SUBDIRS=bitonic_sort connected_comp detect_edges dilation erosion \
-floyd_warshall merge_sort prim toupper transitive_closure
+SUBDIRS=toupper 
 clean:
-	$(foreach dir, $(SUBDIRS), make -C $(dir) force_clean;)	
+	rm -rf cfmse-experiments table3.csv toupper.csv
+	$(foreach dir, $(SUBDIRS), make -C $(dir) force_clean;)
+
+

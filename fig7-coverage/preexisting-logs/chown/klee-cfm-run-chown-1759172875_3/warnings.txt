@@ -1,0 +1,20 @@
+KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+KLEE: WARNING: undefined reference to function: fchownat
+KLEE: WARNING: undefined reference to function: fdopendir
+KLEE: WARNING: executable has module level assembly (ignoring)
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 468167008) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: vprintf(467772320, 469101024) at libc/stdio/fprintf.c:35 14
+KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+KLEE: WARNING ONCE: calling external: __isoc23_strtoul(467711825, 470682064, 10) at ../../lib/xstrtol.c:98 7
+KLEE: WARNING ONCE: calling external: fchownat(4294967196, 468789248, 4294967295, 4294967295, 0) at ../../lib/openat.h:105 0
+KLEE: WARNING ONCE: calling external: printf(448485168, 448740016, 448740016) at ../../src/chown.c:97 7
+KLEE: ERROR: EXITING ON ERROR:
+Execution halting.
+
+

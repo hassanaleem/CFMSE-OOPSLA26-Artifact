@@ -1,0 +1,25 @@
+Symbolic branches :
+../protobuf-c/protobuf-c.c:2052
+../protobuf-c/protobuf-c.c:2074
+../protobuf-c/protobuf-c.c:2079
+../protobuf-c/protobuf-c.c:2083
+../protobuf-c/protobuf-c.c:2084
+../protobuf-c/protobuf-c.c:2119
+../protobuf-c/protobuf-c.c:2122
+../protobuf-c/protobuf-c.c:2125
+../protobuf-c/protobuf-c.c:2131
+../protobuf-c/protobuf-c.c:2892
+../protobuf-c/protobuf-c.c:2912
+../protobuf-c/protobuf-c.c:3090
+../protobuf-c/protobuf-c.c:3106
+../protobuf-c/protobuf-c.c:3112
+../protobuf-c/protobuf-c.c:3124
+../protobuf-c/protobuf-c.c:3140
+../protobuf-c/protobuf-c.c:3141
+../protobuf-c/protobuf-c.c:3143
+../protobuf-c/protobuf-c.c:3152
+../protobuf-c/protobuf-c.c:3171
+../protobuf-c/protobuf-c.c:3203
+../protobuf-c/protobuf-c.c:3263
+runtime/Intrinsic/klee_overshift_check.c:21
+CFM locations :

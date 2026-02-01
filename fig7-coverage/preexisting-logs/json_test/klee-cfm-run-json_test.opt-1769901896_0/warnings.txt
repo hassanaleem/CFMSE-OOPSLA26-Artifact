@@ -1,0 +1,30 @@
+KLEE: WARNING: undefined reference to function: fcntl
+KLEE: WARNING: undefined reference to function: fstat
+KLEE: WARNING: undefined reference to function: ioctl
+KLEE: WARNING: undefined reference to function: open
+KLEE: WARNING: undefined reference to function: puts
+KLEE: WARNING: undefined reference to function: write
+KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 682249888) at libc/termios/tcgetattr.c:43 12
+KLEE: WARNING ONCE: calling __user_main with extra arguments.
+KLEE: WARNING ONCE: calling external: puts(682230544) at json_test.c:14 3
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: ERROR: EXITING ON ERROR:
+Error: memory error: out of bound pointer
+File: ./json.h
+Line: 2147
+assembly.ll line: 3985
+State: 141746
+Stack: 
+	#000003985 in json_parse_ex (src=677724608) at ./json.h:2147
+	#100004007 in json_parse (src=677724608) at ./json.h:2163
+	#200004026 in __user_main (argc=1, argv=662833344) at json_test.c:10
+	#300000347 in __uClibc_main (argc=1, argv=662833344) at libc/misc/internals/__uClibc_main.c:401
+	#400000510 in main (=1, =662833344)
+Info: 
+	address: 2899723760
+	next: object at 19836884948928 of size 1536
+		MO123[1536] (no allocation info)
+	prev: object at 2899723728 of size 38
+		MO1535728[38] allocated at json_parse_ex():  %call39 = call noalias align 16 i8* @malloc(i64 %add) #18, !dbg !125, !sourceFile !75, !mergedLineNum !126
+
+

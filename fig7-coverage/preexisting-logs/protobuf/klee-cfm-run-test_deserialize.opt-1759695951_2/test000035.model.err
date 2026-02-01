@@ -1,0 +1,17 @@
+Error: concretized symbolic size
+File: ../protobuf-c/protobuf-c.c
+Line: 154
+assembly.ll line: 3006
+State: 41454
+Stack: 
+	#000003006 in system_alloc (allocator_data=0, size) at ../protobuf-c/protobuf-c.c:154
+	#100003959 in protobuf_c_message_unpack (desc=1042429312, allocator=0, len=10, data=1040726864) at ../protobuf-c/protobuf-c.c:167
+	#200000548 in __user_main (argc=1, argv=1054746368) at amessage.pb-c.c:43
+	#300000374 in __uClibc_main (argc=1, argv=1054746368) at libc/misc/internals/__uClibc_main.c:401
+	#400000537 in main (=1, =1054746368)
+Info: 
+  size expr: (Add w64 1
+                       (Shl w64 (ZExt w64 (And w8 (Read w8 1 buf) 127))
+                                0))
+  concretization : 7
+  unbound example: 6

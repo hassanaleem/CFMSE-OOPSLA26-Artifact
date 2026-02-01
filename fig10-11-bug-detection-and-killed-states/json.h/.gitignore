@@ -4,6 +4,5 @@ build
 cfm_driver_output/
 *.ll
 test-driver.bc
-log*
-Logs*
+logs
 .github

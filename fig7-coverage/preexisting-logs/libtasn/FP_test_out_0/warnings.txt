@@ -1,0 +1,7 @@
+KLEE: WARNING: undefined reference to function: __isoc23_strtol
+KLEE: WARNING: undefined reference to function: __isoc23_strtoul
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 1120678880) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: __isoc23_strtoul(1120151248, 0, 10) at main.c:43 22
+KLEE: WARNING ONCE: calling external: printf(1120317312, 1072288768) at main.c:19 9
+KLEE: WARNING ONCE: replay did not consume all objects in test input.

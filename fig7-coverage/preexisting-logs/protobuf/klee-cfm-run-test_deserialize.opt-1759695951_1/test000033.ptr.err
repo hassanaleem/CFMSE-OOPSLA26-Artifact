@@ -1,0 +1,17 @@
+Error: memory error: out of bound pointer
+File: ../protobuf-c/protobuf-c.c
+Line: 2410
+assembly.ll line: 5612
+State: 606
+Stack: 
+	#000005612 in parse_required_member (scanned_member=616626208, member=645307208, allocator=645271008, maybe_clear=1) at ../protobuf-c/protobuf-c.c:2410
+	#100005065 in protobuf_c_message_unpack (desc=630653056, allocator=0, len=10, data=628898624) at ../protobuf-c/protobuf-c.c:2908
+	#200000548 in __user_main (argc=1, argv=628647680) at amessage.pb-c.c:43
+	#300000374 in __uClibc_main (argc=1, argv=628647680) at libc/misc/internals/__uClibc_main.c:401
+	#400000537 in main (=1, =628647680)
+Info: 
+	address: 628898634
+	next: object at 628911768 of size 8
+		MO180[8] allocated at __uClibc_main():  %main.addr = alloca i32 (i32, i8**, i8**)*, align 8, !sourceFile !133, !mergedLineNum !134
+	prev: object at 628898624 of size 10
+		MO6647[10] allocated at __user_main():  %buf = alloca [10 x i8], align 1, !sourceFile !133, !mergedLineNum !134

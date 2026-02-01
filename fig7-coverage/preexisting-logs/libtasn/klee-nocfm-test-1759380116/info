@@ -1,0 +1,4 @@
+/home/grads/mhassan01/klee/build/bin/klee -max-memory=32768 -simplify-sym-indices -libc=uclibc --posix-runtime -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error --max-time=10800s --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/cfm_driver_output/libtasn/klee-nocfm-test-1759380116 /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libtasn1/CVE-2012-1569/test.bc 32
+PID: 1811456
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-10-02 04:41:57

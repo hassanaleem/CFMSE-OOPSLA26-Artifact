@@ -1,0 +1,34 @@
+KLEE: WARNING: undefined reference to function: fcntl
+KLEE: WARNING: undefined reference to function: fstat
+KLEE: WARNING: undefined reference to function: ioctl
+KLEE: WARNING: undefined reference to function: open
+KLEE: WARNING: undefined reference to function: puts
+KLEE: WARNING: undefined reference to function: write
+KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 540546400) at libc/termios/tcgetattr.c:43 12
+KLEE: WARNING ONCE: calling __user_main with extra arguments.
+KLEE: WARNING ONCE: calling external: puts(540525184) at json_test.c:14 3
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+KLEE: WARNING: killing 15180 states (over memory cap: 32101MB)
+KLEE: ERROR: EXITING ON ERROR:
+Error: memory error: out of bound pointer
+File: ./json.h
+Line: 1844
+assembly.ll line: 3652
+State: 136096
+Stack: 
+	#000003652 in json_parse_array (state=513926464, array=1038666120) at ./json.h:1844
+	#100003279 in json_parse_value (state=513926464, is_global_object=0, value=1038666104) at ./json.h:1988
+	#200003148 in json_parse_object (state=513926464, is_global_object=0, object=1038666048) at ./json.h:1745
+	#300003264 in json_parse_value (state=513926464, is_global_object=0, value=1038666032) at ./json.h:1981
+	#400003991 in json_parse_ex (src=542027200) at ./json.h:2155
+	#500004005 in json_parse (src=542027200) at ./json.h:2163
+	#600004024 in __user_main (argc=1, argv=520366272) at json_test.c:10
+	#700000347 in __uClibc_main (argc=1, argv=520366272) at libc/misc/internals/__uClibc_main.c:401
+	#800000510 in main (=1, =520366272)
+Info: 
+	address: 8
+	next: object at 512276992 of size 59
+		MO38[59] allocated at main():  tail call fastcc void @__uClibc_main(i32 %0, i8** %1), !sourceFile !71, !mergedLineNum !72
+
+

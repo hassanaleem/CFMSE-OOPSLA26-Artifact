@@ -1,0 +1,18 @@
+Error: memory error: out of bound pointer
+File: libtasn1-2.11//lib/parser_aux.c
+Line: 445
+assembly.ll line: 11556
+State: 15
+Stack: 
+	#000011556 in _asn1_set_down (node=832680960, down=0) at libtasn1-2.11//lib/parser_aux.c:445
+	#100018534 in asn1_delete_structure (structure=852238352) at libtasn1-2.11//lib/structure.c:317
+	#200020556 in asn1_der_decoding (element=840523616, ider=851867712, len=32, errorDescription=797454336) at libtasn1-2.11//lib/decoding.c:1162
+	#300033215 in run (buf_size=32) at main.c:32
+	#400033256 in __klee_posix_wrapped_main (argc=2, argv=840891488, envp=828503768) at main.c:44
+	#500007134 in __user_main (argcPtr=2, argvPtr=828503744, envp=828503768) at runtime/POSIX/klee_init_env.c:245
+	#600000751 in __uClibc_main (main=840518152, argc=2, argv=828503744, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+	#700000906 in main (=2, =828503744)
+Info: 
+	address: 48
+	next: object at 796758912 of size 400
+		MO786[400] allocated at global:static_utmp

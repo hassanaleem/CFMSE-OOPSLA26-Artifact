@@ -1,0 +1,94 @@
+(main) : Overriding KLEE_OPTIONS
+(main) : Overriding CFM_OPTIONS
+(main) : Runnign CFMSE driver with follwing options:
+-------------------------------------------
+Input bitcode file	: ./test-driver.bc
+Program arguments	:  10 
+KLEE options		: --max-time=3h -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov
+CFM options		: -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic
+Run on directory	: /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip
+-------------------------------------------
+(main) : Running klee without the transformation on /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/test-driver.bc
+(main) : Executing : /home/grads/mhassan01/klee/build/bin/klee   -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  -klee-cfmse  -klee-cfmse-run-only-on-loops=false -klee-cfmse-loads-symbolic  --max-time=10800s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/cfm-rundir/sandbox  --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-cfm-run-test-driver-1769917429_0 /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/test-driver.bc  10 
+(klee-nocfm) : Executing : /home/grads/mhassan01/klee/build/bin/klee  -max-memory=32768 -simplify-sym-indices -libc=uclibc -search=nurs:covnew --only-output-states-covering-new --write-cov --exit-on-error  --max-time=10800s --run-in-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-rundir/sandbox  --output-dir=/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-nocfm-test-driver-1769917429  /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/test-driver.bc  10 
+(klee_cfm_stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee-nocfm-stdout) : KLEE: NOTE: Using klee-uclibc : /home/grads/mhassan01/klee/build/runtime/lib/klee-uclibc.bca
+(klee_cfm_stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-cfm-run-test-driver-1769917429_0"
+(klee_cfm_stdout) : KLEE: Using STP solver backend
+(klee-nocfm-stdout) : KLEE: output directory is "/home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-nocfm-test-driver-1769917429"
+(klee-nocfm-stdout) : KLEE: Using STP solver backend
+(klee_cfm_stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee-nocfm-stdout) : INFO[cfmse]: Removing non line table debug info ...
+(klee_cfm_stdout) : INFO[cfmse]: Running CFMSE ...
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions before CFMSE : 6
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions before CFMSE : 2596
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions before CFMSE : 3306
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions before CFMSE : 37893
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: function "__libc_connect" has inline asm
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: function "socket" has inline asm
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __isoc99_sscanf
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: close
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: lseek64
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: open
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: read
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: select
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: time
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: write
+(klee-nocfm-stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : INFO[cfmse]: Number of successful applications of CFMSE : 194
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then merges : 136
+(klee_cfm_stdout) : INFO[cfmse]: Number of if-then-else merges : 58
+(klee_cfm_stdout) : INFO[cfmse]: Number of select instructions added : 306
+(klee_cfm_stdout) : INFO[cfmse]: Select Instructions after CFMSE : 312
+(klee_cfm_stdout) : INFO[cfmse]: Cond Branch Instructions after CFMSE : 2402
+(klee_cfm_stdout) : INFO[cfmse]: Uncond Branch Instructions after CFMSE : 3245
+(klee_cfm_stdout) : INFO[cfmse]: Total Instructions after CFMSE : 36687
+(klee_cfm_stdout) : CFMSE took 3.840000e-01 ms.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 983938640) at libc/termios/tcgetattr.c:43 12
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: function "__libc_connect" has inline asm
+(klee_cfm_stdout) : KLEE: WARNING ONCE: function "socket" has inline asm
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __isoc99_sscanf
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: close
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fcntl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: fstat
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: ioctl
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: lseek64
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: open
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: read
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: select
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: time
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: write
+(klee_cfm_stdout) : KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 263081152) at libc/termios/tcgetattr.c:43 12
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling __user_main with extra arguments.
+(klee_cfm_stdout) : KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: gettimeofday(974703904, 0) at ../../../libosip2-4.0.0/src/osipparser2/osip_port.c:938 3
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: gettimeofday(254143248, 0) at ../../../libosip2-4.0.0/src/osipparser2/osip_port.c:938 3
+(klee_cfm_stdout) : KLEE: WARNING ONCE: calling external: __isoc99_sscanf(262984741, 262542304, 253708504) at ../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:206 57
+(klee-nocfm-stdout) : KLEE: WARNING ONCE: calling external: __isoc99_sscanf(983897654, 983143088, 974224856) at ../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:206 57
+(klee_cfm_stdout) : 
+(klee_cfm_stdout) : KLEE: done: total instructions = 211062459
+(klee_cfm_stdout) : KLEE: done: completed paths = 79389
+(klee_cfm_stdout) : KLEE: done: partially completed paths = 0
+(klee_cfm_stdout) : KLEE: done: generated tests = 63
+(klee_cfm_stdout) : 
+(main) : Symbolic execution with CFM finished successfully
+(main) : No error files found! Exiting the driver loop..!
+(main) : Waiting for KLEE without Transformation to finish execution
+(klee-nocfm-stdout) : 
+(klee-nocfm-stdout) : KLEE: done: total instructions = 1378068898
+(klee-nocfm-stdout) : KLEE: done: completed paths = 518815
+(klee-nocfm-stdout) : KLEE: done: partially completed paths = 0
+(klee-nocfm-stdout) : KLEE: done: generated tests = 75
+(klee-nocfm-stdout) : 
+(klee-nocfm) : KLEE without CFM finished exploration
+(main) : Driver finished execution!
+(main) : CFM output files in path  : /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-cfm-run-test-driver-1769917429_*
+(main) : KLEE output files in path : /home/grads/mhassan01/klee/benchmarks/chopper-experiments/libosip/cfm_driver_output/libosip/klee-nocfm-test-driver-1769917429

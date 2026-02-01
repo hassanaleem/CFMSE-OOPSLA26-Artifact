@@ -19,7 +19,7 @@ mkdir -p $main_dir/$benchName/cfm-rundir
 mkdir -p $main_dir/$benchName/klee-rundir/sandbox
 mkdir -p $main_dir/$benchName/cfm-rundir/sandbox
 ${LLVM_BUILD_DIR}/bin/opt -mem2reg $benchName.bc > $benchName.opt.bc
-python3 ${KLEE_BUILD_DIR}/../scripts/cfm_driver/driver.py -e -i $benchName.opt.bc -k driver_options.json -r $main_dir/$benchName
+python3 ${KLEE_BUILD_DIR}/../scripts/cfm_driver/driver.py -e -i $benchName.opt.bc -k driver_options.json -r $main_dir/$benchName > $main_dir/$benchName/driver.txt 2>&1
 
 
 # combine results from all run

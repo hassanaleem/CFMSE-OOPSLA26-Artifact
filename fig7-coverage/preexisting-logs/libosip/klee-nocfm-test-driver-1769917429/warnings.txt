@@ -1,0 +1,20 @@
+KLEE: WARNING ONCE: function "__libc_connect" has inline asm
+KLEE: WARNING ONCE: function "socket" has inline asm
+KLEE: WARNING: undefined reference to function: __isoc99_sscanf
+KLEE: WARNING: undefined reference to function: __syscall_rt_sigaction
+KLEE: WARNING: undefined reference to function: close
+KLEE: WARNING: undefined reference to function: fcntl
+KLEE: WARNING: undefined reference to function: fstat
+KLEE: WARNING: undefined reference to function: ioctl
+KLEE: WARNING: undefined reference to function: lseek64
+KLEE: WARNING: undefined reference to function: open
+KLEE: WARNING: undefined reference to function: read
+KLEE: WARNING: undefined reference to function: select
+KLEE: WARNING: undefined reference to function: time
+KLEE: WARNING: undefined reference to function: write
+KLEE: WARNING: undefined reference to function: kill (UNSAFE)!
+KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 983938640) at libc/termios/tcgetattr.c:43 12
+KLEE: WARNING ONCE: calling __user_main with extra arguments.
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: gettimeofday(974703904, 0) at ../../../libosip2-4.0.0/src/osipparser2/osip_port.c:938 3
+KLEE: WARNING ONCE: calling external: __isoc99_sscanf(983897654, 983143088, 974224856) at ../../../libosip2-4.0.0/src/osipparser2/osip_message_parse.c:206 57

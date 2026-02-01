@@ -1,0 +1,6 @@
+KLEE: Using STP solver backend
+KLEE: KLEE: using 5 seeds
+
+KLEE: 5 seeds remaining over: 1 states
+KLEE: ERROR: ../../lib/fts.c:463: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location

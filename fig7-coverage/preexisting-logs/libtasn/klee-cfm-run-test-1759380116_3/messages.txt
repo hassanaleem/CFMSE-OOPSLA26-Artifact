@@ -1,0 +1,7 @@
+KLEE: Using STP solver backend
+KLEE: KLEE: using 1 seeds
+
+KLEE: 1 seeds remaining over: 1 states
+KLEE: seeding done (5 states remain)
+KLEE: ERROR: libtasn1-2.11//lib/parser_aux.c:222: concretized symbolic size
+KLEE: NOTE: now ignoring this error at this location

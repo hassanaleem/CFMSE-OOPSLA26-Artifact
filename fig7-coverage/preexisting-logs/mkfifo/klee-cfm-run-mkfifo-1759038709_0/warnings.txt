@@ -1,0 +1,63 @@
+KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+KLEE: WARNING: executable has module level assembly (ignoring)
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 219237376) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: vprintf(218569952, 219958880) at libc/stdio/fprintf.c:35 14
+KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING ONCE: calling external: printf(218757344, 203559072) at ../../src/mkfifo.c:56 7
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: WARNING: mkfifo: ignoring (EIO)
+KLEE: ERROR: EXITING ON ERROR:
+Error: concretized symbolic size
+File: ../../lib/xmalloc.c
+Line: 49
+assembly.ll line: 9814
+State: 994
+Stack: 
+	#000009814 in xmalloc (n) at ../../lib/xmalloc.c:49
+	#100009792 in xnmalloc (n, s=16) at ../../lib/xalloc.h:116
+	#200009242 in mode_compile (mode_string=219135890) at ../../lib/modechange.c:168
+	#300008906 in __klee_posix_wrapped_main (argc=3, argv=220005792) at ../../src/mkfifo.c:124
+	#400007065 in __user_main (argcPtr=15, argvPtr=174729568, envp=174729696) at runtime/POSIX/klee_init_env.c:245
+	#500000682 in __uClibc_main (main=218664960, argc=15, argv=174729568, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at libc/misc/internals/__uClibc_main.c:401
+	#600000837 in main (=15, =174729568)
+Info: 
+  size expr: (Mul w64 16
+                       (Add w64 1
+                                (Add w64 (SExt w64 (ZExt w32 (Or (Eq 61 N0:(Read w8 2 arg00))
+                                                                 (Or (Eq 43 N0) (Eq 45 N0)))))
+                                         (SExt w64 (ZExt w32 (Or (Eq 61 N1:(Read w8 3 arg00))
+                                                                 (Or (Eq 43 N1) (Eq 45 N1))))))))
+  concretization : 16
+  unbound example: 32
+
+

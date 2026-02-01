@@ -51,8 +51,7 @@ run_group() {
 # ---- Chopper experiments ----
 run_group "chopper-experiments" "run-cfm-driver.sh" \
   "libosip" \
-  "libtasn" \
-  "libyaml"
+  "libtasn"
 
 # ---- Coreutils ----
 echo "=============================="

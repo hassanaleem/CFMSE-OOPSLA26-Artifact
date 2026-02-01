@@ -1,0 +1,50 @@
+KLEE: WARNING ONCE: function "vasnprintf" has inline asm
+KLEE: WARNING: undefined reference to function: __ctype_get_mb_cur_max
+KLEE: WARNING: undefined reference to function: fdopendir
+KLEE: WARNING: executable has module level assembly (ignoring)
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 862567744) at runtime/POSIX/fd.c:1007 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+KLEE: WARNING ONCE: Alignment of memory from call "realloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: vprintf(861858864, 863771968) at libc/stdio/fprintf.c:35 14
+KLEE: WARNING ONCE: calling close_stdout with extra arguments.
+KLEE: WARNING ONCE: calling external: __ctype_get_mb_cur_max() at ../../lib/quotearg.c:212 36
+KLEE: WARNING ONCE: calling external: printf(847516672, 847166464, 847166464, 847166464) at ../../src/chcon.c:369 7
+KLEE: WARNING ONCE: skipping fork (memory cap exceeded)
+KLEE: WARNING: killing 5296 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5228 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5263 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5348 states (over memory cap: 32104MB)
+KLEE: WARNING: killing 5229 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5212 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5297 states (over memory cap: 32104MB)
+KLEE: WARNING: killing 5280 states (over memory cap: 32104MB)
+KLEE: WARNING: killing 5263 states (over memory cap: 32104MB)
+KLEE: WARNING: killing 5145 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5229 states (over memory cap: 32104MB)
+KLEE: WARNING: killing 5062 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5046 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5080 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 5064 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 4999 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 5081 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 5065 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 4951 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 4935 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 4968 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 4904 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 4985 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 4969 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 4905 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 4938 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 4874 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 4811 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 4843 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 4875 states (over memory cap: 32103MB)
+KLEE: WARNING: killing 4813 states (over memory cap: 32102MB)
+KLEE: WARNING: killing 4750 states (over memory cap: 32101MB)
+KLEE: WARNING: killing 4829 states (over memory cap: 32103MB)
+KLEE: ERROR: EXITING ON ERROR:
+Execution halting.
+
+

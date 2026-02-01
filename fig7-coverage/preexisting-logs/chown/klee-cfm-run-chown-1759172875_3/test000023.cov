@@ -1,0 +1,3 @@
+libc/string/strchr.c:22
+../../src/chown.c:250
+../../src/chown.c:251

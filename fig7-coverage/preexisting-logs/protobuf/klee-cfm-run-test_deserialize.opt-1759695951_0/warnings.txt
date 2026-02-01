@@ -1,0 +1,41 @@
+KLEE: WARNING: undefined reference to function: fcntl
+KLEE: WARNING: undefined reference to function: fstat
+KLEE: WARNING: undefined reference to function: ioctl
+KLEE: WARNING: undefined reference to function: lseek64
+KLEE: WARNING: undefined reference to function: open
+KLEE: WARNING: undefined reference to function: putchar
+KLEE: WARNING: undefined reference to function: write
+KLEE: WARNING ONCE: calling external: ioctl(0, 21505, 709670624) at libc/termios/tcgetattr.c:43 12
+KLEE: WARNING ONCE: calling __user_main with extra arguments.
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: write(2, 709640112, 33) at libc/stdio/_WRITE.c:52 11
+KLEE: WARNING ONCE: calling external: printf(709609952, (Or w32 (Shl w32 (ZExt w32 (Read w8 9 buf))
+                  28)
+         (Or w32 (Shl w32 (ZExt w32 (And w8 (Read w8 8 buf) 127))
+                          21)
+                 (Or w32 (Shl w32 (ZExt w32 (And w8 (Read w8 7 buf) 127))
+                                  14)
+                         (Or w32 (Shl w32 (ZExt w32 (And w8 (Read w8 6 buf) 127))
+                                          7)
+                                 (ZExt w32 (And w8 (Read w8 5 buf) 127))))))) at test_deserialize.c:42 12
+KLEE: WARNING ONCE: calling external: putchar(10) at amessage.pb-c.c:52 3
+KLEE: ERROR: EXITING ON ERROR:
+Error: memory error: out of bound pointer
+File: ../protobuf-c/protobuf-c.c
+Line: 2406
+assembly.ll line: 5552
+State: 1307
+Stack: 
+	#000005552 in parse_required_member (scanned_member=681059360, member=709689944, allocator=709703936, maybe_clear=1) at ../protobuf-c/protobuf-c.c:2406
+	#100005040 in protobuf_c_message_unpack (desc=706995200, allocator=0, len=10, data=709613840) at ../protobuf-c/protobuf-c.c:2908
+	#200000548 in __user_main (argc=1, argv=707634944) at amessage.pb-c.c:43
+	#300000374 in __uClibc_main (argc=1, argv=707634944) at libc/misc/internals/__uClibc_main.c:401
+	#400000537 in main (=1, =707634944)
+Info: 
+	address: 709613850
+	next: object at 709618704 of size 8
+		MO8[8] allocated at main():  tail call fastcc void @__uClibc_main(i32 %0, i8** %1), !sourceFile !130, !mergedLineNum !131
+	prev: object at 709613840 of size 10
+		MO6647[10] allocated at __user_main():  %buf = alloca [10 x i8], align 1, !sourceFile !133, !mergedLineNum !134
+
+

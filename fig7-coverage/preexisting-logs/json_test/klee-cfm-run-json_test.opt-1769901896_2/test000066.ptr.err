@@ -1,0 +1,19 @@
+Error: memory error: out of bound pointer
+File: ./json.h
+Line: 1740
+assembly.ll line: 3139
+State: 338
+Stack: 
+	#000003139 in json_parse_object (state=424760480, is_global_object=0, object=437883168) at ./json.h:1740
+	#100003268 in json_parse_value (state=424760480, is_global_object=0, value=437883152) at ./json.h:1981
+	#200003995 in json_parse_ex (src=434950112) at ./json.h:2155
+	#300004009 in json_parse (src=434950112) at ./json.h:2163
+	#400004028 in __user_main (argc=1, argv=410159296) at json_test.c:10
+	#500000347 in __uClibc_main (argc=1, argv=410159296) at libc/misc/internals/__uClibc_main.c:401
+	#600000510 in main (=1, =410159296)
+Info: 
+	address: 437883256
+	next: object at 6543201998784 of size 1536
+		MO123[1536] (no allocation info)
+	prev: object at 437883152 of size 110
+		MO9880[110] allocated at json_parse_ex():  %call39 = call noalias align 16 i8* @malloc(i64 %add) #18, !dbg !125, !sourceFile !75, !mergedLineNum !126

@@ -1,0 +1,13 @@
+runtime/POSIX/fd.c:572
+runtime/POSIX/fd.c:573
+runtime/POSIX/fd.c:578
+../../lib/fts.c:324
+../../lib/fts.c:450
+../../lib/fts.c:457
+../../lib/fts.c:458
+../../lib/fts.c:1361
+../../lib/fts.c:1394
+../../lib/fts.c:1396
+../../lib/fts.c:1397
+../../lib/fts.c:1398
+../../lib/fts.c:1435

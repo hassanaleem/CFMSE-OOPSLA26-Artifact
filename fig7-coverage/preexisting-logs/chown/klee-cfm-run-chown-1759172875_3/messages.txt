@@ -1,0 +1,7 @@
+KLEE: Using STP solver backend
+KLEE: KLEE: using 3 seeds
+
+KLEE: 3 seeds remaining over: 1 states
+KLEE: seeding done (60 states remain)
+KLEE: HaltTimer invoked
+KLEE: halting execution, dumping remaining states
