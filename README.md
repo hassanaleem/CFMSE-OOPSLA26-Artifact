@@ -386,3 +386,9 @@ In this command, the user provides the input LLVM bitcode file, the JSON configu
 The driver executes KLEE on the provided program and terminates as soon as the first true positive bug is discovered.
 
 Since CFMSE is implemented as LLVM transformation, it resides within the LLVM framework. Thus, for this artifact, we modify both the LLVM and KLEE source code. Our LLVM changes can be found inside `llvm/lib/Transforms/CFMSE`. Since we now need to call this transformation from within KLEE, we modify its source by adding a call to our transformation in the `KModule.cpp` file present in `klee/lib/Module`. 
+
+## License 
+This artifact includes modified versions of LLVM and KLEE, which remain
+licensed under their original licenses. All artifact-specific scripts,
+drivers, and experimental infrastructure are released under the MIT License.
+See the LICENSE file for details.
