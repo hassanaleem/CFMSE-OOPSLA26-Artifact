@@ -179,6 +179,32 @@ We recommend using the following configuration:
 
 To execute on machines with memory lower than 160GB, navigate to each benchmark program directory and modify the `driver_options.json` based on your system specifications to avoid potential system crashes. For **Table 3** modify the `makefile.in` instead of `driver_options.json`. Ensure that the `max-memory` is set below the total memory available to your system for all experiments. Additionally, configure Docker memory to avoid system crashes as described in the Installation Section.
 
+## List of Claims
+
+- **Improvement in Performance of DSE** (Section 5.1)  
+  This claim is evaluated in the paper using Table 4.  
+  The artifact reproduces this claim using the experiment in Section .
+
+- **Performance Scaling of DSE** (Section 5.1)   
+  This claim is evaluated in the paper using Figure 6.  
+  The artifact reproduces this claim using the experiment in Section `Figure 6 - Merge Sort Paths`.
+
+- **Improvement in Performance of Coverage** (Section 5.2)  
+  This claim is evaluated in the paper using Figure 7.  
+  The artifact reproduces this claim using the experiment in Section `Figure 7 - Coverage`.
+
+- **Improvement in Performance of Bug Discovery** (Section 5.3)  
+  This claim is evaluated in the paper using Figure 10, which reports bug discovery performance, and Figure 11, which shows the improved likelihood of finding a bug as the input to the program scales.  
+  The artifact reproduced this claim using the experiment in Section `Figure 10 and 11 Bug Detection and Killed States`.
+
+- **Minimal Overhead** (Section 5.4)  
+  This claim is evaluated in the paper using Table 4.  
+  The artifact reproduced this claim using the experiment in Section `Table 4 - Overhead`.
+
+Results may differ on machines with limited RAM. Although our approach is designed to operate under lower memory constraints, extremely limited resources may cause the OS to terminate KLEE. Such terminations can affect coverage or bug detection results. In some cases, the bug may not be discovered because the analysis does not run long enough to reach the relevant execution path.
+
+Because KLEE's memory usage is highly dependent on the explored paths, it is hard to predict how many benchmarks will be affected by memory-constrained systems. When the memory conditions used in the experiment are met, all claims are expected to hold. 
+
 
 ## Evaluation and expected results
 
@@ -329,9 +355,6 @@ INFO[cfmse]: Uncond Branch Instructions after CFMSE : 238
 INFO[cfmse]: Total Instructions after CFMSE : 3707
 CFMSE took 1.000000e-02 ms.
 ```
-
-**Warning:**  Results may differ on machines with limited RAM. 
-Although our approach is designed to operate under lower memory constraints, extremely limited resources may cause the OS to terminate KLEE. Such terminations can affect coverage or bug detection results. In some cases, the bug may not be discovered because the analysis does not run long enough to reach the relevant execution path.
 
 ## Experiment Customization and Reusability
 

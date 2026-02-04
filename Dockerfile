@@ -4,7 +4,6 @@ FROM ubuntu:24.04
 # Set a working directory inside the container. All subsequent commands will run from here.
 WORKDIR /cfmse
 
-
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
@@ -27,6 +26,15 @@ COPY llvm-project-cfmse /cfmse/llvm-project-cfmse
 COPY klee /cfmse/klee
 COPY klee-uclibc /cfmse/klee-uclibc
 COPY stp /cfmse/stp
+
+RUN find . \
+    -type f \
+    \( \
+    -name "*.sh" \
+    -o -name "configure" \
+    -o -name "klee-stats" \
+    \) \
+    -exec chmod +x {} +
 
 
 RUN cd stp && \
