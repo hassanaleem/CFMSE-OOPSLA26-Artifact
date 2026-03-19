@@ -1,0 +1,39 @@
+\begin{table}[tb]
+	\centering
+	\caption{Overhead of \name transformation.}
+	\vspace{-1em}
+	%\resizebox{0.8\columnwidth}{!}{
+	\begin{tabular}{@{}lccccccc@{}}
+		\toprule
+		\textbf{Benchmark}                                           & \textbf{\begin{tabular}[c]{@{}l@{}}Compile-time \\ Overhead (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}LoC\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}\#Instructions\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}\#Merges\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Select Instruction \\ Overhead (\%)\end{tabular}} &
+		\textbf{\begin{tabular}[c]{@{}l@{}}If Nesting \end{tabular}} &
+		\textbf{\begin{tabular}[c]{@{}l@{}}Control Flow
+				        \\ Nesting (\%)\end{tabular}}                                                                                                                                                                                                                                                                                                                                                                                     \\
+		\midrule
+		\code{libosip}                                               & 0.38                                                                           & 19,588                                               & 37,893
+		                                                             & 194                                                                            & 0.83\%                                               & 24                                                              & 34                                                                                                                                                         \\
+		\code{libtasn1}                                              & 1.58                                                                           & 20,879                                               & 34,337
+		                                                             & 148                                                                            & 0.56\%                                               & 9                                                               & 13                                                                                                                                                         \\
+		\code{chcon}                                                 & 0.90                                                                           & 435                                                  & 35,248
+		                                                             & 149                                                                            & 0.88\%                                               & 9                                                               & 10                                                                                                                                                         \\
+		\code{chown}                                                 & 0.90                                                                           & 809                                                  & 36,672                                                          & 176                                                       & 0.94\%                                                                               & 9  & 10 \\
+		\code{mkdir}                                                 & 0.80                                                                           & 342                                                  & 28,903
+		                                                             & 104                                                                            & 0.77\%                                               & 9                                                               & 10                                                                                                                                                         \\
+		\code{mkfifo}                                                & 0.76                                                                           & 107                                                  & 27,372                                                          & 90                                                        & 0.74\%                                                                               & 9  & 10 \\
+		\code{json.h}                                                & 0.02                                                                           & 2,439                                                & 5,103                                                           & 18                                                        & 1.17\%                                                                               & 5  & 5  \\
+		\code{protobuf}                                              & 0.10                                                                           & 3,516                                                & 6,334
+		                                                             & 40                                                                             & 0.79\%                                               & 5                                                               & 6                                                                                                                                                          \\
+		\code{utf-8}                                                 & 0.02                                                                           & 1,218                                                & 3,522
+		                                                             & 8                                                                              & 0.32\%                                               & 2                                                               & 3                                                                                                                                                          \\
+
+		\code{tiny-regex-c}                                          & 0.03                                                                           & 428                                                  & 3,877
+		                                                             & 13                                                                             & 0.35\%                                               & 5                                                               & 6                                                                                                                                                          \\
+
+
+		\code{libyaml}                                               & 7.60                                                                           & 7,400                                                & 56,688                                                          & 260                                                       & 1.23\%                                                                               & 26 & 26 \\
+
+		\bottomrule
+	\end{tabular}%}
+	\label{tab:overhead}
+	\vspace{-1.5em}
+\end{table}
