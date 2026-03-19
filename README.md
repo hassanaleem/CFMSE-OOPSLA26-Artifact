@@ -13,7 +13,7 @@ This artifact supports the experiment results shown in the paper, including cove
 * **Output**: Optimized LLVM IR, binaries, raw logs.
 * **Experiment Workflow**: Download source code and benchmarks, compile the source code or build the Dockerfile, run the scripts to generate the results.
 * **Disk space required**: Approximately 40 GB of free disk space for Docker build, or 25 GB for Dockerless builds.
-* **Publicly available**: Will be made available after the evaluation.
+* **Publicly available**: Available on [Zenodo](https://zenodo.org/records/19115620).
 * **Workflow automation**: Bash and Python scripts.
 
 
